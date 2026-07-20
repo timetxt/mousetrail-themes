@@ -14,7 +14,7 @@ named after the file's stem (themes/official/neon/aurora.json ->
 assets/swatches/aurora.svg), showing a smooth S-curve trail stroked with the
 theme's gradient (tail = location 0 on the left, head = location 1 on the
 right, mirroring how the app paints a trail), a glow underlay, and a bright
-head dot in the final stop's color.
+mouse-cursor glyph at the head over a soft halo in the final stop's color.
 
 IMPORTANT: assets/swatches/ is a GENERATED directory. This script is its SOLE
 producer -- every file in it is written or pruned here and none should ever
@@ -60,9 +60,18 @@ GLOW_STROKE_WIDTH = MAIN_STROKE_WIDTH * 2.2
 GLOW_OPACITY = 0.35
 GLOW_BLUR_STDDEV = 6
 
-HEAD_DOT_RADIUS = 9
 HEAD_GLOW_RADIUS = 16
 HEAD_GLOW_OPACITY = 0.35
+
+# Classic arrow-cursor glyph drawn at the head (the trail follows the mouse
+# pointer, so the head is the pointer). Path is in a ~14x20 local box with the
+# hotspot (arrow tip) at 0,0; translated so the tip sits exactly on the path's
+# head point. White fill with a dark outline so it reads on any theme color.
+CURSOR_PATH_D = "M0 0 L0 17 L4.6 12.7 L7.6 19.7 L10.4 18.5 L7.4 11.6 L13.6 11.6 Z"
+CURSOR_FILL = "#ffffff"
+CURSOR_OUTLINE = "#1b1c21"
+CURSOR_OUTLINE_WIDTH = 1.5
+CURSOR_SCALE = 1.1
 
 
 def _fmt(value):
@@ -174,7 +183,9 @@ def _render_svg(gradient_id, stops):
   <path d="{PATH_D}" fill="none" stroke="url(#{gradient_id})" stroke-width="{_fmt(GLOW_STROKE_WIDTH)}" stroke-linecap="round" opacity="{_fmt(GLOW_OPACITY)}" filter="url(#{gradient_id}-blur)"/>
   <path d="{PATH_D}" fill="none" stroke="url(#{gradient_id})" stroke-width="{_fmt(MAIN_STROKE_WIDTH)}" stroke-linecap="round"/>
   <circle cx="{HEAD_X}" cy="{HEAD_Y}" r="{HEAD_GLOW_RADIUS}" fill="{head_hex}" opacity="{_fmt(HEAD_GLOW_OPACITY)}" filter="url(#{gradient_id}-blur)"/>
-  <circle cx="{HEAD_X}" cy="{HEAD_Y}" r="{HEAD_DOT_RADIUS}" fill="{head_hex}"/>
+  <g transform="translate({HEAD_X} {HEAD_Y}) scale({_fmt(CURSOR_SCALE)})">
+    <path d="{CURSOR_PATH_D}" fill="{CURSOR_FILL}" stroke="{CURSOR_OUTLINE}" stroke-width="{_fmt(CURSOR_OUTLINE_WIDTH)}" stroke-linejoin="round"/>
+  </g>
 </svg>
 """
 
