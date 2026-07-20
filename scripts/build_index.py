@@ -130,6 +130,10 @@ def build_index(themes_dir: pathlib.Path, repo_root: pathlib.Path):
     for file_path in sorted(themes_dir.rglob("*.json")):
         rel_path = file_path.relative_to(repo_root).as_posix()
         collection = _collection_for(file_path)
+        # themes/community/<github-username>/<name>.json — attribute the
+        # contributor from the per-user directory.
+        rel_parts = file_path.relative_to(themes_dir).parts
+        author = rel_parts[1] if rel_parts[0] == "community" and len(rel_parts) >= 3 else None
 
         try:
             doc = json.loads(file_path.read_text(encoding="utf-8"))
@@ -161,6 +165,8 @@ def build_index(themes_dir: pathlib.Path, repo_root: pathlib.Path):
                 "lifetime": style.get("lifetime"),
                 "widthScale": style.get("widthScale"),
             }
+            if author:
+                entry["author"] = author
             if is_rainbow:
                 entry["rainbow"] = True
 

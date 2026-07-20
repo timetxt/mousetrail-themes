@@ -1,7 +1,7 @@
 ## Theme contribution
 
 - **Theme name(s):**
-- **File(s) added:** `themes/community/...`
+- **File(s) added:** `themes/community/<github-username>/...`
 
 ### Checklist
 

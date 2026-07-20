@@ -178,6 +178,13 @@
 
     node.querySelector(".card-swatch").style.background = gradientCss(theme.stops);
     node.querySelector(".card-name").textContent = theme.name;
+    if (theme.author) {
+      var authorEl = document.createElement("span");
+      authorEl.className = "card-author";
+      authorEl.textContent = "@" + theme.author;
+      node.querySelector(".card-name").appendChild(document.createTextNode(" "));
+      node.querySelector(".card-name").appendChild(authorEl);
+    }
 
     var badge = node.querySelector(".badge");
     badge.textContent = t(badgeKey(theme.collection));

@@ -7,8 +7,9 @@
 
 ## 1. 编写主题文件
 
-在 `themes/community/<kebab-case-名称>.json` 新建文件，例如
-`themes/community/midnight-teal.json`。名称应具有描述性，且不与现有主题冲突（文件内
+在 `themes/community/<你的-GitHub-用户名>/<kebab-case-名称>.json` 新建文件——
+即以你的 GitHub 用户名命名的文件夹，例如
+`themes/community/octocat/midnight-teal.json`。名称应具有描述性，且不与现有主题冲突（文件内
 的 `name` 字段——主题名称——必须在整个仓库范围内唯一，而不仅仅是你的文件内唯一）。
 
 请遵循 **[THEME-FORMAT.zh-Hans.md](THEME-FORMAT.zh-Hans.md)** 中的确切 JSON
@@ -62,14 +63,14 @@ python3 scripts/validate_themes.py
 python3 scripts/build_swatches.py
 ```
 
-该命令会（重新）生成 `assets/swatches/<你的文件名>.svg`，并清理任何孤立的预览文件。
+该命令会（重新）生成 `assets/swatches/<你的-GitHub-用户名>-<文件名>.svg`，并清理任何孤立的预览文件。
 请将生成的 SVG 与你的主题文件一并提交——如果生成的资源文件与主题文件不一致，CI 会
 构建失败（参见 `validate-themes` 工作流）。
 
 ## 4. 提交 Pull Request
 
-针对本仓库提交一个 PR，包含 `themes/community/` 下的新文件及其生成的
-`assets/swatches/<文件名>.svg`。`validate-themes` 这个 GitHub Actions 工作流会在你的
+针对本仓库提交一个 PR，包含 `themes/community/<你的-GitHub-用户名>/` 下的新文件及其
+生成的 `assets/swatches/<你的-GitHub-用户名>-<文件名>.svg`。`validate-themes` 这个 GitHub Actions 工作流会在你的
 PR 上自动运行相同的验证器，并额外做一次 JSON Schema 校验——它**只是一个辅助工具**：
 不会自动合并任何内容，检查通过也不代表一定会被接受。**合并由维护者人工审核决定。**
 

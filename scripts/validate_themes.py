@@ -197,6 +197,17 @@ def validate_repo(themes_dir, repo_root):
 
     for file_path in files:
         label = str(file_path.relative_to(repo_root))
+
+        # Community themes are namespaced per contributor:
+        # themes/community/<github-username>/<kebab-case-name>.json.
+        rel_parts = file_path.relative_to(themes_dir).parts
+        if rel_parts[0] == "community" and len(rel_parts) != 3:
+            errors.append(
+                f"{label}: community themes must live at "
+                "themes/community/<github-username>/<kebab-case-name>.json"
+            )
+            continue
+
         try:
             text = file_path.read_text(encoding="utf-8")
         except OSError as exc:

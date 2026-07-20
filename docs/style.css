@@ -198,6 +198,12 @@ body {
   font-weight: 650;
 }
 
+.card-author {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
 .badge {
   font-size: 11px;
   font-weight: 700;

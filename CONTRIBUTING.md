@@ -7,8 +7,9 @@ mechanical process: write a theme file, validate it locally, open a pull request
 
 ## 1. Write your theme file
 
-Add a new file at `themes/community/<kebab-case-name>.json`, e.g.
-`themes/community/midnight-teal.json`. Use a name that's descriptive and doesn't collide
+Add a new file at `themes/community/<github-username>/<kebab-case-name>.json` —
+a folder named after your GitHub username, e.g.
+`themes/community/octocat/midnight-teal.json`. Use a name that's descriptive and doesn't collide
 with an existing theme (theme *names* — the `name` field inside the file — must be
 unique across the whole repo, not just your file).
 
@@ -65,14 +66,14 @@ README tables:
 python3 scripts/build_swatches.py
 ```
 
-This (re)writes `assets/swatches/<your-file-stem>.svg` and prunes any orphaned swatch
+This (re)writes `assets/swatches/<github-username>-<your-file-stem>.svg` and prunes any orphaned swatch
 files. Commit the generated SVG along with your theme file — CI fails the build if the
 generated assets are out of date (see the `validate-themes` workflow).
 
 ## 4. Open a pull request
 
-Open a PR against this repo with your new file under `themes/community/` and its
-generated `assets/swatches/<stem>.svg`. The `validate-themes` GitHub Actions workflow
+Open a PR against this repo with your new file under `themes/community/<github-username>/`
+and its generated `assets/swatches/<github-username>-<stem>.svg`. The `validate-themes` GitHub Actions workflow
 runs the same validator plus a JSON Schema check automatically on your PR — it's a
 **helper only**: it does not merge anything, and a green check does not guarantee
 acceptance. **Merging is by maintainer review.**

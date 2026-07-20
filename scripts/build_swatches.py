@@ -11,7 +11,11 @@ Usage:
 
 Output: assets/swatches/*.svg -- one SVG "trail demo" card per theme file,
 named after the file's stem (themes/official/neon/aurora.json ->
-assets/swatches/aurora.svg), showing a smooth S-curve trail stroked with the
+assets/swatches/aurora.svg); community themes, which live in per-contributor
+directories (themes/community/<github-username>/<name>.json), are prefixed
+with the username (-> assets/swatches/<github-username>-<name>.svg) so
+contributors can never collide with each other or with official stems.
+Each card shows a smooth S-curve trail stroked with the
 theme's gradient (tail = location 0 on the left, head = location 1 on the
 right, mirroring how the app paints a trail), a glow underlay, and a bright
 mouse-cursor glyph at the head over a soft halo in the final stop's color.
@@ -200,7 +204,14 @@ def build_swatches(themes_dir: pathlib.Path, swatches_dir: pathlib.Path, repo_ro
 
     for file_path in sorted(themes_dir.rglob("*.json")):
         label = str(file_path.relative_to(repo_root))
-        stem = file_path.stem
+        rel_parts = file_path.relative_to(themes_dir).parts
+        # Community themes live at themes/community/<github-username>/<name>.json;
+        # prefix the username so contributors' swatches can't collide with each
+        # other or with official file stems.
+        if rel_parts[0] == "community" and len(rel_parts) >= 3:
+            stem = f"{rel_parts[1]}-{file_path.stem}"
+        else:
+            stem = file_path.stem
 
         try:
             doc = json.loads(file_path.read_text(encoding="utf-8"))
