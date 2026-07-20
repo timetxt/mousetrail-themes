@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="140" viewBox="0 0 640 140" role="img">
+  <defs>
+    <linearGradient id="sakura-grad" gradientUnits="userSpaceOnUse" x1="56" y1="0" x2="584" y2="0">
+      <stop offset="0" stop-color="#E39BB4"/>
+      <stop offset="0.3333" stop-color="#F2B8CE"/>
+      <stop offset="0.6667" stop-color="#F9D3E1"/>
+      <stop offset="1" stop-color="#FCEDF2"/>
+    </linearGradient>
+    <filter id="sakura-grad-blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="640" height="140" rx="12" fill="#17181d"/>
+  <path d="M56 102 C168 102 168 34 302 34 S436 102 584 62" fill="none" stroke="url(#sakura-grad)" stroke-width="17.6" stroke-linecap="round" opacity="0.35" filter="url(#sakura-grad-blur)"/>
+  <path d="M56 102 C168 102 168 34 302 34 S436 102 584 62" fill="none" stroke="url(#sakura-grad)" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="584" cy="62" r="16" fill="#FCEDF2" opacity="0.35" filter="url(#sakura-grad-blur)"/>
+  <circle cx="584" cy="62" r="9" fill="#FCEDF2"/>
+</svg>

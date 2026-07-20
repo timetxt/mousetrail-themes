@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="140" viewBox="0 0 640 140" role="img">
+  <defs>
+    <linearGradient id="forest-grad" gradientUnits="userSpaceOnUse" x1="56" y1="0" x2="584" y2="0">
+      <stop offset="0" stop-color="#1B5E20"/>
+      <stop offset="0.25" stop-color="#4CAF50"/>
+      <stop offset="0.5" stop-color="#8BC34A"/>
+      <stop offset="0.75" stop-color="#CDDC39"/>
+      <stop offset="1" stop-color="#FFC107"/>
+    </linearGradient>
+    <filter id="forest-grad-blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="640" height="140" rx="12" fill="#17181d"/>
+  <path d="M56 102 C168 102 168 34 302 34 S436 102 584 62" fill="none" stroke="url(#forest-grad)" stroke-width="17.6" stroke-linecap="round" opacity="0.35" filter="url(#forest-grad-blur)"/>
+  <path d="M56 102 C168 102 168 34 302 34 S436 102 584 62" fill="none" stroke="url(#forest-grad)" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="584" cy="62" r="16" fill="#FFC107" opacity="0.35" filter="url(#forest-grad-blur)"/>
+  <circle cx="584" cy="62" r="9" fill="#FFC107"/>
+</svg>

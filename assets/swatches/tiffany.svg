@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="140" viewBox="0 0 640 140" role="img">
+  <defs>
+    <linearGradient id="tiffany-grad" gradientUnits="userSpaceOnUse" x1="56" y1="0" x2="584" y2="0">
+      <stop offset="0" stop-color="#2E9A94"/>
+      <stop offset="0.25" stop-color="#57BDB5"/>
+      <stop offset="0.5" stop-color="#86D4CD"/>
+      <stop offset="0.75" stop-color="#C0E8E0"/>
+      <stop offset="1" stop-color="#EDE6D6"/>
+    </linearGradient>
+    <filter id="tiffany-grad-blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="640" height="140" rx="12" fill="#17181d"/>
+  <path d="M56 102 C168 102 168 34 302 34 S436 102 584 62" fill="none" stroke="url(#tiffany-grad)" stroke-width="17.6" stroke-linecap="round" opacity="0.35" filter="url(#tiffany-grad-blur)"/>
+  <path d="M56 102 C168 102 168 34 302 34 S436 102 584 62" fill="none" stroke="url(#tiffany-grad)" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="584" cy="62" r="16" fill="#EDE6D6" opacity="0.35" filter="url(#tiffany-grad-blur)"/>
+  <circle cx="584" cy="62" r="9" fill="#EDE6D6"/>
+</svg>
