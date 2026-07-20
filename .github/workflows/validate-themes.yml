@@ -1,0 +1,35 @@
+name: validate-themes
+
+# Helper only: validates theme files on every PR and push. It never merges,
+# approves, or otherwise gates a merge by itself -- merging is always by
+# maintainer review (see CONTRIBUTING.md).
+
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run repo validator (scripts/validate_themes.py)
+        run: python3 scripts/validate_themes.py
+
+      - name: Install check-jsonschema
+        run: pip install check-jsonschema
+
+      - name: Validate every theme file against schema/theme.schema.json
+        run: |
+          shopt -s globstar
+          check-jsonschema --schemafile schema/theme.schema.json themes/**/*.json
