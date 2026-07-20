@@ -28,11 +28,40 @@ MouseTrail 中依次打开**设置 → 轨迹 → 导入…**，选择该文件�
 
 ## 主题分类
 
-| 分类 | 路径 | 说明 |
+### 设计师精选（旗舰）
+
+精心策划的高级多色标渐变，位于 `themes/official/designer/`——追求柔和、统一的色彩
+叙事，而非随意的 RGB 取值。
+
+| 预览 | 名称 | 配色 |
 |---|---|---|
-| **设计师精选**（旗舰） | `themes/official/designer/` | 精心策划的高级多色标渐变——追求柔和、统一的色彩叙事，而非随意的 RGB 取值。 |
-| **霓虹** | `themes/official/neon/` | 明亮饱和的多色标渐变，包含应用内置的 **Aurora（极光流光）** 和 **Sunset（日落霞光）** 预设。 |
-| **社区** | `themes/community/` | 通过 Pull Request 贡献，合并前由维护者审核。 |
+| ![Cream 轨迹预览](assets/swatches/cream.svg) | Cream | `#C9A876` → `#E0C79A` → `#EFDDBB` → `#F7EEDA` |
+| ![Cyberpunk 轨迹预览](assets/swatches/cyberpunk.svg) | Cyberpunk | `#2A1A4D` → `#7B2F87` → `#C24A93` → `#7B6DC4` → `#3CC0CE` |
+| ![Matcha 轨迹预览](assets/swatches/matcha.svg) | Matcha | `#6B7A3A` → `#8A9A54` → `#A8B778` → `#CBD3A6` → `#EDE9D2` |
+| ![Morandi 轨迹预览](assets/swatches/morandi.svg) | Morandi | `#7E8A82` → `#94918E` → `#A99E9A` → `#B3A8AE` → `#C7C4BE` |
+| ![Peach 轨迹预览](assets/swatches/peach.svg) | Peach | `#E68A5E` → `#F4B98E` → `#FBDDC2` |
+| ![Sakura 轨迹预览](assets/swatches/sakura.svg) | Sakura | `#E39BB4` → `#F2B8CE` → `#F9D3E1` → `#FCEDF2` |
+| ![Tiffany 轨迹预览](assets/swatches/tiffany.svg) | Tiffany | `#2E9A94` → `#57BDB5` → `#86D4CD` → `#C0E8E0` → `#EDE6D6` |
+
+### 霓虹
+
+明亮饱和的多色标渐变，位于 `themes/official/neon/`，包含应用内置的 **Aurora（极光
+流光）** 和 **Sunset（日落霞光）** 预设。
+
+| 预览 | 名称 | 配色 |
+|---|---|---|
+| ![Aurora 轨迹预览](assets/swatches/aurora.svg) | Aurora | `#7B61FF` → `#00D9FF` → `#00F5A0` → `#A8FF78` |
+| ![Dream Purple 轨迹预览](assets/swatches/dream-purple.svg) | Dream Purple | `#9D7CFF` → `#D291FF` → `#FFB3F7` → `#A8FFF5` |
+| ![Forest 轨迹预览](assets/swatches/forest.svg) | Forest | `#1B5E20` → `#4CAF50` → `#8BC34A` → `#CDDC39` → `#FFC107` |
+| ![Galaxy 轨迹预览](assets/swatches/galaxy.svg) | Galaxy | `#2563EB` → `#8B5CF6` → `#EC4899` → `#F97316` → `#FDE047` |
+| ![Mint Breeze 轨迹预览](assets/swatches/mint-breeze.svg) | Mint Breeze | `#A7F3D0` → `#6EE7B7` → `#38BDF8` → `#E0F2FE` |
+| ![Ocean 轨迹预览](assets/swatches/ocean.svg) | Ocean | `#0187FF` → `#00C2FF` → `#00E9D2` → `#E0FFFA` |
+| ![Sunset 轨迹预览](assets/swatches/sunset.svg) | Sunset | `#FF6B6B` → `#FFA26B` → `#FFD06B` → `#FFF7A8` |
+
+### 社区
+
+通过 Pull Request 贡献，位于 `themes/community/`，合并前由维护者审核。社区主题的
+预览显示在主题库网站（`docs/index.html`）中，此处不再重复列出。
 
 ## 手动编写主题文件
 

@@ -56,12 +56,26 @@ This checks JSON validity, required fields, value ranges, stop counts, the
 anything it reports; it exits non-zero (with every violation listed) if something's
 wrong.
 
-## 3. Open a pull request
+## 3. Generate its swatch
 
-Open a PR against this repo with just your new file under `themes/community/`. The
-`validate-themes` GitHub Actions workflow runs the same validator plus a JSON Schema
-check automatically on your PR — it's a **helper only**: it does not merge anything, and
-a green check does not guarantee acceptance. **Merging is by maintainer review.**
+Run the repo's pure-stdlib swatch generator so your theme gets a preview image in the
+README tables:
+
+```
+python3 scripts/build_swatches.py
+```
+
+This (re)writes `assets/swatches/<your-file-stem>.svg` and prunes any orphaned swatch
+files. Commit the generated SVG along with your theme file — CI fails the build if the
+generated assets are out of date (see the `validate-themes` workflow).
+
+## 4. Open a pull request
+
+Open a PR against this repo with your new file under `themes/community/` and its
+generated `assets/swatches/<stem>.svg`. The `validate-themes` GitHub Actions workflow
+runs the same validator plus a JSON Schema check automatically on your PR — it's a
+**helper only**: it does not merge anything, and a green check does not guarantee
+acceptance. **Merging is by maintainer review.**
 
 The PR template has a short checklist — fill it out; it mirrors the steps above.
 

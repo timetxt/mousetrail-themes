@@ -32,11 +32,41 @@ gradient themes if your app predates gradient support.
 
 ## Collections
 
-| Collection | Path | What it is |
+### Designer (flagship)
+
+Curated, sophisticated multi-stop palettes in `themes/official/designer/` — muted,
+cohesive color stories rather than raw RGB picks.
+
+| Swatch | Name | Colors |
 |---|---|---|
-| **Designer** (flagship) | `themes/official/designer/` | Curated, sophisticated multi-stop palettes — muted, cohesive color stories rather than raw RGB picks. |
-| **Neon** | `themes/official/neon/` | Bright, saturated multi-stop gradients, including the built-in **Aurora** and **Sunset** presets that ship with the app. |
-| **Community** | `themes/community/` | Contributed via pull request, reviewed by a maintainer before merge. |
+| ![Cream trail swatch](assets/swatches/cream.svg) | Cream | `#C9A876` → `#E0C79A` → `#EFDDBB` → `#F7EEDA` |
+| ![Cyberpunk trail swatch](assets/swatches/cyberpunk.svg) | Cyberpunk | `#2A1A4D` → `#7B2F87` → `#C24A93` → `#7B6DC4` → `#3CC0CE` |
+| ![Matcha trail swatch](assets/swatches/matcha.svg) | Matcha | `#6B7A3A` → `#8A9A54` → `#A8B778` → `#CBD3A6` → `#EDE9D2` |
+| ![Morandi trail swatch](assets/swatches/morandi.svg) | Morandi | `#7E8A82` → `#94918E` → `#A99E9A` → `#B3A8AE` → `#C7C4BE` |
+| ![Peach trail swatch](assets/swatches/peach.svg) | Peach | `#E68A5E` → `#F4B98E` → `#FBDDC2` |
+| ![Sakura trail swatch](assets/swatches/sakura.svg) | Sakura | `#E39BB4` → `#F2B8CE` → `#F9D3E1` → `#FCEDF2` |
+| ![Tiffany trail swatch](assets/swatches/tiffany.svg) | Tiffany | `#2E9A94` → `#57BDB5` → `#86D4CD` → `#C0E8E0` → `#EDE6D6` |
+
+### Neon
+
+Bright, saturated multi-stop gradients in `themes/official/neon/`, including the built-in
+**Aurora** and **Sunset** presets that ship with the app.
+
+| Swatch | Name | Colors |
+|---|---|---|
+| ![Aurora trail swatch](assets/swatches/aurora.svg) | Aurora | `#7B61FF` → `#00D9FF` → `#00F5A0` → `#A8FF78` |
+| ![Dream Purple trail swatch](assets/swatches/dream-purple.svg) | Dream Purple | `#9D7CFF` → `#D291FF` → `#FFB3F7` → `#A8FFF5` |
+| ![Forest trail swatch](assets/swatches/forest.svg) | Forest | `#1B5E20` → `#4CAF50` → `#8BC34A` → `#CDDC39` → `#FFC107` |
+| ![Galaxy trail swatch](assets/swatches/galaxy.svg) | Galaxy | `#2563EB` → `#8B5CF6` → `#EC4899` → `#F97316` → `#FDE047` |
+| ![Mint Breeze trail swatch](assets/swatches/mint-breeze.svg) | Mint Breeze | `#A7F3D0` → `#6EE7B7` → `#38BDF8` → `#E0F2FE` |
+| ![Ocean trail swatch](assets/swatches/ocean.svg) | Ocean | `#0187FF` → `#00C2FF` → `#00E9D2` → `#E0FFFA` |
+| ![Sunset trail swatch](assets/swatches/sunset.svg) | Sunset | `#FF6B6B` → `#FFA26B` → `#FFD06B` → `#FFF7A8` |
+
+### Community
+
+Contributed via pull request in `themes/community/`, reviewed by a maintainer before
+merge. Previews for community themes appear in the gallery (`docs/index.html`) rather
+than here.
 
 ## Hand-authoring a theme
 

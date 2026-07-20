@@ -54,12 +54,24 @@ python3 scripts/validate_themes.py
 以及主题名称在全仓库范围内是否唯一。如果有问题，脚本会以非零状态退出并列出每一条
 违规项，请先修复。
 
-## 3. 提交 Pull Request
+## 3. 生成预览图
 
-针对本仓库提交一个仅包含 `themes/community/` 下新文件的 PR。`validate-themes` 这个
-GitHub Actions 工作流会在你的 PR 上自动运行相同的验证器，并额外做一次 JSON Schema
-校验——它**只是一个辅助工具**：不会自动合并任何内容，检查通过也不代表一定会被接受。
-**合并由维护者人工审核决定。**
+运行仓库自带的纯 stdlib 预览图生成器，让你的主题在 README 表格中拥有预览图：
+
+```
+python3 scripts/build_swatches.py
+```
+
+该命令会（重新）生成 `assets/swatches/<你的文件名>.svg`，并清理任何孤立的预览文件。
+请将生成的 SVG 与你的主题文件一并提交——如果生成的资源文件与主题文件不一致，CI 会
+构建失败（参见 `validate-themes` 工作流）。
+
+## 4. 提交 Pull Request
+
+针对本仓库提交一个 PR，包含 `themes/community/` 下的新文件及其生成的
+`assets/swatches/<文件名>.svg`。`validate-themes` 这个 GitHub Actions 工作流会在你的
+PR 上自动运行相同的验证器，并额外做一次 JSON Schema 校验——它**只是一个辅助工具**：
+不会自动合并任何内容，检查通过也不代表一定会被接受。**合并由维护者人工审核决定。**
 
 PR 模板中有一个简短的检查清单，请填写；它与上述步骤一一对应。
 

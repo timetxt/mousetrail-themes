@@ -33,3 +33,12 @@ jobs:
         run: |
           shopt -s globstar
           check-jsonschema --schemafile schema/theme.schema.json themes/**/*.json
+
+      - name: Rebuild generated theme index (scripts/build_index.py)
+        run: python3 scripts/build_index.py
+
+      - name: Rebuild generated swatches (scripts/build_swatches.py)
+        run: python3 scripts/build_swatches.py
+
+      - name: Fail if generated assets are out of date
+        run: git diff --exit-code -- assets docs/themes.json
