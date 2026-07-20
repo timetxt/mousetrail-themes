@@ -230,7 +230,10 @@
     }
     addBtn.textContent = t("addButton");
     downloadBtn.textContent = t("downloadButton");
-    downloadBtn.setAttribute("download", "");
+    // Explicit filename: with a bare `download` attribute some browsers save
+    // the file without its .json extension; naming it from the theme path
+    // guarantees e.g. "matcha.json".
+    downloadBtn.setAttribute("download", theme.path.split("/").pop());
 
     return node;
   }
