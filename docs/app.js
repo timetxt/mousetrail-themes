@@ -35,6 +35,12 @@
         "No download counters. No analytics. No external requests besides theme data.",
       rainbowLabel: "rainbow (animated)",
       loadError: "Could not load themes.json.",
+      nowDrawingLabel: "Now drawing:",
+      tryHint: "Click any color board to try a different trail style — then move your pointer to feel it.",
+      lengthLabel: "Trail length",
+      widthLabel: "Trail width",
+      themeLight: "Light appearance",
+      themeDark: "Dark appearance",
     },
     zh: {
       siteTitle: "MouseTrail 主题库",
@@ -59,6 +65,12 @@
       footerSub: "没有下载计数，没有数据分析，除主题数据外不发起任何外部请求。",
       rainbowLabel: "彩虹（动态）",
       loadError: "无法加载 themes.json。",
+      nowDrawingLabel: "正在绘制：",
+      tryHint: "点击任意色板即可体验不同的轨迹样式，再移动指针感受效果。",
+      lengthLabel: "轨迹长度",
+      widthLabel: "轨迹宽度",
+      themeLight: "浅色外观",
+      themeDark: "深色外观",
     },
   };
 
@@ -68,6 +80,7 @@
     lang: loadLang(),
     collection: "all",
     themes: [],
+    activeTheme: null,
   };
 
   function loadLang() {
@@ -91,6 +104,40 @@
   function t(key) {
     var table = STRINGS[state.lang] || STRINGS.en;
     return table[key] || STRINGS.en[key] || key;
+  }
+
+  // ---- appearance (light / dark) ------------------------------------------
+  //
+  // The inline <head> script already set data-theme before first paint; here we
+  // just reflect that in the toggle and handle clicks. Light is the default
+  // regardless of the OS setting (data-theme="light" suppresses the
+  // prefers-color-scheme dark block); the OS is only followed when nothing has
+  // been forced, which never happens because the pre-paint script always sets a
+  // value. Kept in step with the marketing page.
+
+  var APPEARANCE_KEY = "mousetrail-themes-appearance";
+  var appearance =
+    document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+
+  function applyTheme() {
+    document.documentElement.setAttribute("data-theme", appearance);
+    var light = document.getElementById("theme-light");
+    var dark = document.getElementById("theme-dark");
+    if (light) {
+      light.setAttribute("aria-pressed", String(appearance === "light"));
+      light.setAttribute("aria-label", t("themeLight"));
+      light.setAttribute("title", t("themeLight"));
+    }
+    if (dark) {
+      dark.setAttribute("aria-pressed", String(appearance === "dark"));
+      dark.setAttribute("aria-label", t("themeDark"));
+      dark.setAttribute("title", t("themeDark"));
+    }
+    try {
+      window.localStorage.setItem(APPEARANCE_KEY, appearance);
+    } catch (err) {
+      /* ignore -- the choice just won't persist */
+    }
   }
 
   // ---- Raw-URL derivation -------------------------------------------------
@@ -192,7 +239,28 @@
   function buildCard(theme, template) {
     var node = template.content.firstElementChild.cloneNode(true);
 
-    node.querySelector(".card-swatch").style.background = gradientCss(theme.stops);
+    if (theme === state.activeTheme) {
+      node.classList.add("is-active");
+    }
+
+    var swatch = node.querySelector(".card-swatch");
+    swatch.style.background = gradientCss(theme.stops);
+    // Clicking (or activating via keyboard) the swatch makes this theme the
+    // one the live overlay draws -- the natural hit target for "try this
+    // theme", and separate from .btn-add / .btn-download so those keep
+    // working untouched.
+    swatch.setAttribute("role", "button");
+    swatch.setAttribute("tabindex", "0");
+    swatch.addEventListener("click", function () {
+      setActiveTheme(theme, swatch.getBoundingClientRect());
+    });
+    swatch.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " " || event.key === "Spacebar") {
+        event.preventDefault();
+        setActiveTheme(theme, swatch.getBoundingClientRect());
+      }
+    });
+
     node.querySelector(".card-name").textContent = theme.name;
     if (theme.author) {
       var authorEl = document.createElement("span");
@@ -261,6 +329,286 @@
     return node;
   }
 
+  // ---- Live trail engine ---------------------------------------------------
+  //
+  // Ported from apple-app-submission/index.html's TrailView renderer (the
+  // marketing page). Kept byte-for-byte faithful in behavior: same midpoint-
+  // quadratic stroke construction, same glow underlay + head/tail discs, same
+  // rolling points buffer and flourish mechanic. The only gallery-specific
+  // additions are themeMode() (adapts a gallery theme object into the
+  // renderer's { kind, ... } mode shape -- a no-op for gradient stops, since
+  // themes.json stops are already { red, green, blue, alpha, location }) and
+  // a soft contact-shadow in paint() to help pale themes read against this
+  // page's light background (the marketing page is dark and doesn't need it).
+
+  var BASE_WIDTH = 7;
+  var MAX_POINTS = 500;
+  var GLOW_WIDTH = 2.2;
+  var GLOW_ALPHA = 0.35;
+  var HUE_STEP = 0.015;
+
+  var current = { kind: "gradient", stops: [] };
+  var lifetime = 0.6;
+  var widthScale = 1.0;
+  var trailPoints = [];
+  var hue = 0;
+  var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function themeMode(theme) {
+    if (theme && theme.rainbow) return { kind: "rainbow" };
+    return { kind: "gradient", stops: (theme && theme.stops) || [] };
+  }
+
+  function mixStops(stops, tt) {
+    var v = Math.min(1, Math.max(0, tt));
+    if (v <= stops[0].location) return stops[0];
+    var last = stops[stops.length - 1];
+    if (v >= last.location) return last;
+    for (var i = 0; i < stops.length - 1; i++) {
+      var a = stops[i], b = stops[i + 1];
+      if (v >= a.location && v <= b.location) {
+        var span = b.location - a.location;
+        var f = span <= 0 ? 0 : (v - a.location) / span;
+        return {
+          red: a.red + (b.red - a.red) * f,
+          green: a.green + (b.green - a.green) * f,
+          blue: a.blue + (b.blue - a.blue) * f,
+          alpha: a.alpha + (b.alpha - a.alpha) * f,
+        };
+      }
+    }
+    return last;
+  }
+
+  function trailRgba(c, alpha) {
+    return (
+      "rgba(" +
+      Math.round(c.red * 255) + "," +
+      Math.round(c.green * 255) + "," +
+      Math.round(c.blue * 255) + "," +
+      alpha + ")"
+    );
+  }
+
+  function colorFor(mode, pointHue, alpha, tt) {
+    if (mode.kind === "rainbow") {
+      return "hsla(" + (pointHue * 360).toFixed(1) + ", 100%, 55%, " + alpha + ")";
+    }
+    if (mode.kind === "fixed") return trailRgba(mode, mode.alpha * alpha);
+    if (!mode.stops || mode.stops.length === 0) return "rgba(123,97,255," + alpha + ")";
+    var c = mixStops(mode.stops, tt);
+    return trailRgba(c, c.alpha * alpha);
+  }
+
+  function trailMid(a, b) {
+    return { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
+  }
+
+  // one stroked piece per point: midpoint-to-midpoint quadratics, butt caps
+  function strokeTrail(ctx, pts, mode, scale, widthMul, alphaMul) {
+    var n = pts.length;
+    var maxW = BASE_WIDTH * scale;
+    ctx.lineCap = "butt";
+    ctx.lineJoin = "round";
+    for (var j = 0; j < n; j++) {
+      var p = pts[j];
+      if (p.life <= 0) continue;
+      var tt = j / (n - 1);
+      ctx.strokeStyle = colorFor(mode, p.hue, p.life * alphaMul, tt);
+      ctx.lineWidth = (maxW * p.life + 1) * widthMul;
+      ctx.beginPath();
+      if (j === 0) {
+        var m0 = trailMid(pts[0], pts[1]);
+        ctx.moveTo(p.x, p.y);
+        ctx.lineTo(m0.x, m0.y);
+      } else if (j === n - 1) {
+        var mn = trailMid(pts[n - 2], pts[n - 1]);
+        ctx.moveTo(mn.x, mn.y);
+        ctx.lineTo(p.x, p.y);
+      } else {
+        var a = trailMid(pts[j - 1], p);
+        var b = trailMid(p, pts[j + 1]);
+        ctx.moveTo(a.x, a.y);
+        ctx.quadraticCurveTo(p.x, p.y, b.x, b.y);
+      }
+      ctx.stroke();
+    }
+  }
+
+  function trailDisc(ctx, p, r, color) {
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, Math.max(0, r), 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  function paint(ctx, pts, mode, scale) {
+    if (pts.length < 2) return;
+    var isGradient = mode.kind === "gradient";
+
+    // Gallery-only addition: this page's background is light, unlike the
+    // marketing page's dark stage, so pale/pastel themes (Reverie, Cream)
+    // can wash out. A soft dark contact-shadow under every stroke/disc adds
+    // contrast without shifting hue -- negligible on vivid themes, most
+    // helpful on pale ones.
+    ctx.save();
+    ctx.shadowColor = "rgba(10, 9, 15, 0.32)";
+    ctx.shadowBlur = 3.5 * scale;
+
+    if (isGradient) strokeTrail(ctx, pts, mode, scale, GLOW_WIDTH, GLOW_ALPHA);
+    strokeTrail(ctx, pts, mode, scale, 1, 1);
+
+    var maxW = BASE_WIDTH * scale;
+    var tail = pts[0];
+    if (tail.life > 0) {
+      if (isGradient) trailDisc(ctx, tail, (maxW * tail.life + 1) * GLOW_WIDTH / 2, colorFor(mode, tail.hue, tail.life * GLOW_ALPHA, 0));
+      trailDisc(ctx, tail, (maxW * tail.life + 1) / 2, colorFor(mode, tail.hue, tail.life, 0));
+    }
+    var head = pts[pts.length - 1];
+    if (head.life > 0) {
+      if (isGradient) trailDisc(ctx, head, (maxW * 0.55 * head.life + 1.5) * GLOW_WIDTH, colorFor(mode, head.hue, head.life * GLOW_ALPHA, 1));
+      trailDisc(ctx, head, maxW * 0.55 * head.life + 1.5, colorFor(mode, head.hue, head.life, 1));
+    }
+    ctx.restore();
+  }
+
+  var overlayCanvas = document.getElementById("overlay");
+  var overlayCtx = overlayCanvas ? overlayCanvas.getContext("2d") : null;
+
+  function sizeCanvas(cv, c2d, w, h) {
+    var dpr = window.devicePixelRatio || 1;
+    cv.width = Math.max(1, Math.floor(w * dpr));
+    cv.height = Math.max(1, Math.floor(h * dpr));
+    cv.style.width = w + "px";
+    cv.style.height = h + "px";
+    c2d.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  function resizeOverlay() {
+    if (!overlayCanvas || !overlayCtx) return;
+    sizeCanvas(overlayCanvas, overlayCtx, window.innerWidth, window.innerHeight);
+  }
+
+  function addPoint(x, y) {
+    hue = (hue + HUE_STEP) % 1;
+    trailPoints.push({ x: x, y: y, t: performance.now() / 1000, hue: hue });
+    if (trailPoints.length > MAX_POINTS) trailPoints.splice(0, trailPoints.length - MAX_POINTS);
+  }
+
+  // A short drawn-by-itself ribbon: played once on load and again whenever a
+  // theme is picked, so the choice is visible without moving the pointer.
+  var flourish = null;
+
+  function playFlourish(rect, ms) {
+    if (reducedMotion || !rect) return;
+    flourish = {
+      until: performance.now() + ms,
+      cx: rect.left + rect.width / 2,
+      cy: rect.top + rect.height / 2,
+      rx: Math.min(rect.width * 0.42, 260),
+      ry: Math.min(rect.height * 0.42, 90),
+      phase: 0,
+    };
+  }
+
+  function stepFlourish(nowMs) {
+    if (!flourish) return;
+    if (nowMs > flourish.until) { flourish = null; return; }
+    flourish.phase += 0.05;
+    addPoint(
+      flourish.cx + flourish.rx * Math.sin(flourish.phase * 1.1),
+      flourish.cy + flourish.ry * Math.sin(flourish.phase * 1.73 + 0.6)
+    );
+  }
+
+  function frame(nowMs) {
+    if (!overlayCtx) { requestAnimationFrame(frame); return; }
+    stepFlourish(nowMs);
+    var now = performance.now() / 1000;
+    trailPoints = trailPoints.filter(function (p) { return now - p.t <= lifetime; });
+    overlayCtx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+    var live = trailPoints.map(function (p) {
+      return { x: p.x, y: p.y, hue: p.hue, life: Math.max(0, 1 - (now - p.t) / lifetime) };
+    });
+    paint(overlayCtx, live, current, widthScale);
+    requestAnimationFrame(frame);
+  }
+
+  function nowDrawingSwatchCss(theme) {
+    if (!theme) return "transparent";
+    if (theme.rainbow) {
+      return "linear-gradient(90deg," + [0, 60, 120, 180, 240, 300, 360].map(function (d) {
+        return "hsl(" + d + ",100%,55%)";
+      }).join(",") + ")";
+    }
+    return gradientCss(theme.stops);
+  }
+
+  function updateNowDrawing() {
+    var nameEl = document.getElementById("now-drawing-name");
+    var swatchEl = document.getElementById("now-drawing-swatch");
+    if (nameEl) nameEl.textContent = state.activeTheme ? state.activeTheme.name : "";
+    if (swatchEl) swatchEl.style.background = nowDrawingSwatchCss(state.activeTheme);
+  }
+
+  // ---- length / width sliders ---------------------------------------------
+  //
+  // The sliders are the single source of truth for lifetime/widthScale: their
+  // HTML defaults (0.6 / 1.0) match the initial variables, and picking a theme
+  // deliberately leaves them alone, so a length/width the user dials in
+  // persists as they browse colours.
+
+  var lengthRange = document.getElementById("length-range");
+  var widthRange = document.getElementById("width-range");
+  var lengthValue = document.getElementById("length-value");
+  var widthValue = document.getElementById("width-value");
+
+  if (lengthRange) {
+    lengthRange.addEventListener("input", function () {
+      lifetime = parseFloat(lengthRange.value);
+      if (lengthValue) lengthValue.textContent = lifetime.toFixed(1) + "s";
+    });
+  }
+  if (widthRange) {
+    widthRange.addEventListener("input", function () {
+      widthScale = parseFloat(widthRange.value);
+      if (widthValue) widthValue.textContent = widthScale.toFixed(1) + "×";
+    });
+  }
+
+  // Sets which theme the live overlay draws. Called on first load (default:
+  // the first theme) and whenever a card's swatch is clicked/activated.
+  // Real pointer movement anywhere on the page draws it; rect (when given)
+  // plays a short flourish over that spot so the pick is visible even if the
+  // pointer doesn't move.
+  function setActiveTheme(theme, rect) {
+    if (!theme) return;
+    state.activeTheme = theme;
+    current = themeMode(theme);
+    // Length and width are the user's own choice via the sliders, so picking a
+    // theme changes colour ONLY — it must not wipe a length/width the user has
+    // dialed in while browsing. (The theme's stored lifetime/widthScale still
+    // ship in its .json for the app itself; this page is for feeling colours.)
+    trailPoints = [];
+    updateNowDrawing();
+    render();
+    if (rect) playFlourish(rect, 1300);
+  }
+
+  if (overlayCanvas && overlayCtx) {
+    resizeOverlay();
+    window.addEventListener("resize", resizeOverlay);
+    window.addEventListener(
+      "pointermove",
+      function (e) {
+        flourish = null; // a real pointer always wins over the flourish
+        addPoint(e.clientX, e.clientY);
+      },
+      { passive: true }
+    );
+    requestAnimationFrame(frame);
+  }
+
   function render() {
     document.documentElement.lang = state.lang === "zh" ? "zh-Hans" : "en";
 
@@ -276,6 +624,19 @@
     });
 
     document.getElementById("repo-link").href = repoUrl();
+
+    // Theme buttons hold SVG icons, not text, so they carry no data-i18n and
+    // are missed by the sweep above; refresh their translated labels here.
+    var lightBtn = document.getElementById("theme-light");
+    var darkBtn = document.getElementById("theme-dark");
+    if (lightBtn) {
+      lightBtn.setAttribute("aria-label", t("themeLight"));
+      lightBtn.setAttribute("title", t("themeLight"));
+    }
+    if (darkBtn) {
+      darkBtn.setAttribute("aria-label", t("themeDark"));
+      darkBtn.setAttribute("title", t("themeDark"));
+    }
 
     var localNote = document.getElementById("local-preview-note");
     localNote.hidden = isPublished();
@@ -304,6 +665,16 @@
       render();
     });
 
+    document.getElementById("theme-light").addEventListener("click", function () {
+      appearance = "light";
+      applyTheme();
+    });
+    document.getElementById("theme-dark").addEventListener("click", function () {
+      appearance = "dark";
+      applyTheme();
+    });
+    applyTheme();
+
     document.getElementById("filters").addEventListener("click", function (event) {
       var tab = event.target.closest(".filter-tab");
       if (!tab) return;
@@ -319,6 +690,13 @@
       .then(function (data) {
         state.themes = data.themes || [];
         render();
+        // Default active theme: the first one, with an opening flourish
+        // over its card so the effect is visible before anyone moves the
+        // pointer (suppressed under prefers-reduced-motion by playFlourish).
+        if (state.themes.length) {
+          var firstSwatch = document.querySelector(".card-swatch");
+          setActiveTheme(state.themes[0], firstSwatch ? firstSwatch.getBoundingClientRect() : null);
+        }
       })
       .catch(function (err) {
         var gallery = document.getElementById("gallery");

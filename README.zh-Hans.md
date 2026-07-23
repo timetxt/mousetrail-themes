@@ -7,8 +7,9 @@
 2–5 个色标的 `gradient` 渐变）、持续时间和宽度——仅此而已。你可以浏览主题库网站一键
 添加主题到应用，也可以下载 `.json` 文件自行导入。
 
-**[在 App Store 下载 macOS 版 MouseTrail](https://apps.apple.com/au/app/mousetrail/id6787651654?mt=12)**
- · **[浏览主题库网站](https://timetxt.github.io/mousetrail-themes/)**
+**[在主题库网站浏览并实时体验每一款主题](https://timetxt.github.io/mousetrail-themes/)**——
+点击任意色板并移动指针，即可感受该主题作为真实鼠标轨迹的效果，还能调节长度与宽度，
+然后一键**添加到 MouseTrail**，或**[在 App Store 下载应用](https://apps.apple.com/au/app/mousetrail/id6787651654?mt=12)**。
 
 ## 如何使用主题
 

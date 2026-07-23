@@ -8,8 +8,10 @@ describes a trail's color mode (`rainbow`, `fixed`, or a 2–5 stop `gradient`),
 and width — nothing else. Browse the gallery, one-click add a theme to the app, or
 download the `.json` and import it yourself.
 
-**[Get MouseTrail for macOS on the App Store](https://apps.apple.com/au/app/mousetrail/id6787651654?mt=12)**
- · **[Browse the theme gallery](https://timetxt.github.io/mousetrail-themes/)**
+**[Browse and try every theme live in the gallery](https://timetxt.github.io/mousetrail-themes/)** —
+click any color board and move your pointer to feel that theme drawn as a real cursor
+trail, adjust its length and width, then **Add to MouseTrail** in one click or
+**[get the app on the App Store](https://apps.apple.com/au/app/mousetrail/id6787651654?mt=12)**.
 
 ## Using a theme
 
