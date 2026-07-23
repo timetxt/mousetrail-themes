@@ -7,10 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-07-24
+
 ### Added
 
 - **Reverie** (designer collection) — a soft, dreamy pastel gradient sweeping from
-  orchid through lilac and periwinkle to an airy pale cyan.
+  orchid through lilac and periwinkle to an airy pale cyan. The library is now 15 themes.
+- **Live trail experience in the gallery** — click any color board to draw that theme
+  as a real fading cursor trail, tune its length (0.3–1.5s) and width (0.5–2.0×), and
+  switch themes on the fly. A "Now drawing" indicator names the active theme.
+- **Light / dark appearance toggle** in the gallery, beside the existing EN / 简体中文 toggle,
+  defaulting to light and remembering your choice.
+- App Store and GitHub repository links in the gallery header and both READMEs, so the
+  gallery links out to the app and its source.
 
 ## [1.0.0] - 2026-07-20
 
