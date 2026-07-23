@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- **Reverie** (designer collection) — a soft, dreamy pastel gradient sweeping from
+  orchid through lilac and periwinkle to an airy pale cyan.
+
 ## [1.0.0] - 2026-07-20
 
 ### Added

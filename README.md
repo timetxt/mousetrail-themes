@@ -47,6 +47,7 @@ cohesive color stories rather than raw RGB picks.
 | ![Matcha trail swatch](assets/swatches/matcha.svg) | Matcha | `#6B7A3A` → `#8A9A54` → `#A8B778` → `#CBD3A6` → `#EDE9D2` |
 | ![Morandi trail swatch](assets/swatches/morandi.svg) | Morandi | `#7E8A82` → `#94918E` → `#A99E9A` → `#B3A8AE` → `#C7C4BE` |
 | ![Peach trail swatch](assets/swatches/peach.svg) | Peach | `#E68A5E` → `#F4B98E` → `#FBDDC2` |
+| ![Reverie trail swatch](assets/swatches/reverie.svg) | Reverie | `#B883D3` → `#C4A5DE` → `#A1A9D0` → `#96CCCB` → `#CFEAF1` |
 | ![Sakura trail swatch](assets/swatches/sakura.svg) | Sakura | `#E39BB4` → `#F2B8CE` → `#F9D3E1` → `#FCEDF2` |
 | ![Tiffany trail swatch](assets/swatches/tiffany.svg) | Tiffany | `#2E9A94` → `#57BDB5` → `#86D4CD` → `#C0E8E0` → `#EDE6D6` |
 
