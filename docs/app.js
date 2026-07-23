@@ -21,6 +21,8 @@
       badgeDesigner: "Designer",
       badgeNeon: "Neon",
       badgeCommunity: "Community",
+      macAppLink: "Get MouseTrail for macOS",
+      repoLink: "GitHub repo",
       addButton: "Add to MouseTrail",
       downloadButton: "Download .json",
       addDisabledTitle: "available on the published site",
@@ -44,6 +46,8 @@
       badgeDesigner: "设计师精选",
       badgeNeon: "霓虹",
       badgeCommunity: "社区",
+      macAppLink: "下载 macOS 版 MouseTrail",
+      repoLink: "GitHub 仓库",
       addButton: "添加到 MouseTrail",
       downloadButton: "下载 .json",
       addDisabledTitle: "仅在已发布的网站上可用",
@@ -124,6 +128,18 @@
 
   function isPublished() {
     return publishedRepoInfo() !== null;
+  }
+
+  // Same principle as rawUrlFor: on the published site the repo link is derived
+  // from the hostname, so a fork's gallery links to the fork. The constant below
+  // is only the local-preview fallback, where there is no hostname to derive
+  // from -- it is never used on a published *.github.io site.
+  var UPSTREAM_REPO_URL = "https://github.com/timetxt/mousetrail-themes";
+
+  function repoUrl() {
+    var info = publishedRepoInfo();
+    if (!info) return UPSTREAM_REPO_URL;
+    return "https://github.com/" + info.owner + "/" + info.repo;
   }
 
   // ---- Color helpers -------------------------------------------------------
@@ -258,6 +274,8 @@
         tab.getAttribute("data-collection") === state.collection
       );
     });
+
+    document.getElementById("repo-link").href = repoUrl();
 
     var localNote = document.getElementById("local-preview-note");
     localNote.hidden = isPublished();

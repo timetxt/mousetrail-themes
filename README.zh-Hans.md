@@ -7,12 +7,15 @@
 2–5 个色标的 `gradient` 渐变）、持续时间和宽度——仅此而已。你可以浏览主题库网站一键
 添加主题到应用，也可以下载 `.json` 文件自行导入。
 
+**[在 App Store 下载 macOS 版 MouseTrail](https://apps.apple.com/au/app/mousetrail/id6787651654?mt=12)**
+ · **[浏览主题库网站](https://timetxt.github.io/mousetrail-themes/)**
+
 ## 如何使用主题
 
 **方式一：主题库网站的"添加到 MouseTrail"（推荐）**
 
-打开主题库网站（`docs/index.html`，通过 GitHub Pages 发布），点击任意主题卡片上的
-**添加到 MouseTrail**。这会打开一个 `mousetrail://import?url=...` 深链接，将该主题的
+打开[主题库网站](https://timetxt.github.io/mousetrail-themes/)（`docs/index.html`，
+通过 GitHub Pages 发布），点击任意主题卡片上的**添加到 MouseTrail**。这会打开一个 `mousetrail://import?url=...` 深链接，将该主题的
 原始 JSON 文件地址传给应用；应用会下载该文件、弹出确认对话框列出主题名称，只有在你
 确认后才会导入——不会静默生效。
 
