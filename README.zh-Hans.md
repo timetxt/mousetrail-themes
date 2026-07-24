@@ -1,11 +1,36 @@
 # MouseTrail 主题库
 
-*[English](README.md)*
+<div align="center">
+  <img src="assets/swatches/aurora.svg" alt="MouseTrail 轨迹主题" width="520">
+</div>
 
-一个面向 **MouseTrail**（macOS 鼠标轨迹应用）的公开渐变轨迹主题库。这里的每个主题都是
-一个简单、可读的 JSON 文件，描述轨迹的颜色模式（`rainbow` 彩虹、`fixed` 固定色，或
-2–5 个色标的 `gradient` 渐变）、持续时间和宽度——仅此而已。你可以浏览主题库网站一键
-添加主题到应用，也可以下载 `.json` 文件自行导入。
+<p align="center">
+  <strong>精美的鼠标轨迹，一键即得。</strong>
+</p>
+
+<p align="center">
+  一个面向 <strong>MouseTrail</strong>（macOS 鼠标轨迹应用）的公开渐变轨迹主题库——
+  每个主题都是一个简单、可读的 JSON 文件，描述轨迹的颜色模式（<code>rainbow</code> 彩虹、
+  <code>fixed</code> 固定色，或 2–5 个色标的 <code>gradient</code> 渐变）、持续时间和宽度。
+  你可以浏览主题库网站一键添加主题到应用，也可以下载 <code>.json</code> 文件自行导入。
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/platform-macOS-475A60.svg" alt="平台：macOS">
+  <img src="https://img.shields.io/badge/format-plain%20JSON-216C83.svg" alt="格式：纯 JSON">
+  <a href="https://apps.apple.com/au/app/mousetrail/id6787651654?mt=12"><img src="https://img.shields.io/badge/App%20Store-MouseTrail-0D96F6.svg" alt="在 App Store 下载 MouseTrail"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY--NC%204.0-C8553D.svg" alt="许可协议：CC BY-NC 4.0"></a>
+  <a href="https://discord.com/channels/1529997922643476652/1529997923201585244"><img src="https://img.shields.io/badge/discord-community-5865F2.svg" alt="Discord 社区"></a>
+</p>
+
+<p align="center">
+  <a href="https://timetxt.github.io/mousetrail-themes/">主题库网站</a> ·
+  <a href="#如何使用主题">如何使用</a> ·
+  <a href="#主题分类">主题分类</a> ·
+  <a href="THEME-FORMAT.zh-Hans.md">主题格式</a> ·
+  <a href="CONTRIBUTING.zh-Hans.md">参与贡献</a> ·
+  <a href="README.md">English</a>
+</p>
 
 **[在主题库网站浏览并实时体验每一款主题](https://timetxt.github.io/mousetrail-themes/)**——
 点击任意色板并移动指针，即可感受该主题作为真实鼠标轨迹的效果，还能调节长度与宽度，

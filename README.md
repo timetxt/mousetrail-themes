@@ -1,12 +1,37 @@
 # MouseTrail Themes
 
-*[简体中文](README.zh-Hans.md)*
+<div align="center">
+  <img src="assets/swatches/aurora.svg" alt="MouseTrail trail theme" width="520">
+</div>
 
-A public library of gradient trail themes for MouseTrail, the macOS cursor-trail app.
-Every theme here is a plain, hand-readable JSON file that
-describes a trail's color mode (`rainbow`, `fixed`, or a 2–5 stop `gradient`), lifetime,
-and width — nothing else. Browse the gallery, one-click add a theme to the app, or
-download the `.json` and import it yourself.
+<p align="center">
+  <strong>Beautiful cursor trails, one click away.</strong>
+</p>
+
+<p align="center">
+  A public library of gradient trail themes for MouseTrail, the macOS
+  cursor-trail app — each a plain, hand-readable JSON file describing a trail's
+  color mode (<code>rainbow</code>, <code>fixed</code>, or a 2–5 stop
+  <code>gradient</code>), lifetime, and width. Browse the gallery, one-click add
+  a theme to the app, or download the <code>.json</code> and import it yourself.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/platform-macOS-475A60.svg" alt="Platform: macOS">
+  <img src="https://img.shields.io/badge/format-plain%20JSON-216C83.svg" alt="Format: plain JSON">
+  <a href="https://apps.apple.com/au/app/mousetrail/id6787651654?mt=12"><img src="https://img.shields.io/badge/App%20Store-MouseTrail-0D96F6.svg" alt="Get MouseTrail on the App Store"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY--NC%204.0-C8553D.svg" alt="License: CC BY-NC 4.0"></a>
+  <a href="https://discord.com/channels/1529997922643476652/1529997923201585244"><img src="https://img.shields.io/badge/discord-community-5865F2.svg" alt="Discord community"></a>
+</p>
+
+<p align="center">
+  <a href="https://timetxt.github.io/mousetrail-themes/">Gallery</a> ·
+  <a href="#using-a-theme">Using a Theme</a> ·
+  <a href="#collections">Collections</a> ·
+  <a href="THEME-FORMAT.md">Theme Format</a> ·
+  <a href="CONTRIBUTING.md">Contributing</a> ·
+  <a href="README.zh-Hans.md">简体中文</a>
+</p>
 
 **[Browse and try every theme live in the gallery](https://timetxt.github.io/mousetrail-themes/)** —
 click any color board and move your pointer to feel that theme drawn as a real cursor
