@@ -36,6 +36,9 @@
 点击任意色板并移动指针，即可感受该主题作为真实鼠标轨迹的效果，还能调节长度与宽度，
 然后一键**添加到 MouseTrail**，或**[在 App Store 下载应用](https://apps.apple.com/au/app/mousetrail/id6787651654?mt=12)**。
 
+> 🐍 **应用新功能：** MouseTrail 现已加入**贪吃蛇小游戏**——让轨迹化身贪吃蛇，
+> 用鼠标操控它吃点成长，挑战你的历史最高分。免费，见[最新版本](https://apps.apple.com/au/app/mousetrail/id6787651654?mt=12)。
+
 ## 如何使用主题
 
 **方式一：主题库网站的"添加到 MouseTrail"（推荐）**

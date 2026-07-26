@@ -33,6 +33,8 @@
       licenseLink: "LICENSE",
       footerSub:
         "No download counters. No analytics. No external requests besides theme data.",
+      appNews:
+        "🐍 New in the app: MouseTrail now has a free Snake Game — steer your trail and chase your high score.",
       rainbowLabel: "rainbow (animated)",
       loadError: "Could not load themes.json.",
       nowDrawingLabel: "Now drawing:",
@@ -63,6 +65,8 @@
       licenseNote: "主题采用 CC BY-NC 4.0 许可协议",
       licenseLink: "许可协议",
       footerSub: "没有下载计数，没有数据分析，除主题数据外不发起任何外部请求。",
+      appNews:
+        "🐍 应用新功能：MouseTrail 现已加入免费的贪吃蛇小游戏——操控你的轨迹，挑战最高分。",
       rainbowLabel: "彩虹（动态）",
       loadError: "无法加载 themes.json。",
       nowDrawingLabel: "正在绘制：",

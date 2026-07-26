@@ -38,6 +38,10 @@ click any color board and move your pointer to feel that theme drawn as a real c
 trail, adjust its length and width, then **Add to MouseTrail** in one click or
 **[get the app on the App Store](https://apps.apple.com/au/app/mousetrail/id6787651654?mt=12)**.
 
+> 🐍 **New in the app:** MouseTrail now has a **Snake Game** — turn your trail into
+> a snake, steer it with your mouse, and chase your all-time high score. Free, in
+> [the latest version](https://apps.apple.com/au/app/mousetrail/id6787651654?mt=12).
+
 ## Using a theme
 
 **1. Gallery "Add to MouseTrail" (recommended)**
