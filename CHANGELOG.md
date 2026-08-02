@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- **43 themes** drawn from a batch of colour references, taking the library from 15 to 58.
+  - *Dopamine cards* (neon) — **Crimson Pop**, **Candy Pop**, **Tangerine Rush**,
+    **Honey Glow**, **Lime Surge**, **Aqua Surge**, **Azure Rush**, **Periwinkle Drift**,
+    **Ultraviolet Bloom**: saturated four-stop ramps, one per hue family.
+  - *Two-tone gradients* (designer) — **Sapphire Sprout**, **Rose Gold**, **Pine Ivory**,
+    **Kingfisher**, **Ash Lilac**: a single dark-to-bright sweep between two named colours.
+  - *Three-colour palettes* — **Citrus Sea** (neon), plus **Misty Blush**, **Pine Glade**,
+    **Cloud Indigo**, **Caramel Latte** (designer).
+  - *Soft pastels* (designer) — **Wisteria Veil**, **Meadow Tide**, **Sky Wash**,
+    **Sage Whisper**, **Rose Powder**, **Frost Blue**, **Apricot Silk**, **Spring Dew**,
+    **Harbor Mist**, **Olive Grove**, **Clay Rose**, **Denim Fade**, **Mandarin Linen**,
+    **Spring Day**.
+  - *Dark-ground neons* — **Neon Orchid**, **Electric Tide**, **Amber Forge**,
+    **Neon Iris**, **Verdant Pulse**, **Firecracker**, **Emerald Lagoon**,
+    **Prism Drift**, **Jade Current**, **Voltage**: a near-black tail rising into one or
+    two bright accents.
+
 ## [1.1.0] - 2026-07-24
 
 ### Added

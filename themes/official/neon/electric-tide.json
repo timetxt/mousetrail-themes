@@ -1,0 +1,39 @@
+{
+  "themes": [
+    {
+      "name": "Electric Tide",
+      "style": {
+        "colorMode": {
+          "gradient": {
+            "stops": [
+              {
+                "alpha": 1,
+                "blue": 0.1607843137254902,
+                "green": 0.054901960784313725,
+                "location": 0.0,
+                "red": 0.09019607843137255
+              },
+              {
+                "alpha": 1,
+                "blue": 0.9882352941176471,
+                "green": 0.49411764705882355,
+                "location": 0.5,
+                "red": 0.0
+              },
+              {
+                "alpha": 1,
+                "blue": 0.9882352941176471,
+                "green": 0.8901960784313725,
+                "location": 1.0,
+                "red": 0.43529411764705883
+              }
+            ]
+          }
+        },
+        "lifetime": 0.6,
+        "widthScale": 1.0
+      }
+    }
+  ],
+  "version": 2
+}

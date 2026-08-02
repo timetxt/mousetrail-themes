@@ -1,0 +1,46 @@
+{
+  "themes": [
+    {
+      "name": "Voltage",
+      "style": {
+        "colorMode": {
+          "gradient": {
+            "stops": [
+              {
+                "alpha": 1,
+                "blue": 0.23529411764705882,
+                "green": 0.23529411764705882,
+                "location": 0.0,
+                "red": 0.23529411764705882
+              },
+              {
+                "alpha": 1,
+                "blue": 1.0,
+                "green": 0.0,
+                "location": 0.3333333333333333,
+                "red": 0.5019607843137255
+              },
+              {
+                "alpha": 1,
+                "blue": 0.5019607843137255,
+                "green": 0.0,
+                "location": 0.6666666666666666,
+                "red": 1.0
+              },
+              {
+                "alpha": 1,
+                "blue": 0.0,
+                "green": 0.8705882352941177,
+                "location": 1.0,
+                "red": 1.0
+              }
+            ]
+          }
+        },
+        "lifetime": 0.6,
+        "widthScale": 1.0
+      }
+    }
+  ],
+  "version": 2
+}

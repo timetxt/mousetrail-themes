@@ -1,0 +1,39 @@
+{
+  "themes": [
+    {
+      "name": "Citrus Sea",
+      "style": {
+        "colorMode": {
+          "gradient": {
+            "stops": [
+              {
+                "alpha": 1,
+                "blue": 0.9411764705882353,
+                "green": 0.7764705882352941,
+                "location": 0.0,
+                "red": 0.2823529411764706
+              },
+              {
+                "alpha": 1,
+                "blue": 0.8392156862745098,
+                "green": 0.9411764705882353,
+                "location": 0.5,
+                "red": 1.0
+              },
+              {
+                "alpha": 1,
+                "blue": 0.23921568627450981,
+                "green": 0.5411764705882353,
+                "location": 1.0,
+                "red": 1.0
+              }
+            ]
+          }
+        },
+        "lifetime": 0.6,
+        "widthScale": 1.0
+      }
+    }
+  ],
+  "version": 2
+}

@@ -1,0 +1,39 @@
+{
+  "themes": [
+    {
+      "name": "Neon Iris",
+      "style": {
+        "colorMode": {
+          "gradient": {
+            "stops": [
+              {
+                "alpha": 1,
+                "blue": 0.17254901960784313,
+                "green": 0.12941176470588237,
+                "location": 0.0,
+                "red": 0.03529411764705882
+              },
+              {
+                "alpha": 1,
+                "blue": 0.8705882352941177,
+                "green": 0.8392156862745098,
+                "location": 0.5,
+                "red": 0.0
+              },
+              {
+                "alpha": 1,
+                "blue": 0.9921568627450981,
+                "green": 0.7137254901960784,
+                "location": 1.0,
+                "red": 0.8745098039215686
+              }
+            ]
+          }
+        },
+        "lifetime": 0.6,
+        "widthScale": 1.0
+      }
+    }
+  ],
+  "version": 2
+}

@@ -1,0 +1,39 @@
+{
+  "themes": [
+    {
+      "name": "Misty Blush",
+      "style": {
+        "colorMode": {
+          "gradient": {
+            "stops": [
+              {
+                "alpha": 1,
+                "blue": 0.3803921568627451,
+                "green": 0.43529411764705883,
+                "location": 0.0,
+                "red": 1.0
+              },
+              {
+                "alpha": 1,
+                "blue": 0.8156862745098039,
+                "green": 0.7333333333333333,
+                "location": 0.5,
+                "red": 0.9725490196078431
+              },
+              {
+                "alpha": 1,
+                "blue": 0.8823529411764706,
+                "green": 0.9725490196078431,
+                "location": 1.0,
+                "red": 1.0
+              }
+            ]
+          }
+        },
+        "lifetime": 0.6,
+        "widthScale": 1.0
+      }
+    }
+  ],
+  "version": 2
+}

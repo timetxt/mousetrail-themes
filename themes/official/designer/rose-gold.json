@@ -1,0 +1,32 @@
+{
+  "themes": [
+    {
+      "name": "Rose Gold",
+      "style": {
+        "colorMode": {
+          "gradient": {
+            "stops": [
+              {
+                "alpha": 1,
+                "blue": 0.4666666666666667,
+                "green": 0.2784313725490196,
+                "location": 0.0,
+                "red": 1.0
+              },
+              {
+                "alpha": 1,
+                "blue": 0.5725490196078431,
+                "green": 0.8627450980392157,
+                "location": 1.0,
+                "red": 0.984313725490196
+              }
+            ]
+          }
+        },
+        "lifetime": 0.6,
+        "widthScale": 1.0
+      }
+    }
+  ],
+  "version": 2
+}

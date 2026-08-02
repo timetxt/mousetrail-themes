@@ -1,0 +1,39 @@
+{
+  "themes": [
+    {
+      "name": "Caramel Latte",
+      "style": {
+        "colorMode": {
+          "gradient": {
+            "stops": [
+              {
+                "alpha": 1,
+                "blue": 0.38823529411764707,
+                "green": 0.43137254901960786,
+                "location": 0.0,
+                "red": 0.5529411764705883
+              },
+              {
+                "alpha": 1,
+                "blue": 0.7843137254901961,
+                "green": 0.8,
+                "location": 0.5,
+                "red": 0.8431372549019608
+              },
+              {
+                "alpha": 1,
+                "blue": 0.9607843137254902,
+                "green": 0.9607843137254902,
+                "location": 1.0,
+                "red": 0.9607843137254902
+              }
+            ]
+          }
+        },
+        "lifetime": 0.6,
+        "widthScale": 1.0
+      }
+    }
+  ],
+  "version": 2
+}

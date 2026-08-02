@@ -1,0 +1,39 @@
+{
+  "themes": [
+    {
+      "name": "Firecracker",
+      "style": {
+        "colorMode": {
+          "gradient": {
+            "stops": [
+              {
+                "alpha": 1,
+                "blue": 0.07058823529411765,
+                "green": 0.08235294117647059,
+                "location": 0.0,
+                "red": 0.10588235294117647
+              },
+              {
+                "alpha": 1,
+                "blue": 0.15294117647058825,
+                "green": 0.0,
+                "location": 0.5,
+                "red": 0.9764705882352941
+              },
+              {
+                "alpha": 1,
+                "blue": 0.8,
+                "green": 0.8666666666666667,
+                "location": 1.0,
+                "red": 0.1843137254901961
+              }
+            ]
+          }
+        },
+        "lifetime": 0.6,
+        "widthScale": 1.0
+      }
+    }
+  ],
+  "version": 2
+}

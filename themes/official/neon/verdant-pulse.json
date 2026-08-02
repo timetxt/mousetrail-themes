@@ -1,0 +1,39 @@
+{
+  "themes": [
+    {
+      "name": "Verdant Pulse",
+      "style": {
+        "colorMode": {
+          "gradient": {
+            "stops": [
+              {
+                "alpha": 1,
+                "blue": 0.0784313725490196,
+                "green": 0.17254901960784313,
+                "location": 0.0,
+                "red": 0.08235294117647059
+              },
+              {
+                "alpha": 1,
+                "blue": 0.24705882352941178,
+                "green": 0.19215686274509805,
+                "location": 0.5,
+                "red": 0.0
+              },
+              {
+                "alpha": 1,
+                "blue": 0.6705882352941176,
+                "green": 0.9921568627450981,
+                "location": 1.0,
+                "red": 0.6862745098039216
+              }
+            ]
+          }
+        },
+        "lifetime": 0.6,
+        "widthScale": 1.0
+      }
+    }
+  ],
+  "version": 2
+}

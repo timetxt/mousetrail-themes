@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="140" viewBox="0 0 640 140" role="img">
+  <defs>
+    <linearGradient id="sapphire-sprout-grad" gradientUnits="userSpaceOnUse" x1="56" y1="0" x2="584" y2="0">
+      <stop offset="0" stop-color="#053154"/>
+      <stop offset="1" stop-color="#BCE672"/>
+    </linearGradient>
+    <filter id="sapphire-sprout-grad-blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="640" height="140" rx="12" fill="#17181d"/>
+  <path d="M56 102 C168 102 168 34 302 34 S436 102 584 62" fill="none" stroke="url(#sapphire-sprout-grad)" stroke-width="17.6" stroke-linecap="round" opacity="0.35" filter="url(#sapphire-sprout-grad-blur)"/>
+  <path d="M56 102 C168 102 168 34 302 34 S436 102 584 62" fill="none" stroke="url(#sapphire-sprout-grad)" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="584" cy="62" r="16" fill="#BCE672" opacity="0.35" filter="url(#sapphire-sprout-grad-blur)"/>
+  <g transform="translate(584 62) scale(1.1)">
+    <path d="M0 0 L0 17 L4.6 12.7 L7.6 19.7 L10.4 18.5 L7.4 11.6 L13.6 11.6 Z" fill="#ffffff" stroke="#1b1c21" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+</svg>
