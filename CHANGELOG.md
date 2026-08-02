@@ -25,6 +25,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     **Neon Iris**, **Verdant Pulse**, **Firecracker**, **Emerald Lagoon**,
     **Prism Drift**, **Jade Current**, **Voltage**: a near-black tail rising into one or
     two bright accents.
+- **Paginated gallery** — the card grid now shows 12 themes per page with numbered page
+  controls, so 58 themes no longer render as a single six-thousand-pixel scroll.
+  Collection filters reset to the first page, and the page-number window slides around
+  the current page so the control keeps a stable width.
 
 ## [1.1.0] - 2026-07-24
 

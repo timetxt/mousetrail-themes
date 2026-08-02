@@ -37,6 +37,7 @@
         "🐍 New in the app: MouseTrail now has a free Snake Game — steer your trail and chase your high score.",
       rainbowLabel: "rainbow (animated)",
       loadError: "Could not load themes.json.",
+      themesWord: "themes",
       nowDrawingLabel: "Now drawing:",
       tryHint: "Click any color board to try a different trail style — then move your pointer to feel it.",
       lengthLabel: "Trail length",
@@ -69,6 +70,7 @@
         "🐍 应用新功能：MouseTrail 现已加入免费的贪吃蛇小游戏——操控你的轨迹，挑战最高分。",
       rainbowLabel: "彩虹（动态）",
       loadError: "无法加载 themes.json。",
+      themesWord: "个主题",
       nowDrawingLabel: "正在绘制：",
       tryHint: "点击任意色板即可体验不同的轨迹样式，再移动指针感受效果。",
       lengthLabel: "轨迹长度",
@@ -83,6 +85,7 @@
   var state = {
     lang: loadLang(),
     collection: "all",
+    page: 1,
     themes: [],
     activeTheme: null,
   };
@@ -657,9 +660,48 @@
 
     emptyState.hidden = visible.length !== 0;
 
-    visible.forEach(function (theme) {
+    var PER_PAGE = 12;
+    var pageCount = Math.max(1, Math.ceil(visible.length / PER_PAGE));
+    if (state.page > pageCount) state.page = pageCount;
+    if (state.page < 1) state.page = 1;
+
+    var start = (state.page - 1) * PER_PAGE;
+    visible.slice(start, start + PER_PAGE).forEach(function (theme) {
       gallery.appendChild(buildCard(theme, template));
     });
+
+    renderPager(pageCount, visible.length);
+  }
+
+  // Numbered pager. Kept to a fixed width so the control never reflows the
+  // page as the collection filter changes the page count: the window of
+  // numbers slides around the current page instead of growing.
+  function renderPager(pageCount, total) {
+    var pager = document.getElementById("pager");
+    var pages = document.getElementById("pager-pages");
+    var count = document.getElementById("pager-count");
+
+    pager.hidden = pageCount <= 1;
+    count.textContent = total + " " + t("themesWord");
+
+    document.getElementById("pager-prev").disabled = state.page <= 1;
+    document.getElementById("pager-next").disabled = state.page >= pageCount;
+
+    pages.innerHTML = "";
+    var WINDOW = 5;
+    var first = Math.max(1, Math.min(state.page - Math.floor(WINDOW / 2), pageCount - WINDOW + 1));
+    first = Math.max(1, first);
+    var last = Math.min(pageCount, first + WINDOW - 1);
+
+    for (var i = first; i <= last; i++) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "pager-num" + (i === state.page ? " is-active" : "");
+      b.textContent = String(i);
+      b.setAttribute("data-page", String(i));
+      if (i === state.page) b.setAttribute("aria-current", "page");
+      pages.appendChild(b);
+    }
   }
 
   function init() {
@@ -679,10 +721,26 @@
     });
     applyTheme();
 
+    document.getElementById("pager").addEventListener("click", function (event) {
+      var num = event.target.closest(".pager-num");
+      if (num) {
+        state.page = parseInt(num.getAttribute("data-page"), 10);
+      } else if (event.target.closest(".pager-prev")) {
+        state.page -= 1;
+      } else if (event.target.closest(".pager-next")) {
+        state.page += 1;
+      } else {
+        return;
+      }
+      render();
+      document.getElementById("gallery").scrollIntoView({ block: "start", behavior: "smooth" });
+    });
+
     document.getElementById("filters").addEventListener("click", function (event) {
       var tab = event.target.closest(".filter-tab");
       if (!tab) return;
       state.collection = tab.getAttribute("data-collection");
+      state.page = 1;
       render();
     });
 
