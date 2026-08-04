@@ -25,6 +25,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     **Neon Iris**, **Verdant Pulse**, **Firecracker**, **Emerald Lagoon**,
     **Prism Drift**, **Jade Current**, **Voltage**: a near-black tail rising into one or
     two bright accents.
+- **14 themes** from a second batch of colour references, taking the library from 58 to 72.
+  - *Muted three-colour cards* (designer) — **Ember Dusk**, **Slate Coral**, **Stone Tide**,
+    **Ash Blush**, **Kiln Blush**, **Harvest Slate**: navy, slate and charcoal tails rising
+    into terracotta, amber, blush or sage cream.
+  - *Fresh greens* (designer) — **Orchard Frost**, a chartreuse-to-frost ramp, and
+    **Lagoon Peach**, teal through mint into a warm peach head.
+  - *Deep blues* (neon) — **Aegean Blue**, **Tidewater** and **Bottle Cap**: indigo and
+    denim tails climbing to pale cyan, the last breaking into a tartrazine yellow head.
+  - *Blue-to-bright* (neon) — **Meadowlark** (midnight blue through sky into chartreuse),
+    **Aventurine** (navy through teal and turquoise into mint), and **Bougainvillea**
+    (cornflower through periwinkle and orchid into pale rose).
 - **Paginated gallery** — the card grid now shows 12 themes per page with numbered page
   controls, so 58 themes no longer render as a single six-thousand-pixel scroll.
   Collection filters reset to the first page, and the page-number window slides around
