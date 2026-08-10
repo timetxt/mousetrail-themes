@@ -41,6 +41,12 @@ COLLECTION_ORDER = {"designer": 0, "neon": 1, "community": 2}
 RAINBOW_STOP_COUNT = 6
 
 
+def _stable_id(rel_path: str) -> str:
+    """A deterministic, path-derived identifier suitable for UI state."""
+    stem = rel_path.removesuffix(".json").replace("/", "-").replace("_", "-")
+    return "theme-" + stem.lower()
+
+
 def _collection_for(file_path: pathlib.Path) -> str:
     """Derives the collection ('designer'/'neon'/'community') from the file's
     path segments relative to themes/, e.g. themes/official/neon/aurora.json
@@ -146,6 +152,9 @@ def build_index(themes_dir: pathlib.Path, repo_root: pathlib.Path):
             print(f"skipping {rel_path}: no 'themes' array", file=sys.stderr)
             continue
 
+        if len(themes) != 1:
+            raise ValueError(f"{rel_path}: gallery theme files must contain exactly one theme, found {len(themes)}")
+
         for theme in themes:
             if not isinstance(theme, dict):
                 continue
@@ -158,12 +167,14 @@ def build_index(themes_dir: pathlib.Path, repo_root: pathlib.Path):
             stops, is_rainbow = _resolve_stops(color_mode)
 
             entry = {
+                "id": _stable_id(rel_path),
                 "name": name,
                 "collection": collection,
                 "path": rel_path,
                 "stops": stops,
                 "lifetime": style.get("lifetime"),
                 "widthScale": style.get("widthScale"),
+                "preview": "assets/previews/" + _stable_id(rel_path) + ".svg",
             }
             if author:
                 entry["author"] = author
@@ -181,6 +192,7 @@ def main():
 
     output = {
         "_generated_by": "scripts/build_index.py -- do not hand-edit this file",
+        "version": 2,
         "themes": themes,
     }
 

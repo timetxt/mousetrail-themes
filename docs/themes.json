@@ -1,7 +1,9 @@
 {
   "_generated_by": "scripts/build_index.py -- do not hand-edit this file",
+  "version": 2,
   "themes": [
     {
+      "id": "theme-themes-official-designer-apricot-silk",
       "name": "Apricot Silk",
       "collection": "designer",
       "path": "themes/official/designer/apricot-silk.json",
@@ -36,9 +38,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-apricot-silk.svg"
     },
     {
+      "id": "theme-themes-official-designer-ash-blush",
       "name": "Ash Blush",
       "collection": "designer",
       "path": "themes/official/designer/ash-blush.json",
@@ -66,9 +70,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-ash-blush.svg"
     },
     {
+      "id": "theme-themes-official-designer-ash-lilac",
       "name": "Ash Lilac",
       "collection": "designer",
       "path": "themes/official/designer/ash-lilac.json",
@@ -89,9 +95,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-ash-lilac.svg"
     },
     {
+      "id": "theme-themes-official-designer-caramel-latte",
       "name": "Caramel Latte",
       "collection": "designer",
       "path": "themes/official/designer/caramel-latte.json",
@@ -119,9 +127,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-caramel-latte.svg"
     },
     {
+      "id": "theme-themes-official-designer-clay-rose",
       "name": "Clay Rose",
       "collection": "designer",
       "path": "themes/official/designer/clay-rose.json",
@@ -156,9 +166,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-clay-rose.svg"
     },
     {
+      "id": "theme-themes-official-designer-cloud-indigo",
       "name": "Cloud Indigo",
       "collection": "designer",
       "path": "themes/official/designer/cloud-indigo.json",
@@ -186,9 +198,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-cloud-indigo.svg"
     },
     {
+      "id": "theme-themes-official-designer-cream",
       "name": "Cream",
       "collection": "designer",
       "path": "themes/official/designer/cream.json",
@@ -223,9 +237,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-cream.svg"
     },
     {
+      "id": "theme-themes-official-designer-cyberpunk",
       "name": "Cyberpunk",
       "collection": "designer",
       "path": "themes/official/designer/cyberpunk.json",
@@ -267,9 +283,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-cyberpunk.svg"
     },
     {
+      "id": "theme-themes-official-designer-denim-fade",
       "name": "Denim Fade",
       "collection": "designer",
       "path": "themes/official/designer/denim-fade.json",
@@ -304,9 +322,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-denim-fade.svg"
     },
     {
+      "id": "theme-themes-official-designer-ember-dusk",
       "name": "Ember Dusk",
       "collection": "designer",
       "path": "themes/official/designer/ember-dusk.json",
@@ -334,9 +354,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-ember-dusk.svg"
     },
     {
+      "id": "theme-themes-official-designer-frost-blue",
       "name": "Frost Blue",
       "collection": "designer",
       "path": "themes/official/designer/frost-blue.json",
@@ -371,9 +393,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-frost-blue.svg"
     },
     {
+      "id": "theme-themes-official-designer-harbor-mist",
       "name": "Harbor Mist",
       "collection": "designer",
       "path": "themes/official/designer/harbor-mist.json",
@@ -408,9 +432,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-harbor-mist.svg"
     },
     {
+      "id": "theme-themes-official-designer-harvest-slate",
       "name": "Harvest Slate",
       "collection": "designer",
       "path": "themes/official/designer/harvest-slate.json",
@@ -438,9 +464,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-harvest-slate.svg"
     },
     {
+      "id": "theme-themes-official-designer-kiln-blush",
       "name": "Kiln Blush",
       "collection": "designer",
       "path": "themes/official/designer/kiln-blush.json",
@@ -468,9 +496,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-kiln-blush.svg"
     },
     {
+      "id": "theme-themes-official-designer-kingfisher",
       "name": "Kingfisher",
       "collection": "designer",
       "path": "themes/official/designer/kingfisher.json",
@@ -491,9 +521,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-kingfisher.svg"
     },
     {
+      "id": "theme-themes-official-designer-lagoon-peach",
       "name": "Lagoon Peach",
       "collection": "designer",
       "path": "themes/official/designer/lagoon-peach.json",
@@ -521,9 +553,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-lagoon-peach.svg"
     },
     {
+      "id": "theme-themes-official-designer-mandarin-linen",
       "name": "Mandarin Linen",
       "collection": "designer",
       "path": "themes/official/designer/mandarin-linen.json",
@@ -558,9 +592,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-mandarin-linen.svg"
     },
     {
+      "id": "theme-themes-official-designer-matcha",
       "name": "Matcha",
       "collection": "designer",
       "path": "themes/official/designer/matcha.json",
@@ -602,9 +638,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-matcha.svg"
     },
     {
+      "id": "theme-themes-official-designer-meadow-tide",
       "name": "Meadow Tide",
       "collection": "designer",
       "path": "themes/official/designer/meadow-tide.json",
@@ -639,9 +677,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-meadow-tide.svg"
     },
     {
+      "id": "theme-themes-official-designer-misty-blush",
       "name": "Misty Blush",
       "collection": "designer",
       "path": "themes/official/designer/misty-blush.json",
@@ -669,9 +709,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-misty-blush.svg"
     },
     {
+      "id": "theme-themes-official-designer-morandi",
       "name": "Morandi",
       "collection": "designer",
       "path": "themes/official/designer/morandi.json",
@@ -713,9 +755,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-morandi.svg"
     },
     {
+      "id": "theme-themes-official-designer-olive-grove",
       "name": "Olive Grove",
       "collection": "designer",
       "path": "themes/official/designer/olive-grove.json",
@@ -750,9 +794,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-olive-grove.svg"
     },
     {
+      "id": "theme-themes-official-designer-orchard-frost",
       "name": "Orchard Frost",
       "collection": "designer",
       "path": "themes/official/designer/orchard-frost.json",
@@ -787,9 +833,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-orchard-frost.svg"
     },
     {
+      "id": "theme-themes-official-designer-peach",
       "name": "Peach",
       "collection": "designer",
       "path": "themes/official/designer/peach.json",
@@ -817,9 +865,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-peach.svg"
     },
     {
+      "id": "theme-themes-official-designer-pine-glade",
       "name": "Pine Glade",
       "collection": "designer",
       "path": "themes/official/designer/pine-glade.json",
@@ -847,9 +897,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-pine-glade.svg"
     },
     {
+      "id": "theme-themes-official-designer-pine-ivory",
       "name": "Pine Ivory",
       "collection": "designer",
       "path": "themes/official/designer/pine-ivory.json",
@@ -870,9 +922,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-pine-ivory.svg"
     },
     {
+      "id": "theme-themes-official-designer-reverie",
       "name": "Reverie",
       "collection": "designer",
       "path": "themes/official/designer/reverie.json",
@@ -914,9 +968,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-reverie.svg"
     },
     {
+      "id": "theme-themes-official-designer-rose-gold",
       "name": "Rose Gold",
       "collection": "designer",
       "path": "themes/official/designer/rose-gold.json",
@@ -937,9 +993,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-rose-gold.svg"
     },
     {
+      "id": "theme-themes-official-designer-rose-powder",
       "name": "Rose Powder",
       "collection": "designer",
       "path": "themes/official/designer/rose-powder.json",
@@ -974,9 +1032,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-rose-powder.svg"
     },
     {
+      "id": "theme-themes-official-designer-sage-whisper",
       "name": "Sage Whisper",
       "collection": "designer",
       "path": "themes/official/designer/sage-whisper.json",
@@ -1011,9 +1071,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-sage-whisper.svg"
     },
     {
+      "id": "theme-themes-official-designer-sakura",
       "name": "Sakura",
       "collection": "designer",
       "path": "themes/official/designer/sakura.json",
@@ -1048,9 +1110,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-sakura.svg"
     },
     {
+      "id": "theme-themes-official-designer-sapphire-sprout",
       "name": "Sapphire Sprout",
       "collection": "designer",
       "path": "themes/official/designer/sapphire-sprout.json",
@@ -1071,9 +1135,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-sapphire-sprout.svg"
     },
     {
+      "id": "theme-themes-official-designer-sky-wash",
       "name": "Sky Wash",
       "collection": "designer",
       "path": "themes/official/designer/sky-wash.json",
@@ -1108,9 +1174,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-sky-wash.svg"
     },
     {
+      "id": "theme-themes-official-designer-slate-coral",
       "name": "Slate Coral",
       "collection": "designer",
       "path": "themes/official/designer/slate-coral.json",
@@ -1138,9 +1206,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-slate-coral.svg"
     },
     {
+      "id": "theme-themes-official-designer-spring-day",
       "name": "Spring Day",
       "collection": "designer",
       "path": "themes/official/designer/spring-day.json",
@@ -1175,9 +1245,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-spring-day.svg"
     },
     {
+      "id": "theme-themes-official-designer-spring-dew",
       "name": "Spring Dew",
       "collection": "designer",
       "path": "themes/official/designer/spring-dew.json",
@@ -1212,9 +1284,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-spring-dew.svg"
     },
     {
+      "id": "theme-themes-official-designer-stone-tide",
       "name": "Stone Tide",
       "collection": "designer",
       "path": "themes/official/designer/stone-tide.json",
@@ -1242,9 +1316,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-stone-tide.svg"
     },
     {
+      "id": "theme-themes-official-designer-tiffany",
       "name": "Tiffany",
       "collection": "designer",
       "path": "themes/official/designer/tiffany.json",
@@ -1286,9 +1362,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-tiffany.svg"
     },
     {
+      "id": "theme-themes-official-designer-wisteria-veil",
       "name": "Wisteria Veil",
       "collection": "designer",
       "path": "themes/official/designer/wisteria-veil.json",
@@ -1323,9 +1401,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-wisteria-veil.svg"
     },
     {
+      "id": "theme-themes-official-neon-aegean-blue",
       "name": "Aegean Blue",
       "collection": "neon",
       "path": "themes/official/neon/aegean-blue.json",
@@ -1360,9 +1440,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-aegean-blue.svg"
     },
     {
+      "id": "theme-themes-official-neon-amber-forge",
       "name": "Amber Forge",
       "collection": "neon",
       "path": "themes/official/neon/amber-forge.json",
@@ -1390,9 +1472,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-amber-forge.svg"
     },
     {
+      "id": "theme-themes-official-neon-aqua-surge",
       "name": "Aqua Surge",
       "collection": "neon",
       "path": "themes/official/neon/aqua-surge.json",
@@ -1427,9 +1511,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-aqua-surge.svg"
     },
     {
+      "id": "theme-themes-official-neon-aurora",
       "name": "Aurora",
       "collection": "neon",
       "path": "themes/official/neon/aurora.json",
@@ -1464,9 +1550,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-aurora.svg"
     },
     {
+      "id": "theme-themes-official-neon-aventurine",
       "name": "Aventurine",
       "collection": "neon",
       "path": "themes/official/neon/aventurine.json",
@@ -1508,9 +1596,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-aventurine.svg"
     },
     {
+      "id": "theme-themes-official-neon-azure-rush",
       "name": "Azure Rush",
       "collection": "neon",
       "path": "themes/official/neon/azure-rush.json",
@@ -1545,9 +1635,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-azure-rush.svg"
     },
     {
+      "id": "theme-themes-official-neon-bottle-cap",
       "name": "Bottle Cap",
       "collection": "neon",
       "path": "themes/official/neon/bottle-cap.json",
@@ -1582,9 +1674,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-bottle-cap.svg"
     },
     {
+      "id": "theme-themes-official-neon-bougainvillea",
       "name": "Bougainvillea",
       "collection": "neon",
       "path": "themes/official/neon/bougainvillea.json",
@@ -1626,9 +1720,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-bougainvillea.svg"
     },
     {
+      "id": "theme-themes-official-neon-candy-pop",
       "name": "Candy Pop",
       "collection": "neon",
       "path": "themes/official/neon/candy-pop.json",
@@ -1663,9 +1759,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-candy-pop.svg"
     },
     {
+      "id": "theme-themes-official-neon-citrus-sea",
       "name": "Citrus Sea",
       "collection": "neon",
       "path": "themes/official/neon/citrus-sea.json",
@@ -1693,9 +1791,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-citrus-sea.svg"
     },
     {
+      "id": "theme-themes-official-neon-crimson-pop",
       "name": "Crimson Pop",
       "collection": "neon",
       "path": "themes/official/neon/crimson-pop.json",
@@ -1730,9 +1830,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-crimson-pop.svg"
     },
     {
+      "id": "theme-themes-official-neon-dream-purple",
       "name": "Dream Purple",
       "collection": "neon",
       "path": "themes/official/neon/dream-purple.json",
@@ -1767,9 +1869,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-dream-purple.svg"
     },
     {
+      "id": "theme-themes-official-neon-electric-tide",
       "name": "Electric Tide",
       "collection": "neon",
       "path": "themes/official/neon/electric-tide.json",
@@ -1797,9 +1901,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-electric-tide.svg"
     },
     {
+      "id": "theme-themes-official-neon-emerald-lagoon",
       "name": "Emerald Lagoon",
       "collection": "neon",
       "path": "themes/official/neon/emerald-lagoon.json",
@@ -1827,9 +1933,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-emerald-lagoon.svg"
     },
     {
+      "id": "theme-themes-official-neon-firecracker",
       "name": "Firecracker",
       "collection": "neon",
       "path": "themes/official/neon/firecracker.json",
@@ -1857,9 +1965,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-firecracker.svg"
     },
     {
+      "id": "theme-themes-official-neon-forest",
       "name": "Forest",
       "collection": "neon",
       "path": "themes/official/neon/forest.json",
@@ -1901,9 +2011,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-forest.svg"
     },
     {
+      "id": "theme-themes-official-neon-galaxy",
       "name": "Galaxy",
       "collection": "neon",
       "path": "themes/official/neon/galaxy.json",
@@ -1945,9 +2057,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-galaxy.svg"
     },
     {
+      "id": "theme-themes-official-neon-honey-glow",
       "name": "Honey Glow",
       "collection": "neon",
       "path": "themes/official/neon/honey-glow.json",
@@ -1982,9 +2096,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-honey-glow.svg"
     },
     {
+      "id": "theme-themes-official-neon-jade-current",
       "name": "Jade Current",
       "collection": "neon",
       "path": "themes/official/neon/jade-current.json",
@@ -2012,9 +2128,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-jade-current.svg"
     },
     {
+      "id": "theme-themes-official-neon-lime-surge",
       "name": "Lime Surge",
       "collection": "neon",
       "path": "themes/official/neon/lime-surge.json",
@@ -2049,9 +2167,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-lime-surge.svg"
     },
     {
+      "id": "theme-themes-official-neon-meadowlark",
       "name": "Meadowlark",
       "collection": "neon",
       "path": "themes/official/neon/meadowlark.json",
@@ -2093,9 +2213,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-meadowlark.svg"
     },
     {
+      "id": "theme-themes-official-neon-mint-breeze",
       "name": "Mint Breeze",
       "collection": "neon",
       "path": "themes/official/neon/mint-breeze.json",
@@ -2130,9 +2252,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-mint-breeze.svg"
     },
     {
+      "id": "theme-themes-official-neon-neon-iris",
       "name": "Neon Iris",
       "collection": "neon",
       "path": "themes/official/neon/neon-iris.json",
@@ -2160,9 +2284,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-neon-iris.svg"
     },
     {
+      "id": "theme-themes-official-neon-neon-orchid",
       "name": "Neon Orchid",
       "collection": "neon",
       "path": "themes/official/neon/neon-orchid.json",
@@ -2190,9 +2316,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-neon-orchid.svg"
     },
     {
+      "id": "theme-themes-official-neon-ocean",
       "name": "Ocean",
       "collection": "neon",
       "path": "themes/official/neon/ocean.json",
@@ -2227,9 +2355,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-ocean.svg"
     },
     {
+      "id": "theme-themes-official-neon-periwinkle-drift",
       "name": "Periwinkle Drift",
       "collection": "neon",
       "path": "themes/official/neon/periwinkle-drift.json",
@@ -2264,9 +2394,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-periwinkle-drift.svg"
     },
     {
+      "id": "theme-themes-official-neon-prism-drift",
       "name": "Prism Drift",
       "collection": "neon",
       "path": "themes/official/neon/prism-drift.json",
@@ -2301,9 +2433,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-prism-drift.svg"
     },
     {
+      "id": "theme-themes-official-neon-sunset",
       "name": "Sunset",
       "collection": "neon",
       "path": "themes/official/neon/sunset.json",
@@ -2338,9 +2472,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-sunset.svg"
     },
     {
+      "id": "theme-themes-official-neon-tangerine-rush",
       "name": "Tangerine Rush",
       "collection": "neon",
       "path": "themes/official/neon/tangerine-rush.json",
@@ -2375,9 +2511,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-tangerine-rush.svg"
     },
     {
+      "id": "theme-themes-official-neon-tidewater",
       "name": "Tidewater",
       "collection": "neon",
       "path": "themes/official/neon/tidewater.json",
@@ -2419,9 +2557,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-tidewater.svg"
     },
     {
+      "id": "theme-themes-official-neon-ultraviolet-bloom",
       "name": "Ultraviolet Bloom",
       "collection": "neon",
       "path": "themes/official/neon/ultraviolet-bloom.json",
@@ -2456,9 +2596,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-ultraviolet-bloom.svg"
     },
     {
+      "id": "theme-themes-official-neon-verdant-pulse",
       "name": "Verdant Pulse",
       "collection": "neon",
       "path": "themes/official/neon/verdant-pulse.json",
@@ -2486,9 +2628,11 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-verdant-pulse.svg"
     },
     {
+      "id": "theme-themes-official-neon-voltage",
       "name": "Voltage",
       "collection": "neon",
       "path": "themes/official/neon/voltage.json",
@@ -2523,7 +2667,8 @@
         }
       ],
       "lifetime": 0.6,
-      "widthScale": 1.0
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-voltage.svg"
     }
   ]
 }

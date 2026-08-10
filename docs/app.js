@@ -13,6 +13,14 @@
   var STRINGS = {
     en: {
       siteTitle: "MouseTrail Themes",
+      galleryTitle: "MouseTrail Theme Gallery",
+      gallerySubtitle: "Choose a theme and move your mouse to see the magic.",
+      galleryLink: "Gallery", aboutLink: "About", eyebrow: "CURSOR THEMES",
+      searchLabel: "Search themes", searchPlaceholder: "Search themes...",
+      sortLabel: "Sort", catalogueOrder: "Catalogue order", nameOrder: "Name A–Z",
+      emptyTitle: "No themes found", clearFilters: "Clear filters", errorTitle: "Could not load the gallery", retry: "Retry",
+      previous: "Previous", next: "Next", previewOn: "Preview On", previewOff: "Preview Off",
+      previousTheme: "Previous theme", nextTheme: "Next theme",
       tagline: "A public gallery of gradient trail themes for MouseTrail.",
       filterAll: "All",
       filterDesigner: "Designer",
@@ -38,6 +46,10 @@
       rainbowLabel: "rainbow (animated)",
       loadError: "Could not load themes.json.",
       themesWord: "themes",
+      colorsWord: "colors",
+      previewControls: "Preview controls",
+      collectionFilters: "Collection filters",
+      tryLabel: "Try the trail",
       nowDrawingLabel: "Now drawing:",
       tryHint: "Click any color board to try a different trail style — then move your pointer to feel it.",
       lengthLabel: "Trail length",
@@ -47,6 +59,14 @@
     },
     zh: {
       siteTitle: "MouseTrail 主题库",
+      galleryTitle: "MouseTrail 主题库",
+      gallerySubtitle: "选择主题并移动鼠标，即可体验效果。",
+      galleryLink: "主题库", aboutLink: "关于", eyebrow: "鼠标轨迹主题",
+      searchLabel: "搜索主题", searchPlaceholder: "搜索主题…",
+      sortLabel: "排序", catalogueOrder: "目录顺序", nameOrder: "名称 A–Z",
+      emptyTitle: "没有找到主题", clearFilters: "清除筛选", errorTitle: "无法加载主题库", retry: "重试",
+      previous: "上一个", next: "下一个", previewOn: "预览开启", previewOff: "预览关闭",
+      previousTheme: "上一个主题", nextTheme: "下一个主题",
       tagline: "MouseTrail 渐变轨迹主题的公开展示库。",
       filterAll: "全部",
       filterDesigner: "设计师精选",
@@ -71,6 +91,10 @@
       rainbowLabel: "彩虹（动态）",
       loadError: "无法加载 themes.json。",
       themesWord: "个主题",
+      colorsWord: "种颜色",
+      previewControls: "预览控制",
+      collectionFilters: "主题分类筛选",
+      tryLabel: "体验轨迹",
       nowDrawingLabel: "正在绘制：",
       tryHint: "点击任意色板即可体验不同的轨迹样式，再移动指针感受效果。",
       lengthLabel: "轨迹长度",
@@ -82,12 +106,27 @@
 
   var LANG_STORAGE_KEY = "mousetrail-themes-lang";
 
+  // Keep localized display copy out of the portable app theme JSON format.
+  // These canonical English-name keys make the fallback deterministic.
+  var ZH_THEME_NAMES = {
+    "Apricot Silk":"杏桃丝绸", "Ash Blush":"灰烬腮红", "Ash Lilac":"灰烬丁香", "Caramel Latte":"焦糖拿铁", "Clay Rose":"陶土玫瑰", "Cloud Indigo":"云靛蓝", "Cream":"奶油", "Cyberpunk":"赛博朋克", "Denim Fade":"褪色牛仔", "Ember Dusk":"余烬暮色", "Frost Blue":"霜蓝", "Harbor Mist":"港湾薄雾", "Harvest Slate":"丰收板岩", "Kiln Blush":"窑烧腮红", "Kingfisher":"翠鸟", "Lagoon Peach":"泻湖蜜桃", "Mandarin Linen":"柑橘亚麻", "Matcha":"抹茶", "Meadow Tide":"草甸潮汐", "Misty Blush":"薄雾腮红", "Morandi":"莫兰迪", "Olive Grove":"橄榄林", "Orchard Frost":"果园霜", "Peach":"蜜桃", "Pine Glade":"松林空地", "Pine Ivory":"松木象牙", "Reverie":"遐想", "Rose Gold":"玫瑰金", "Rose Powder":"玫瑰粉", "Sage Whisper":"鼠尾草低语", "Sakura":"樱花", "Sapphire Sprout":"蓝宝石新芽", "Sky Wash":"天空水彩", "Slate Coral":"板岩珊瑚", "Spring Day":"春日", "Spring Dew":"春露", "Stone Tide":"石潮", "Tiffany":"蒂芙尼", "Wisteria Veil":"紫藤薄纱",
+    "Aegean Blue":"爱琴海蓝", "Amber Forge":"琥珀锻造", "Aqua Surge":"水色奔涌", "Aurora":"极光", "Aventurine":"东陵玉", "Azure Rush":"蔚蓝疾驰", "Bottle Cap":"瓶盖", "Bougainvillea":"三角梅", "Candy Pop":"糖果跳跃", "Citrus Sea":"柑橘海", "Crimson Pop":"猩红跳跃", "Dream Purple":"梦幻紫", "Electric Tide":"电光潮汐", "Emerald Lagoon":"翡翠泻湖", "Firecracker":"爆竹", "Forest":"森林", "Galaxy":"银河", "Honey Glow":"蜜糖光晕", "Jade Current":"翡翠洋流", "Lime Surge":"青柠奔涌", "Meadowlark":"草地云雀", "Mint Breeze":"薄荷微风", "Neon Iris":"霓虹鸢尾", "Neon Orchid":"霓虹兰花", "Ocean":"海洋", "Periwinkle Drift":"长春花漂流", "Prism Drift":"棱镜漂流", "Sunset":"日落", "Tangerine Rush":"橘子疾驰", "Tidewater":"潮水", "Ultraviolet Bloom":"紫外绽放", "Verdant Pulse":"翠绿脉冲", "Voltage":"电压"
+  };
+
   var state = {
     lang: loadLang(),
     collection: "all",
     page: 1,
     themes: [],
     activeTheme: null,
+    query: "",
+    sort: "catalogue",
+    // The gallery is a hands-on cursor preview. Reduced motion suppresses
+    // auto-play flourishes, but never silently turns off a user's preview.
+    previewEnabled: true,
+    dialogTheme: null,
+    lastDialogTrigger: null,
+    lastDialogId: null,
   };
 
   function loadLang() {
@@ -111,6 +150,11 @@
   function t(key) {
     var table = STRINGS[state.lang] || STRINGS.en;
     return table[key] || STRINGS.en[key] || key;
+  }
+
+  function displayThemeName(theme) {
+    if (!theme) return "";
+    return state.lang === "zh" ? (ZH_THEME_NAMES[theme.name] || theme.name) : theme.name;
   }
 
   // ---- appearance (light / dark) ------------------------------------------
@@ -251,24 +295,22 @@
     }
 
     var swatch = node.querySelector(".card-swatch");
+    swatch.setAttribute("data-theme-id", theme.id || theme.path);
+    var preview = swatch.querySelector("img");
+    preview.src = theme.preview || "";
+    preview.alt = displayThemeName(theme) + " silk preview";
+    preview.addEventListener("error", function () { preview.hidden = true; });
     swatch.style.background = gradientCss(theme.stops);
     // Clicking (or activating via keyboard) the swatch makes this theme the
     // one the live overlay draws -- the natural hit target for "try this
     // theme", and separate from .btn-add / .btn-download so those keep
     // working untouched.
-    swatch.setAttribute("role", "button");
-    swatch.setAttribute("tabindex", "0");
     swatch.addEventListener("click", function () {
       setActiveTheme(theme, swatch.getBoundingClientRect());
-    });
-    swatch.addEventListener("keydown", function (event) {
-      if (event.key === "Enter" || event.key === " " || event.key === "Spacebar") {
-        event.preventDefault();
-        setActiveTheme(theme, swatch.getBoundingClientRect());
-      }
+      openDialog(theme, document.querySelector(".card.is-active .card-swatch"));
     });
 
-    node.querySelector(".card-name").textContent = theme.name;
+    node.querySelector(".card-name").textContent = displayThemeName(theme);
     if (theme.author) {
       var authorEl = document.createElement("span");
       authorEl.className = "card-author";
@@ -279,6 +321,7 @@
 
     var badge = node.querySelector(".badge");
     badge.textContent = t(badgeKey(theme.collection));
+    badge.classList.add("badge--" + (theme.collection || "community"));
 
     var chipRow = node.querySelector(".chip-row");
     if (theme.rainbow) {
@@ -303,6 +346,7 @@
         chipRow.appendChild(chipEl);
       });
     }
+    node.querySelector(".color-count").textContent = (theme.stops || []).length + " " + t("colorsWord");
 
     var addBtn = node.querySelector(".btn-add");
     var downloadBtn = node.querySelector(".btn-download");
@@ -334,6 +378,59 @@
     downloadBtn.setAttribute("download", theme.path.split("/").pop());
 
     return node;
+  }
+
+  function visibleThemes() {
+    var query = state.query.trim().toLocaleLowerCase();
+    var result = state.themes.filter(function (theme) {
+      var collectionMatches = state.collection === "all" || theme.collection === state.collection;
+      var text = [theme.name, displayThemeName(theme), theme.author || "", theme.collection || ""].join(" ").toLocaleLowerCase();
+      return collectionMatches && (!query || text.indexOf(query) !== -1);
+    });
+    if (state.sort === "name") result.sort(function (a, b) { return displayThemeName(a).localeCompare(displayThemeName(b), state.lang === "zh" ? "zh-Hans" : "en"); });
+    return result;
+  }
+
+  function openDialog(theme, trigger) {
+    var dialog = document.getElementById("theme-dialog");
+    if (!dialog) return;
+    state.dialogTheme = theme;
+    state.lastDialogTrigger = trigger || null;
+    state.lastDialogId = theme.id || theme.path;
+    updateDialog();
+    if (!dialog.open) dialog.showModal();
+    resizeDialogOverlay();
+    dialogTrailPoints = [];
+  }
+
+  function updateDialog() {
+    var dialog = document.getElementById("theme-dialog");
+    var theme = state.dialogTheme;
+    if (!dialog || !theme) return;
+    var all = visibleThemes();
+    var position = Math.max(0, all.indexOf(theme));
+    document.getElementById("dialog-title").textContent = displayThemeName(theme);
+    document.getElementById("dialog-position").textContent = (position + 1) + " / " + all.length;
+    var image = document.getElementById("dialog-image");
+    image.src = theme.preview || "";
+    image.alt = displayThemeName(theme) + " silk preview";
+    var palette = document.getElementById("dialog-palette");
+    palette.innerHTML = "";
+    (theme.stops || []).slice().sort(function(a,b){return a.location-b.location;}).forEach(function(stop){
+      var item=document.createElement("span"), dot=document.createElement("i");
+      dot.style.background=toCss(stop); item.appendChild(dot); item.appendChild(document.createTextNode(toHex(stop))); palette.appendChild(item);
+    });
+    setThemeLinks(theme, document.getElementById("dialog-add"), document.getElementById("dialog-download"));
+    document.getElementById("dialog-prev").disabled = position <= 0;
+    document.getElementById("dialog-next").disabled = position >= all.length - 1;
+  }
+
+  function setThemeLinks(theme, addBtn, downloadBtn) {
+    if (!theme || !addBtn || !downloadBtn) return;
+    var raw = rawUrlFor(theme.path);
+    if (raw) { addBtn.href="mousetrail://import?url=" + encodeURIComponent(raw); downloadBtn.href=raw; }
+    else { addBtn.href="#"; addBtn.setAttribute("aria-disabled","true"); downloadBtn.href="../"+theme.path; }
+    downloadBtn.setAttribute("download", theme.path.split("/").pop());
   }
 
   // ---- Live trail engine ---------------------------------------------------
@@ -481,6 +578,9 @@
 
   var overlayCanvas = document.getElementById("overlay");
   var overlayCtx = overlayCanvas ? overlayCanvas.getContext("2d") : null;
+  var dialogCanvas = document.getElementById("dialog-overlay");
+  var dialogCtx = dialogCanvas ? dialogCanvas.getContext("2d") : null;
+  var dialogTrailPoints = [];
 
   function sizeCanvas(cv, c2d, w, h) {
     var dpr = window.devicePixelRatio || 1;
@@ -496,10 +596,22 @@
     sizeCanvas(overlayCanvas, overlayCtx, window.innerWidth, window.innerHeight);
   }
 
+  function resizeDialogOverlay() {
+    var preview = document.getElementById("dialog-preview");
+    if (!dialogCanvas || !dialogCtx || !preview) return;
+    sizeCanvas(dialogCanvas, dialogCtx, preview.clientWidth, preview.clientHeight);
+  }
+
   function addPoint(x, y) {
     hue = (hue + HUE_STEP) % 1;
     trailPoints.push({ x: x, y: y, t: performance.now() / 1000, hue: hue });
     if (trailPoints.length > MAX_POINTS) trailPoints.splice(0, trailPoints.length - MAX_POINTS);
+  }
+
+  function addDialogPoint(x, y) {
+    hue = (hue + HUE_STEP) % 1;
+    dialogTrailPoints.push({ x: x, y: y, t: performance.now() / 1000, hue: hue });
+    if (dialogTrailPoints.length > MAX_POINTS) dialogTrailPoints.splice(0, dialogTrailPoints.length - MAX_POINTS);
   }
 
   // A short drawn-by-itself ribbon: played once on load and again whenever a
@@ -529,7 +641,13 @@
   }
 
   function frame(nowMs) {
-    if (!overlayCtx) { requestAnimationFrame(frame); return; }
+    if (!overlayCtx || document.hidden) { requestAnimationFrame(frame); return; }
+    if (!state.previewEnabled) {
+      overlayCtx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      if (dialogCtx) dialogCtx.clearRect(0, 0, dialogCanvas.clientWidth, dialogCanvas.clientHeight);
+      requestAnimationFrame(frame);
+      return;
+    }
     stepFlourish(nowMs);
     var now = performance.now() / 1000;
     trailPoints = trailPoints.filter(function (p) { return now - p.t <= lifetime; });
@@ -538,6 +656,13 @@
       return { x: p.x, y: p.y, hue: p.hue, life: Math.max(0, 1 - (now - p.t) / lifetime) };
     });
     paint(overlayCtx, live, current, widthScale);
+    if (dialogCtx && document.getElementById("theme-dialog").open) {
+      dialogTrailPoints = dialogTrailPoints.filter(function (p) { return now - p.t <= lifetime; });
+      dialogCtx.clearRect(0, 0, dialogCanvas.clientWidth, dialogCanvas.clientHeight);
+      paint(dialogCtx, dialogTrailPoints.map(function (p) {
+        return { x: p.x, y: p.y, hue: p.hue, life: Math.max(0, 1 - (now - p.t) / lifetime) };
+      }), current, widthScale);
+    }
     requestAnimationFrame(frame);
   }
 
@@ -554,7 +679,7 @@
   function updateNowDrawing() {
     var nameEl = document.getElementById("now-drawing-name");
     var swatchEl = document.getElementById("now-drawing-swatch");
-    if (nameEl) nameEl.textContent = state.activeTheme ? state.activeTheme.name : "";
+    if (nameEl) nameEl.textContent = displayThemeName(state.activeTheme);
     if (swatchEl) swatchEl.style.background = nowDrawingSwatchCss(state.activeTheme);
   }
 
@@ -597,6 +722,7 @@
     // dialed in while browsing. (The theme's stored lifetime/widthScale still
     // ship in its .json for the app itself; this page is for feeling colours.)
     trailPoints = [];
+    dialogTrailPoints = [];
     updateNowDrawing();
     render();
     if (rect) playFlourish(rect, 1300);
@@ -605,14 +731,24 @@
   if (overlayCanvas && overlayCtx) {
     resizeOverlay();
     window.addEventListener("resize", resizeOverlay);
+    window.addEventListener("resize", resizeDialogOverlay);
     window.addEventListener(
       "pointermove",
       function (e) {
+        if (!state.previewEnabled) return;
         flourish = null; // a real pointer always wins over the flourish
         addPoint(e.clientX, e.clientY);
       },
       { passive: true }
     );
+    var dialogPreview = document.getElementById("dialog-preview");
+    if (dialogPreview) {
+      dialogPreview.addEventListener("pointermove", function (e) {
+        if (!state.previewEnabled) return;
+        var rect = dialogPreview.getBoundingClientRect();
+        addDialogPoint(e.clientX - rect.left, e.clientY - rect.top);
+      }, { passive: true });
+    }
     requestAnimationFrame(frame);
   }
 
@@ -622,6 +758,17 @@
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       el.textContent = t(el.getAttribute("data-i18n"));
     });
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
+      el.placeholder = t(el.getAttribute("data-i18n-placeholder"));
+    });
+    document.querySelectorAll("[data-i18n-aria-label]").forEach(function (el) {
+      el.setAttribute("aria-label", t(el.getAttribute("data-i18n-aria-label")));
+    });
+    document.getElementById("dialog-prev").setAttribute("aria-label", t("previousTheme"));
+    document.getElementById("dialog-next").setAttribute("aria-label", t("nextTheme"));
+    var previewToggle = document.getElementById("preview-toggle");
+    previewToggle.setAttribute("aria-pressed", String(state.previewEnabled));
+    previewToggle.lastElementChild.textContent = t(state.previewEnabled ? "previewOn" : "previewOff");
 
     document.querySelectorAll(".filter-tab").forEach(function (tab) {
       tab.classList.toggle(
@@ -654,13 +801,12 @@
 
     gallery.innerHTML = "";
 
-    var visible = state.themes.filter(function (theme) {
-      return state.collection === "all" || theme.collection === state.collection;
-    });
+    var visible = visibleThemes();
 
     emptyState.hidden = visible.length !== 0;
+    document.getElementById("result-count").textContent = visible.length + " " + t("themesWord");
 
-    var PER_PAGE = 12;
+    var PER_PAGE = 24;
     var pageCount = Math.max(1, Math.ceil(visible.length / PER_PAGE));
     if (state.page > pageCount) state.page = pageCount;
     if (state.page < 1) state.page = 1;
@@ -671,6 +817,13 @@
     });
 
     renderPager(pageCount, visible.length);
+    updateNowDrawing();
+    var headerAdd = document.getElementById("header-add");
+    if (headerAdd && state.activeTheme) {
+      var headerRaw = rawUrlFor(state.activeTheme.path);
+      headerAdd.href = headerRaw ? "mousetrail://import?url=" + encodeURIComponent(headerRaw) : "#";
+      headerAdd.toggleAttribute("aria-disabled", !headerRaw);
+    }
   }
 
   // Numbered pager. Kept to a fixed width so the control never reflows the
@@ -744,7 +897,44 @@
       render();
     });
 
-    fetch("themes.json")
+    document.querySelectorAll("[data-collection-link]").forEach(function(link) {
+      link.addEventListener("click", function () {
+        state.collection = link.getAttribute("data-collection-link"); state.page = 1; render();
+        document.getElementById("filters").scrollIntoView({block:"start", behavior: reducedMotion ? "auto" : "smooth"});
+      });
+    });
+
+    var search = document.getElementById("theme-search");
+    var searchTimer;
+    search.addEventListener("input", function () { clearTimeout(searchTimer); searchTimer=setTimeout(function(){state.query=search.value;state.page=1;render();},160); });
+    document.addEventListener("keydown", function(event){
+      if (event.key === "/" && document.activeElement !== search && !event.metaKey && !event.ctrlKey) { event.preventDefault(); search.focus(); }
+      var dialog=document.getElementById("theme-dialog");
+      if (dialog.open && event.key === "Escape") { event.preventDefault(); dialog.close(); return; }
+      if (dialog.open && (event.key === "ArrowLeft" || event.key === "ArrowRight")) { event.preventDefault(); navigateDialog(event.key === "ArrowLeft" ? -1 : 1); }
+    });
+    document.getElementById("sort-select").addEventListener("change", function(event){state.sort=event.target.value;state.page=1;render();});
+    document.getElementById("clear-search").addEventListener("click", function(){state.query="";state.collection="all";state.page=1;search.value="";render();});
+    document.getElementById("preview-toggle").addEventListener("click", function(event){state.previewEnabled=!state.previewEnabled;event.currentTarget.setAttribute("aria-pressed",String(state.previewEnabled));event.currentTarget.lastElementChild.textContent=t(state.previewEnabled?"previewOn":"previewOff");trailPoints=[];dialogTrailPoints=[];});
+    document.getElementById("theme-dialog").addEventListener("close", function(){
+      dialogTrailPoints=[];
+      var returnId = state.lastDialogId;
+      var returnNode = Array.prototype.slice.call(document.querySelectorAll(".card-swatch")).find(function(node){ return node.getAttribute("data-theme-id") === returnId; });
+      if (returnNode) returnNode.focus();
+      state.lastDialogTrigger=null; state.lastDialogId=null;
+    });
+    document.getElementById("dialog-prev").addEventListener("click", function(){navigateDialog(-1);});
+    document.getElementById("dialog-next").addEventListener("click", function(){navigateDialog(1);});
+    document.getElementById("theme-dialog").addEventListener("toggle", function () {
+      if (this.open) { resizeDialogOverlay(); dialogTrailPoints=[]; }
+    });
+    var settings=document.getElementById("settings-toggle"), panel=document.getElementById("preview-settings");
+    if(settings&&panel)settings.addEventListener("click",function(){var open=panel.hidden;panel.hidden=!open;settings.setAttribute("aria-expanded",String(open));});
+
+    function loadThemes() {
+      document.getElementById("error-state").hidden=true;
+      fetch("themes.json")
+
       .then(function (response) {
         if (!response.ok) throw new Error("HTTP " + response.status);
         return response.json();
@@ -761,12 +951,24 @@
         }
       })
       .catch(function (err) {
-        var gallery = document.getElementById("gallery");
-        gallery.textContent = t("loadError") + " (" + err.message + ")";
+        document.getElementById("gallery").innerHTML = "";
+        document.getElementById("error-message").textContent = t("loadError") + " (" + err.message + ")";
+        document.getElementById("error-state").hidden = false;
       });
+    }
+
+    document.getElementById("retry").addEventListener("click", loadThemes);
+    loadThemes();
 
     render();
   }
 
+  function navigateDialog(step) {
+    var items=visibleThemes(); if (!state.dialogTheme) return;
+    var next=items[items.indexOf(state.dialogTheme)+step]; if (!next) return;
+    state.dialogTheme=next; setActiveTheme(next, null); updateDialog();
+  }
+
   document.addEventListener("DOMContentLoaded", init);
 })();
+//# sourceMappingURL=app.js.map
