@@ -117,7 +117,9 @@
     "Orchid Whisper":"兰花低语", "Lilac Tide":"丁香潮汐", "Dusk Corsage":"暮色胸花", "Indigo Garden":"靛蓝花园", "Periwinkle Hush":"长春花静语", "Teal Blossom":"青蓝绽放", "Indigo Mint":"靛蓝薄荷", "Lavender Nightfall":"薰衣草夜幕",
     "Windmill Meadow":"风车草甸", "Algae Milk Cocoa":"蓝藻奶巧", "Peach Hazelnut":"甜桃榛果", "Berry Whisper Breeze":"莓语轻风", "Smoked Terracotta":"烟熏陶土", "Windblown Wheat":"风吹麦浪", "Jasmine Light Tea":"茉莉清茶", "Tennis Court Bloom":"网球场花语", "Carnation Court":"康乃馨球场", "Dopamine Harvest":"多巴胺丰收", "Vintage Magazine":"复古杂志", "Chapter Sixty-Five":"第六十五章", "Delft Amethyst":"代尔夫特紫晶", "Maple Sumac":"枫叶漆树", "Persimmon Grove":"柿子林", "Forest Ember":"森林余烬", "Gaudi Arcade":"高迪拱廊",
     "Distant Sky Blue":"远天蓝", "Sea Sky Blue":"海天蓝", "Stream Stone Blue":"涧石蓝", "Gem Blue":"宝石蓝", "Glaze Indigo":"靛青", "Enamel Blue":"搪瓷蓝",
-    "Santorini Bloom":"圣托里尼之花"
+    "Santorini Bloom":"圣托里尼之花",
+    // Fifth batch (2026-08-13).
+    "Rose Toast":"玫瑰祝酒"
   };
 
   var state = {
