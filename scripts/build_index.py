@@ -28,6 +28,25 @@ REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 THEMES_DIR = REPO_ROOT / "themes"
 OUTPUT_PATH = REPO_ROOT / "docs" / "themes.json"
 
+# Slug -> "YYYY-MM-DD" the theme was first published. Backfilled once from the
+# release repo's git history (first commit that added each theme file), then
+# hand/script-extended: stamp new theme files with the release date when they
+# are added, alongside the CHANGELOG entry. A theme missing from this map
+# (e.g. a fresh community contribution) just gets no createdAt -- the gallery
+# sorts those last rather than guessing.
+#
+# Lives beside this script rather than under themes/ -- every other theme
+# tool (validate_themes.py, build_swatches.py, build_previews.py, CI) globs
+# themes/**/*.json expecting every match to be a theme file.
+CREATED_DATES_PATH = pathlib.Path(__file__).resolve().parent / "created-dates.json"
+
+
+def _load_created_dates() -> dict:
+    try:
+        return json.loads(CREATED_DATES_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+
 # Path segment (relative to themes/) -> collection label, matching the repo
 # layout: themes/official/designer, themes/official/neon, themes/community.
 COLLECTION_BY_SEGMENT = {
@@ -132,6 +151,7 @@ def build_index(themes_dir: pathlib.Path, repo_root: pathlib.Path):
     index entries, in deterministic (collection, filename) order.
     """
     entries = []
+    created_dates = _load_created_dates()
 
     for file_path in sorted(themes_dir.rglob("*.json")):
         rel_path = file_path.relative_to(repo_root).as_posix()
@@ -180,6 +200,9 @@ def build_index(themes_dir: pathlib.Path, repo_root: pathlib.Path):
                 entry["author"] = author
             if is_rainbow:
                 entry["rainbow"] = True
+            created_at = created_dates.get(file_path.stem)
+            if created_at:
+                entry["createdAt"] = created_at
 
             entries.append((collection, file_path.name, entry))
 

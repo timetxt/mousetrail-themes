@@ -39,7 +39,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-algae-milk-cocoa.svg"
+      "preview": "assets/previews/theme-themes-official-designer-algae-milk-cocoa.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-apricot-silk",
@@ -78,7 +79,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-apricot-silk.svg"
+      "preview": "assets/previews/theme-themes-official-designer-apricot-silk.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-ash-blush",
@@ -110,7 +112,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-ash-blush.svg"
+      "preview": "assets/previews/theme-themes-official-designer-ash-blush.svg",
+      "createdAt": "2026-08-04"
     },
     {
       "id": "theme-themes-official-designer-ash-lilac",
@@ -135,7 +138,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-ash-lilac.svg"
+      "preview": "assets/previews/theme-themes-official-designer-ash-lilac.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-berry-whisper-breeze",
@@ -174,7 +178,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-berry-whisper-breeze.svg"
+      "preview": "assets/previews/theme-themes-official-designer-berry-whisper-breeze.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-caramel-latte",
@@ -206,7 +211,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-caramel-latte.svg"
+      "preview": "assets/previews/theme-themes-official-designer-caramel-latte.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-carnation-court",
@@ -238,7 +244,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-carnation-court.svg"
+      "preview": "assets/previews/theme-themes-official-designer-carnation-court.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-chapter-sixty-five",
@@ -284,7 +291,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-chapter-sixty-five.svg"
+      "preview": "assets/previews/theme-themes-official-designer-chapter-sixty-five.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-clay-rose",
@@ -323,7 +331,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-clay-rose.svg"
+      "preview": "assets/previews/theme-themes-official-designer-clay-rose.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-cloud-indigo",
@@ -355,7 +364,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-cloud-indigo.svg"
+      "preview": "assets/previews/theme-themes-official-designer-cloud-indigo.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-cream",
@@ -394,7 +404,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-cream.svg"
+      "preview": "assets/previews/theme-themes-official-designer-cream.svg",
+      "createdAt": "2026-07-20"
     },
     {
       "id": "theme-themes-official-designer-cyberpunk",
@@ -440,7 +451,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-cyberpunk.svg"
+      "preview": "assets/previews/theme-themes-official-designer-cyberpunk.svg",
+      "createdAt": "2026-07-20"
     },
     {
       "id": "theme-themes-official-designer-delft-amethyst",
@@ -486,7 +498,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-delft-amethyst.svg"
+      "preview": "assets/previews/theme-themes-official-designer-delft-amethyst.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-denim-fade",
@@ -525,7 +538,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-denim-fade.svg"
+      "preview": "assets/previews/theme-themes-official-designer-denim-fade.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-distant-sky-blue",
@@ -557,7 +571,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-distant-sky-blue.svg"
+      "preview": "assets/previews/theme-themes-official-designer-distant-sky-blue.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-dopamine-harvest",
@@ -603,7 +618,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-dopamine-harvest.svg"
+      "preview": "assets/previews/theme-themes-official-designer-dopamine-harvest.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-dusk-corsage",
@@ -635,7 +651,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-dusk-corsage.svg"
+      "preview": "assets/previews/theme-themes-official-designer-dusk-corsage.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-ember-dusk",
@@ -667,7 +684,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-ember-dusk.svg"
+      "preview": "assets/previews/theme-themes-official-designer-ember-dusk.svg",
+      "createdAt": "2026-08-04"
     },
     {
       "id": "theme-themes-official-designer-enamel-blue",
@@ -699,7 +717,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-enamel-blue.svg"
+      "preview": "assets/previews/theme-themes-official-designer-enamel-blue.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-forest-ember",
@@ -745,7 +764,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-forest-ember.svg"
+      "preview": "assets/previews/theme-themes-official-designer-forest-ember.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-frost-blue",
@@ -784,7 +804,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-frost-blue.svg"
+      "preview": "assets/previews/theme-themes-official-designer-frost-blue.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-gaudi-arcade",
@@ -830,7 +851,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-gaudi-arcade.svg"
+      "preview": "assets/previews/theme-themes-official-designer-gaudi-arcade.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-gem-blue",
@@ -862,7 +884,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-gem-blue.svg"
+      "preview": "assets/previews/theme-themes-official-designer-gem-blue.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-glaze-indigo",
@@ -894,7 +917,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-glaze-indigo.svg"
+      "preview": "assets/previews/theme-themes-official-designer-glaze-indigo.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-harbor-mist",
@@ -933,7 +957,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-harbor-mist.svg"
+      "preview": "assets/previews/theme-themes-official-designer-harbor-mist.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-harvest-slate",
@@ -965,7 +990,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-harvest-slate.svg"
+      "preview": "assets/previews/theme-themes-official-designer-harvest-slate.svg",
+      "createdAt": "2026-08-04"
     },
     {
       "id": "theme-themes-official-designer-indigo-garden",
@@ -997,7 +1023,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-indigo-garden.svg"
+      "preview": "assets/previews/theme-themes-official-designer-indigo-garden.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-indigo-mint",
@@ -1029,7 +1056,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-indigo-mint.svg"
+      "preview": "assets/previews/theme-themes-official-designer-indigo-mint.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-jasmine-light-tea",
@@ -1068,7 +1096,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-jasmine-light-tea.svg"
+      "preview": "assets/previews/theme-themes-official-designer-jasmine-light-tea.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-kiln-blush",
@@ -1100,7 +1129,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-kiln-blush.svg"
+      "preview": "assets/previews/theme-themes-official-designer-kiln-blush.svg",
+      "createdAt": "2026-08-04"
     },
     {
       "id": "theme-themes-official-designer-kingfisher",
@@ -1125,7 +1155,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-kingfisher.svg"
+      "preview": "assets/previews/theme-themes-official-designer-kingfisher.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-lagoon-peach",
@@ -1157,7 +1188,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-lagoon-peach.svg"
+      "preview": "assets/previews/theme-themes-official-designer-lagoon-peach.svg",
+      "createdAt": "2026-08-04"
     },
     {
       "id": "theme-themes-official-designer-lavender-nightfall",
@@ -1189,7 +1221,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-lavender-nightfall.svg"
+      "preview": "assets/previews/theme-themes-official-designer-lavender-nightfall.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-lilac-tide",
@@ -1221,7 +1254,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-lilac-tide.svg"
+      "preview": "assets/previews/theme-themes-official-designer-lilac-tide.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-mandarin-linen",
@@ -1260,7 +1294,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-mandarin-linen.svg"
+      "preview": "assets/previews/theme-themes-official-designer-mandarin-linen.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-maple-sumac",
@@ -1306,7 +1341,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-maple-sumac.svg"
+      "preview": "assets/previews/theme-themes-official-designer-maple-sumac.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-matcha",
@@ -1352,7 +1388,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-matcha.svg"
+      "preview": "assets/previews/theme-themes-official-designer-matcha.svg",
+      "createdAt": "2026-07-20"
     },
     {
       "id": "theme-themes-official-designer-meadow-tide",
@@ -1391,7 +1428,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-meadow-tide.svg"
+      "preview": "assets/previews/theme-themes-official-designer-meadow-tide.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-misty-blush",
@@ -1423,7 +1461,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-misty-blush.svg"
+      "preview": "assets/previews/theme-themes-official-designer-misty-blush.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-morandi",
@@ -1469,7 +1508,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-morandi.svg"
+      "preview": "assets/previews/theme-themes-official-designer-morandi.svg",
+      "createdAt": "2026-07-20"
     },
     {
       "id": "theme-themes-official-designer-olive-grove",
@@ -1508,7 +1548,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-olive-grove.svg"
+      "preview": "assets/previews/theme-themes-official-designer-olive-grove.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-orchard-frost",
@@ -1547,7 +1588,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-orchard-frost.svg"
+      "preview": "assets/previews/theme-themes-official-designer-orchard-frost.svg",
+      "createdAt": "2026-08-04"
     },
     {
       "id": "theme-themes-official-designer-orchid-whisper",
@@ -1579,7 +1621,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-orchid-whisper.svg"
+      "preview": "assets/previews/theme-themes-official-designer-orchid-whisper.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-peach-hazelnut",
@@ -1618,7 +1661,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-peach-hazelnut.svg"
+      "preview": "assets/previews/theme-themes-official-designer-peach-hazelnut.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-peach",
@@ -1650,7 +1694,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-peach.svg"
+      "preview": "assets/previews/theme-themes-official-designer-peach.svg",
+      "createdAt": "2026-07-20"
     },
     {
       "id": "theme-themes-official-designer-periwinkle-hush",
@@ -1682,7 +1727,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-periwinkle-hush.svg"
+      "preview": "assets/previews/theme-themes-official-designer-periwinkle-hush.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-persimmon-grove",
@@ -1728,7 +1774,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-persimmon-grove.svg"
+      "preview": "assets/previews/theme-themes-official-designer-persimmon-grove.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-pine-glade",
@@ -1760,7 +1807,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-pine-glade.svg"
+      "preview": "assets/previews/theme-themes-official-designer-pine-glade.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-pine-ivory",
@@ -1785,7 +1833,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-pine-ivory.svg"
+      "preview": "assets/previews/theme-themes-official-designer-pine-ivory.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-reverie",
@@ -1831,7 +1880,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-reverie.svg"
+      "preview": "assets/previews/theme-themes-official-designer-reverie.svg",
+      "createdAt": "2026-07-24"
     },
     {
       "id": "theme-themes-official-designer-rose-gold",
@@ -1856,7 +1906,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-rose-gold.svg"
+      "preview": "assets/previews/theme-themes-official-designer-rose-gold.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-rose-powder",
@@ -1895,7 +1946,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-rose-powder.svg"
+      "preview": "assets/previews/theme-themes-official-designer-rose-powder.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-sage-whisper",
@@ -1934,7 +1986,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-sage-whisper.svg"
+      "preview": "assets/previews/theme-themes-official-designer-sage-whisper.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-sakura",
@@ -1973,7 +2026,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-sakura.svg"
+      "preview": "assets/previews/theme-themes-official-designer-sakura.svg",
+      "createdAt": "2026-07-20"
     },
     {
       "id": "theme-themes-official-designer-sapphire-sprout",
@@ -1998,7 +2052,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-sapphire-sprout.svg"
+      "preview": "assets/previews/theme-themes-official-designer-sapphire-sprout.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-sea-sky-blue",
@@ -2030,7 +2085,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-sea-sky-blue.svg"
+      "preview": "assets/previews/theme-themes-official-designer-sea-sky-blue.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-sky-wash",
@@ -2069,7 +2125,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-sky-wash.svg"
+      "preview": "assets/previews/theme-themes-official-designer-sky-wash.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-slate-coral",
@@ -2101,7 +2158,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-slate-coral.svg"
+      "preview": "assets/previews/theme-themes-official-designer-slate-coral.svg",
+      "createdAt": "2026-08-04"
     },
     {
       "id": "theme-themes-official-designer-smoked-terracotta",
@@ -2140,7 +2198,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-smoked-terracotta.svg"
+      "preview": "assets/previews/theme-themes-official-designer-smoked-terracotta.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-spring-day",
@@ -2179,7 +2238,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-spring-day.svg"
+      "preview": "assets/previews/theme-themes-official-designer-spring-day.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-spring-dew",
@@ -2218,7 +2278,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-spring-dew.svg"
+      "preview": "assets/previews/theme-themes-official-designer-spring-dew.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-designer-stone-tide",
@@ -2250,7 +2311,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-stone-tide.svg"
+      "preview": "assets/previews/theme-themes-official-designer-stone-tide.svg",
+      "createdAt": "2026-08-04"
     },
     {
       "id": "theme-themes-official-designer-stream-stone-blue",
@@ -2282,7 +2344,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-stream-stone-blue.svg"
+      "preview": "assets/previews/theme-themes-official-designer-stream-stone-blue.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-teal-blossom",
@@ -2314,7 +2377,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-teal-blossom.svg"
+      "preview": "assets/previews/theme-themes-official-designer-teal-blossom.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-tennis-court-bloom",
@@ -2353,7 +2417,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-tennis-court-bloom.svg"
+      "preview": "assets/previews/theme-themes-official-designer-tennis-court-bloom.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-tiffany",
@@ -2399,7 +2464,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-tiffany.svg"
+      "preview": "assets/previews/theme-themes-official-designer-tiffany.svg",
+      "createdAt": "2026-07-20"
     },
     {
       "id": "theme-themes-official-designer-vintage-magazine",
@@ -2445,7 +2511,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-vintage-magazine.svg"
+      "preview": "assets/previews/theme-themes-official-designer-vintage-magazine.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-windblown-wheat",
@@ -2484,7 +2551,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-windblown-wheat.svg"
+      "preview": "assets/previews/theme-themes-official-designer-windblown-wheat.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-windmill-meadow",
@@ -2530,7 +2598,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-windmill-meadow.svg"
+      "preview": "assets/previews/theme-themes-official-designer-windmill-meadow.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-designer-wisteria-veil",
@@ -2569,7 +2638,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-wisteria-veil.svg"
+      "preview": "assets/previews/theme-themes-official-designer-wisteria-veil.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-aegean-blue",
@@ -2608,7 +2678,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-aegean-blue.svg"
+      "preview": "assets/previews/theme-themes-official-neon-aegean-blue.svg",
+      "createdAt": "2026-08-04"
     },
     {
       "id": "theme-themes-official-neon-amber-forge",
@@ -2640,7 +2711,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-amber-forge.svg"
+      "preview": "assets/previews/theme-themes-official-neon-amber-forge.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-aqua-surge",
@@ -2679,7 +2751,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-aqua-surge.svg"
+      "preview": "assets/previews/theme-themes-official-neon-aqua-surge.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-aurora",
@@ -2718,7 +2791,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-aurora.svg"
+      "preview": "assets/previews/theme-themes-official-neon-aurora.svg",
+      "createdAt": "2026-07-20"
     },
     {
       "id": "theme-themes-official-neon-aventurine",
@@ -2764,7 +2838,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-aventurine.svg"
+      "preview": "assets/previews/theme-themes-official-neon-aventurine.svg",
+      "createdAt": "2026-08-04"
     },
     {
       "id": "theme-themes-official-neon-azure-rush",
@@ -2803,7 +2878,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-azure-rush.svg"
+      "preview": "assets/previews/theme-themes-official-neon-azure-rush.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-bottle-cap",
@@ -2842,7 +2918,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-bottle-cap.svg"
+      "preview": "assets/previews/theme-themes-official-neon-bottle-cap.svg",
+      "createdAt": "2026-08-04"
     },
     {
       "id": "theme-themes-official-neon-bougainvillea",
@@ -2888,7 +2965,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-bougainvillea.svg"
+      "preview": "assets/previews/theme-themes-official-neon-bougainvillea.svg",
+      "createdAt": "2026-08-04"
     },
     {
       "id": "theme-themes-official-neon-candy-pop",
@@ -2927,7 +3005,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-candy-pop.svg"
+      "preview": "assets/previews/theme-themes-official-neon-candy-pop.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-citrus-sea",
@@ -2959,7 +3038,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-citrus-sea.svg"
+      "preview": "assets/previews/theme-themes-official-neon-citrus-sea.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-crimson-pop",
@@ -2998,7 +3078,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-crimson-pop.svg"
+      "preview": "assets/previews/theme-themes-official-neon-crimson-pop.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-dream-purple",
@@ -3037,7 +3118,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-dream-purple.svg"
+      "preview": "assets/previews/theme-themes-official-neon-dream-purple.svg",
+      "createdAt": "2026-07-20"
     },
     {
       "id": "theme-themes-official-neon-electric-tide",
@@ -3069,7 +3151,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-electric-tide.svg"
+      "preview": "assets/previews/theme-themes-official-neon-electric-tide.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-emerald-lagoon",
@@ -3101,7 +3184,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-emerald-lagoon.svg"
+      "preview": "assets/previews/theme-themes-official-neon-emerald-lagoon.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-firecracker",
@@ -3133,7 +3217,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-firecracker.svg"
+      "preview": "assets/previews/theme-themes-official-neon-firecracker.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-forest",
@@ -3179,7 +3264,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-forest.svg"
+      "preview": "assets/previews/theme-themes-official-neon-forest.svg",
+      "createdAt": "2026-07-20"
     },
     {
       "id": "theme-themes-official-neon-galaxy",
@@ -3225,7 +3311,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-galaxy.svg"
+      "preview": "assets/previews/theme-themes-official-neon-galaxy.svg",
+      "createdAt": "2026-07-20"
     },
     {
       "id": "theme-themes-official-neon-honey-glow",
@@ -3264,7 +3351,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-honey-glow.svg"
+      "preview": "assets/previews/theme-themes-official-neon-honey-glow.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-jade-current",
@@ -3296,7 +3384,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-jade-current.svg"
+      "preview": "assets/previews/theme-themes-official-neon-jade-current.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-lime-surge",
@@ -3335,7 +3424,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-lime-surge.svg"
+      "preview": "assets/previews/theme-themes-official-neon-lime-surge.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-meadowlark",
@@ -3381,7 +3471,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-meadowlark.svg"
+      "preview": "assets/previews/theme-themes-official-neon-meadowlark.svg",
+      "createdAt": "2026-08-04"
     },
     {
       "id": "theme-themes-official-neon-mint-breeze",
@@ -3420,7 +3511,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-mint-breeze.svg"
+      "preview": "assets/previews/theme-themes-official-neon-mint-breeze.svg",
+      "createdAt": "2026-07-20"
     },
     {
       "id": "theme-themes-official-neon-neon-iris",
@@ -3452,7 +3544,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-neon-iris.svg"
+      "preview": "assets/previews/theme-themes-official-neon-neon-iris.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-neon-orchid",
@@ -3484,7 +3577,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-neon-orchid.svg"
+      "preview": "assets/previews/theme-themes-official-neon-neon-orchid.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-ocean",
@@ -3523,7 +3617,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-ocean.svg"
+      "preview": "assets/previews/theme-themes-official-neon-ocean.svg",
+      "createdAt": "2026-07-20"
     },
     {
       "id": "theme-themes-official-neon-periwinkle-drift",
@@ -3562,7 +3657,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-periwinkle-drift.svg"
+      "preview": "assets/previews/theme-themes-official-neon-periwinkle-drift.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-prism-drift",
@@ -3601,7 +3697,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-prism-drift.svg"
+      "preview": "assets/previews/theme-themes-official-neon-prism-drift.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-santorini-bloom",
@@ -3640,7 +3737,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-santorini-bloom.svg"
+      "preview": "assets/previews/theme-themes-official-neon-santorini-bloom.svg",
+      "createdAt": "2026-08-13"
     },
     {
       "id": "theme-themes-official-neon-sunset",
@@ -3679,7 +3777,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-sunset.svg"
+      "preview": "assets/previews/theme-themes-official-neon-sunset.svg",
+      "createdAt": "2026-07-20"
     },
     {
       "id": "theme-themes-official-neon-tangerine-rush",
@@ -3718,7 +3817,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-tangerine-rush.svg"
+      "preview": "assets/previews/theme-themes-official-neon-tangerine-rush.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-tidewater",
@@ -3764,7 +3864,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-tidewater.svg"
+      "preview": "assets/previews/theme-themes-official-neon-tidewater.svg",
+      "createdAt": "2026-08-04"
     },
     {
       "id": "theme-themes-official-neon-ultraviolet-bloom",
@@ -3803,7 +3904,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-ultraviolet-bloom.svg"
+      "preview": "assets/previews/theme-themes-official-neon-ultraviolet-bloom.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-verdant-pulse",
@@ -3835,7 +3937,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-verdant-pulse.svg"
+      "preview": "assets/previews/theme-themes-official-neon-verdant-pulse.svg",
+      "createdAt": "2026-08-02"
     },
     {
       "id": "theme-themes-official-neon-voltage",
@@ -3874,7 +3977,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-voltage.svg"
+      "preview": "assets/previews/theme-themes-official-neon-voltage.svg",
+      "createdAt": "2026-08-02"
     }
   ]
 }

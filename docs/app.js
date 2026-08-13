@@ -17,7 +17,7 @@
       gallerySubtitle: "Choose a theme and move your mouse to see the magic.",
       galleryLink: "Gallery", aboutLink: "About", eyebrow: "CURSOR THEMES",
       searchLabel: "Search themes", searchPlaceholder: "Search themes...",
-      sortLabel: "Sort", catalogueOrder: "Catalogue order", nameOrder: "Name A–Z",
+      sortLabel: "Sort", catalogueOrder: "Catalogue order", nameOrder: "Name A–Z", newestOrder: "Newest first",
       emptyTitle: "No themes found", clearFilters: "Clear filters", errorTitle: "Could not load the gallery", retry: "Retry",
       previous: "Previous", next: "Next", previewOn: "Preview On", previewOff: "Preview Off",
       previousTheme: "Previous theme", nextTheme: "Next theme",
@@ -63,7 +63,7 @@
       gallerySubtitle: "选择主题并移动鼠标，即可体验效果。",
       galleryLink: "主题库", aboutLink: "关于", eyebrow: "鼠标轨迹主题",
       searchLabel: "搜索主题", searchPlaceholder: "搜索主题…",
-      sortLabel: "排序", catalogueOrder: "目录顺序", nameOrder: "名称 A–Z",
+      sortLabel: "排序", catalogueOrder: "目录顺序", nameOrder: "名称 A–Z", newestOrder: "最新优先",
       emptyTitle: "没有找到主题", clearFilters: "清除筛选", errorTitle: "无法加载主题库", retry: "重试",
       previous: "上一个", next: "下一个", previewOn: "预览开启", previewOff: "预览关闭",
       previousTheme: "上一个主题", nextTheme: "下一个主题",
@@ -110,7 +110,14 @@
   // These canonical English-name keys make the fallback deterministic.
   var ZH_THEME_NAMES = {
     "Apricot Silk":"杏桃丝绸", "Ash Blush":"灰烬腮红", "Ash Lilac":"灰烬丁香", "Caramel Latte":"焦糖拿铁", "Clay Rose":"陶土玫瑰", "Cloud Indigo":"云靛蓝", "Cream":"奶油", "Cyberpunk":"赛博朋克", "Denim Fade":"褪色牛仔", "Ember Dusk":"余烬暮色", "Frost Blue":"霜蓝", "Harbor Mist":"港湾薄雾", "Harvest Slate":"丰收板岩", "Kiln Blush":"窑烧腮红", "Kingfisher":"翠鸟", "Lagoon Peach":"泻湖蜜桃", "Mandarin Linen":"柑橘亚麻", "Matcha":"抹茶", "Meadow Tide":"草甸潮汐", "Misty Blush":"薄雾腮红", "Morandi":"莫兰迪", "Olive Grove":"橄榄林", "Orchard Frost":"果园霜", "Peach":"蜜桃", "Pine Glade":"松林空地", "Pine Ivory":"松木象牙", "Reverie":"遐想", "Rose Gold":"玫瑰金", "Rose Powder":"玫瑰粉", "Sage Whisper":"鼠尾草低语", "Sakura":"樱花", "Sapphire Sprout":"蓝宝石新芽", "Sky Wash":"天空水彩", "Slate Coral":"板岩珊瑚", "Spring Day":"春日", "Spring Dew":"春露", "Stone Tide":"石潮", "Tiffany":"蒂芙尼", "Wisteria Veil":"紫藤薄纱",
-    "Aegean Blue":"爱琴海蓝", "Amber Forge":"琥珀锻造", "Aqua Surge":"水色奔涌", "Aurora":"极光", "Aventurine":"东陵玉", "Azure Rush":"蔚蓝疾驰", "Bottle Cap":"瓶盖", "Bougainvillea":"三角梅", "Candy Pop":"糖果跳跃", "Citrus Sea":"柑橘海", "Crimson Pop":"猩红跳跃", "Dream Purple":"梦幻紫", "Electric Tide":"电光潮汐", "Emerald Lagoon":"翡翠泻湖", "Firecracker":"爆竹", "Forest":"森林", "Galaxy":"银河", "Honey Glow":"蜜糖光晕", "Jade Current":"翡翠洋流", "Lime Surge":"青柠奔涌", "Meadowlark":"草地云雀", "Mint Breeze":"薄荷微风", "Neon Iris":"霓虹鸢尾", "Neon Orchid":"霓虹兰花", "Ocean":"海洋", "Periwinkle Drift":"长春花漂流", "Prism Drift":"棱镜漂流", "Sunset":"日落", "Tangerine Rush":"橘子疾驰", "Tidewater":"潮水", "Ultraviolet Bloom":"紫外绽放", "Verdant Pulse":"翠绿脉冲", "Voltage":"电压"
+    "Aegean Blue":"爱琴海蓝", "Amber Forge":"琥珀锻造", "Aqua Surge":"水色奔涌", "Aurora":"极光", "Aventurine":"东陵玉", "Azure Rush":"蔚蓝疾驰", "Bottle Cap":"瓶盖", "Bougainvillea":"三角梅", "Candy Pop":"糖果跳跃", "Citrus Sea":"柑橘海", "Crimson Pop":"猩红跳跃", "Dream Purple":"梦幻紫", "Electric Tide":"电光潮汐", "Emerald Lagoon":"翡翠泻湖", "Firecracker":"爆竹", "Forest":"森林", "Galaxy":"银河", "Honey Glow":"蜜糖光晕", "Jade Current":"翡翠洋流", "Lime Surge":"青柠奔涌", "Meadowlark":"草地云雀", "Mint Breeze":"薄荷微风", "Neon Iris":"霓虹鸢尾", "Neon Orchid":"霓虹兰花", "Ocean":"海洋", "Periwinkle Drift":"长春花漂流", "Prism Drift":"棱镜漂流", "Sunset":"日落", "Tangerine Rush":"橘子疾驰", "Tidewater":"潮水", "Ultraviolet Bloom":"紫外绽放", "Verdant Pulse":"翠绿脉冲", "Voltage":"电压",
+    // Fourth batch (2026-08-13) -- stops kept in each source card's own
+    // printed order rather than resorted by lightness; several ZH names
+    // below are the source reference card's own Chinese title, reused as-is.
+    "Orchid Whisper":"兰花低语", "Lilac Tide":"丁香潮汐", "Dusk Corsage":"暮色胸花", "Indigo Garden":"靛蓝花园", "Periwinkle Hush":"长春花静语", "Teal Blossom":"青蓝绽放", "Indigo Mint":"靛蓝薄荷", "Lavender Nightfall":"薰衣草夜幕",
+    "Windmill Meadow":"风车草甸", "Algae Milk Cocoa":"蓝藻奶巧", "Peach Hazelnut":"甜桃榛果", "Berry Whisper Breeze":"莓语轻风", "Smoked Terracotta":"烟熏陶土", "Windblown Wheat":"风吹麦浪", "Jasmine Light Tea":"茉莉清茶", "Tennis Court Bloom":"网球场花语", "Carnation Court":"康乃馨球场", "Dopamine Harvest":"多巴胺丰收", "Vintage Magazine":"复古杂志", "Chapter Sixty-Five":"第六十五章", "Delft Amethyst":"代尔夫特紫晶", "Maple Sumac":"枫叶漆树", "Persimmon Grove":"柿子林", "Forest Ember":"森林余烬", "Gaudi Arcade":"高迪拱廊",
+    "Distant Sky Blue":"远天蓝", "Sea Sky Blue":"海天蓝", "Stream Stone Blue":"涧石蓝", "Gem Blue":"宝石蓝", "Glaze Indigo":"靛青", "Enamel Blue":"搪瓷蓝",
+    "Santorini Bloom":"圣托里尼之花"
   };
 
   var state = {
@@ -388,6 +395,14 @@
       return collectionMatches && (!query || text.indexOf(query) !== -1);
     });
     if (state.sort === "name") result.sort(function (a, b) { return displayThemeName(a).localeCompare(displayThemeName(b), state.lang === "zh" ? "zh-Hans" : "en"); });
+    if (state.sort === "created") result.sort(function (a, b) {
+      // ISO "YYYY-MM-DD" strings compare correctly lexicographically; a
+      // theme with no createdAt (e.g. an unstamped community theme) falls
+      // back to "" and sorts last rather than floating to the top.
+      var byDate = (b.createdAt || "").localeCompare(a.createdAt || "");
+      if (byDate !== 0) return byDate;
+      return displayThemeName(a).localeCompare(displayThemeName(b), state.lang === "zh" ? "zh-Hans" : "en");
+    });
     return result;
   }
 
