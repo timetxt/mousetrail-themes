@@ -140,6 +140,7 @@ cohesive color stories rather than raw RGB picks.
 | ![Teal Blossom trail swatch](assets/swatches/teal-blossom.svg) | Teal Blossom | `#024D62` → `#FCE9EA` → `#DBC4DE` |
 | ![Tennis Court Bloom trail swatch](assets/swatches/tennis-court-bloom.svg) | Tennis Court Bloom | `#FFE5F4` → `#5E8D66` → `#F1A6BC` → `#022414` |
 | ![Tiffany trail swatch](assets/swatches/tiffany.svg) | Tiffany | `#2E9A94` → `#57BDB5` → `#86D4CD` → `#C0E8E0` → `#EDE6D6` |
+| ![Unripe Mango trail swatch](assets/swatches/unripe-mango.svg) | Unripe Mango | `#04044D` → `#102A01` → `#B59F7B` → `#C7BAA5` |
 | ![Vintage Magazine trail swatch](assets/swatches/vintage-magazine.svg) | Vintage Magazine | `#D3AB78` → `#98341F` → `#DACABF` → `#E19956` → `#4A3934` |
 | ![Windblown Wheat trail swatch](assets/swatches/windblown-wheat.svg) | Windblown Wheat | `#F7F4ED` → `#C7D3C0` → `#C8A96B` → `#8FA28A` |
 | ![Windmill Meadow trail swatch](assets/swatches/windmill-meadow.svg) | Windmill Meadow | `#4A79B8` → `#E3E6EA` → `#E6D6C3` → `#687C45` → `#1E2A13` |

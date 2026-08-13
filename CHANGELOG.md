@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **Unripe Mango** (`themes/official/designer/unripe-mango.json`) — a sixth-patch
+  Xiaohongshu colour card ("未成熟的芒果世界") naming Jade, Ocean, Pigeon, Missing,
+  and Sentimental, taking the library from 105 to 106. The four-stop ramp keeps the
+  card's dark navy and green tails and its warm tan-to-greige head; Jade is omitted
+  as the near-duplicate of Missing and Pigeon.
 - **Rose Toast** (`themes/official/designer/rose-toast.json`) — a fifth-patch reference
   (a champagne/rosé photo card naming Rose Quartz, Champagne Cream, Petal Blush, Cocoa
   Silk, and Merlot Noir), taking the library from 104 to 105. Stops follow the card's
