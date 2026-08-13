@@ -70,6 +70,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Collection filters reset to the first page, and the page-number window slides around
   the current page so the control keeps a stable width.
 
+### Fixed
+
+- **"Newest first" sort skipping Unripe Mango** — the theme built into
+  `docs/themes.json` with no `createdAt` because `scripts/created-dates.json` had no
+  entry for its slug, so the gallery's sort (which deliberately sorts an undated theme
+  last rather than guessing a date) buried it at the bottom instead of showing it
+  first. Backfilled the missing `created-dates.json` entry and regenerated the index;
+  documented the required stamp step in the `mousetrail-theme-release` skill so a new
+  official theme can't silently ship without one again.
+
 ## [1.1.0] - 2026-07-24
 
 ### Added
