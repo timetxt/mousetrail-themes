@@ -1950,6 +1950,53 @@
       "createdAt": "2026-08-02"
     },
     {
+      "id": "theme-themes-official-designer-rose-toast",
+      "name": "Rose Toast",
+      "collection": "designer",
+      "path": "themes/official/designer/rose-toast.json",
+      "stops": [
+        {
+          "alpha": 1,
+          "blue": 0.6901960784313725,
+          "green": 0.6549019607843137,
+          "location": 0.0,
+          "red": 0.8509803921568627
+        },
+        {
+          "alpha": 1,
+          "blue": 0.8588235294117647,
+          "green": 0.9098039215686274,
+          "location": 0.25,
+          "red": 0.9568627450980393
+        },
+        {
+          "alpha": 1,
+          "blue": 0.788235294117647,
+          "green": 0.7725490196078432,
+          "location": 0.5,
+          "red": 0.9215686274509803
+        },
+        {
+          "alpha": 1,
+          "blue": 0.4196078431372549,
+          "green": 0.48627450980392156,
+          "location": 0.75,
+          "red": 0.6509803921568628
+        },
+        {
+          "alpha": 1,
+          "blue": 0.22745098039215686,
+          "green": 0.1843137254901961,
+          "location": 1.0,
+          "red": 0.35294117647058826
+        }
+      ],
+      "lifetime": 0.6,
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-rose-toast.svg",
+      "createdAt": "2026-08-13"
+    },
+    {
       "id": "theme-themes-official-designer-sage-whisper",
       "name": "Sage Whisper",
       "collection": "designer",

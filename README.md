@@ -125,6 +125,7 @@ cohesive color stories rather than raw RGB picks.
 | ![Reverie trail swatch](assets/swatches/reverie.svg) | Reverie | `#B883D3` → `#C4A5DE` → `#A1A9D0` → `#96CCCB` → `#CFEAF1` |
 | ![Rose Gold trail swatch](assets/swatches/rose-gold.svg) | Rose Gold | `#FF4777` → `#FBDC92` |
 | ![Rose Powder trail swatch](assets/swatches/rose-powder.svg) | Rose Powder | `#F0A0A0` → `#F8C8C8` → `#FBE6E6` → `#FFF5F5` |
+| ![Rose Toast trail swatch](assets/swatches/rose-toast.svg) | Rose Toast | `#D9A7B0` → `#F4E8DB` → `#EBC5C9` → `#A67C6B` → `#5A2F3A` |
 | ![Sage Whisper trail swatch](assets/swatches/sage-whisper.svg) | Sage Whisper | `#C2E2C2` → `#CDE5CD` → `#DCE9DC` → `#E8EEDC` |
 | ![Sakura trail swatch](assets/swatches/sakura.svg) | Sakura | `#E39BB4` → `#F2B8CE` → `#F9D3E1` → `#FCEDF2` |
 | ![Sapphire Sprout trail swatch](assets/swatches/sapphire-sprout.svg) | Sapphire Sprout | `#053154` → `#BCE672` |

@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **Rose Toast** (`themes/official/designer/rose-toast.json`) — a fifth-patch reference
+  (a champagne/rosé photo card naming Rose Quartz, Champagne Cream, Petal Blush, Cocoa
+  Silk, and Merlot Noir), taking the library from 104 to 105. Stops follow the card's
+  own top-to-bottom order rather than being resorted by lightness, so the head (Merlot
+  Noir) is a deliberately dark wine tone rather than the ramp's brightest stop.
 - **32 themes** from a fourth batch of colour references, taking the library from 72 to
   104. Each theme's stops follow the exact colour order printed on its source reference
   card (tail to head), rather than being resorted by lightness.
