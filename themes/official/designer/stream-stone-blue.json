@@ -1,0 +1,39 @@
+{
+  "themes": [
+    {
+      "name": "Stream Stone Blue",
+      "style": {
+        "colorMode": {
+          "gradient": {
+            "stops": [
+              {
+                "alpha": 1,
+                "blue": 0.788235294117647,
+                "green": 0.6627450980392157,
+                "location": 0.0,
+                "red": 0.4
+              },
+              {
+                "alpha": 1,
+                "blue": 0.7647058823529411,
+                "green": 0.6039215686274509,
+                "location": 0.5,
+                "red": 0.3803921568627451
+              },
+              {
+                "alpha": 1,
+                "blue": 0.7647058823529411,
+                "green": 0.596078431372549,
+                "location": 1.0,
+                "red": 0.33725490196078434
+              }
+            ]
+          }
+        },
+        "lifetime": 0.6,
+        "widthScale": 1.0
+      }
+    }
+  ],
+  "version": 2
+}

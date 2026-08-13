@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="Orchid Whisper silk preview">
+<defs><linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop offset="0.000" stop-color="#DBC4DE"/><stop offset="0.500" stop-color="#7A77B0"/><stop offset="1.000" stop-color="#FCE9EA"/></linearGradient><radialGradient id="v"><stop offset="0" stop-color="#fff" stop-opacity=".08"/><stop offset=".72" stop-color="#050405" stop-opacity=".18"/><stop offset="1" stop-color="#050405" stop-opacity=".72"/></radialGradient><filter id="b"><feGaussianBlur stdDeviation="30"/></filter><filter id="g"><feGaussianBlur stdDeviation="9"/></filter></defs>
+<rect width="960" height="600" fill="url(#c)"/>
+<path d="M-80 156C126 42 282 250 482 132S786 54 1050 28" fill="none" stroke="#fff8eb" stroke-width="150" opacity=".22" filter="url(#b)"/>
+<path d="M-62 184C133 72 288 280 492 160S798 82 1050 52" fill="none" stroke="#FCE9EA" stroke-width="96" opacity=".32" filter="url(#b)"/>
+<path d="M-80 385C105 270 282 468 480 324S786 244 1050 394" fill="none" stroke="#050405" stroke-width="164" opacity=".56" filter="url(#b)"/>
+<path d="M-62 369C120 274 294 448 488 306S792 252 1045 366" fill="none" stroke="#fffaf0" stroke-width="12" opacity=".54" filter="url(#g)"/>
+<rect width="960" height="600" fill="url(#v)"/>
+</svg>

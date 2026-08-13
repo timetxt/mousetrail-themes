@@ -1,0 +1,39 @@
+{
+  "themes": [
+    {
+      "name": "Carnation Court",
+      "style": {
+        "colorMode": {
+          "gradient": {
+            "stops": [
+              {
+                "alpha": 1,
+                "blue": 0.8784313725490196,
+                "green": 0.9490196078431372,
+                "location": 0.0,
+                "red": 0.9764705882352941
+              },
+              {
+                "alpha": 1,
+                "blue": 0.7529411764705882,
+                "green": 0.6666666666666666,
+                "location": 0.5,
+                "red": 0.9921568627450981
+              },
+              {
+                "alpha": 1,
+                "blue": 0.19215686274509805,
+                "green": 0.21568627450980393,
+                "location": 1.0,
+                "red": 0.0
+              }
+            ]
+          }
+        },
+        "lifetime": 0.6,
+        "widthScale": 1.0
+      }
+    }
+  ],
+  "version": 2
+}

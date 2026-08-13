@@ -9,6 +9,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **32 themes** from a fourth batch of colour references, taking the library from 72 to
+  104. Each theme's stops follow the exact colour order printed on its source reference
+  card (tail to head), rather than being resorted by lightness.
+  - *Cindy萬 palette pool* (designer) — **Orchid Whisper**, **Lilac Tide**, **Dusk
+    Corsage**, **Indigo Garden**, **Periwinkle Hush**, **Teal Blossom**, **Indigo Mint**,
+    **Lavender Nightfall**: eight 3-colour recombinations of one shared
+    lilac/periwinkle/indigo/teal/blush palette.
+  - *Photograph and moodboard palettes* (designer) — **Windmill Meadow**, **Algae Milk
+    Cocoa**, **Peach Hazelnut**, **Berry Whisper Breeze**, **Smoked Terracotta**,
+    **Windblown Wheat**, **Jasmine Light Tea**, **Tennis Court Bloom**, **Carnation
+    Court**, **Dopamine Harvest**, **Vintage Magazine**, **Chapter Sixty-Five**, **Delft
+    Amethyst**, **Maple Sumac**, **Persimmon Grove**, **Forest Ember**, **Gaudi Arcade**:
+    named swatch-card extractions spanning muted neutrals, autumn foliage, and vintage
+    moodboards.
+  - *Chinese traditional blue catalogue* (designer) — **Distant Sky Blue**, **Sea Sky
+    Blue**, **Stream Stone Blue**, **Gem Blue**, **Glaze Indigo**, **Enamel Blue**: six
+    3-stop excerpts from an 18-colour 中国传统色 blue reference chart.
+  - *Bright pairing* (neon) — **Santorini Bloom**: sunflower yellow and Aegean blue from
+    a Greek island photo.
 - **43 themes** drawn from a batch of colour references, taking the library from 15 to 58.
   - *Dopamine cards* (neon) — **Crimson Pop**, **Candy Pop**, **Tangerine Rush**,
     **Honey Glow**, **Lime Surge**, **Aqua Surge**, **Azure Rush**, **Periwinkle Drift**,
