@@ -28,12 +28,18 @@ REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 THEMES_DIR = REPO_ROOT / "themes"
 OUTPUT_PATH = REPO_ROOT / "docs" / "themes.json"
 
-# Slug -> "YYYY-MM-DD" the theme was first published. Backfilled once from the
-# release repo's git history (first commit that added each theme file), then
-# hand/script-extended: stamp new theme files with the release date when they
-# are added, alongside the CHANGELOG entry. A theme missing from this map
-# (e.g. a fresh community contribution) just gets no createdAt -- the gallery
-# sorts those last rather than guessing.
+# Slug -> full ISO 8601 timestamp (e.g. "2026-08-13T13:21:42+10:00") the
+# theme was first published. Full timestamp, not just a date: two batches
+# routinely land on the same calendar day (a theme batch and a same-day
+# follow-up fix are both "today"), and a date-only value can't tell them
+# apart -- the gallery's "Newest first" sort would silently fall back to
+# alphabetical among everything sharing that date, which is not what
+# "newest" means. Backfilled once from the release repo's git history (the
+# commit author time of the first commit that added each theme file), then
+# hand/script-extended: stamp new theme files with the actual commit time
+# when they are added, alongside the CHANGELOG entry. A theme missing from
+# this map (e.g. a fresh community contribution) just gets no createdAt --
+# the gallery sorts those last rather than guessing.
 #
 # Lives beside this script rather than under themes/ -- every other theme
 # tool (validate_themes.py, build_swatches.py, build_previews.py, CI) globs
