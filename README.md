@@ -74,6 +74,7 @@ cohesive color stories rather than raw RGB picks.
 | Swatch | Name | Colors |
 |---|---|---|
 | ![Algae Milk Cocoa trail swatch](assets/swatches/algae-milk-cocoa.svg) | Algae Milk Cocoa | `#C7D3DB` → `#A79A8A` → `#FCF7DF` → `#3E3630` |
+| ![Almond Milk trail swatch](assets/swatches/almond-milk.svg) | Almond Milk | `#696C75` → `#E3CDBA` → `#F9F8F9` |
 | ![Apricot Silk trail swatch](assets/swatches/apricot-silk.svg) | Apricot Silk | `#F2B382` → `#F8D0B0` → `#FBE3D2` → `#FFF8DD` |
 | ![Ash Blush trail swatch](assets/swatches/ash-blush.svg) | Ash Blush | `#5E6566` → `#959BA9` → `#E1C6C0` |
 | ![Ash Lilac trail swatch](assets/swatches/ash-lilac.svg) | Ash Lilac | `#363636` → `#B0A4E3` |
@@ -81,6 +82,7 @@ cohesive color stories rather than raw RGB picks.
 | ![Caramel Latte trail swatch](assets/swatches/caramel-latte.svg) | Caramel Latte | `#8D6E63` → `#D7CCC8` → `#F5F5F5` |
 | ![Carnation Court trail swatch](assets/swatches/carnation-court.svg) | Carnation Court | `#F9F2E0` → `#FDAAC0` → `#003731` |
 | ![Chapter Sixty-Five trail swatch](assets/swatches/chapter-sixty-five.svg) | Chapter Sixty-Five | `#A67E4B` → `#AB2719` → `#DDD6CE` → `#17252F` → `#602822` |
+| ![Citron Stone trail swatch](assets/swatches/citron-stone.svg) | Citron Stone | `#696C75` → `#E7E5CD` → `#E7D558` |
 | ![Clay Rose trail swatch](assets/swatches/clay-rose.svg) | Clay Rose | `#C27B7B` → `#EEAAAA` → `#F6D6D6` → `#FDEEEE` |
 | ![Cloud Indigo trail swatch](assets/swatches/cloud-indigo.svg) | Cloud Indigo | `#3949AB` → `#7986CB` → `#ECEFF1` |
 | ![Cream trail swatch](assets/swatches/cream.svg) | Cream | `#C9A876` → `#E0C79A` → `#EFDDBB` → `#F7EEDA` |
@@ -93,6 +95,7 @@ cohesive color stories rather than raw RGB picks.
 | ![Ember Dusk trail swatch](assets/swatches/ember-dusk.svg) | Ember Dusk | `#243146` → `#D97556` → `#F1AD5F` |
 | ![Enamel Blue trail swatch](assets/swatches/enamel-blue.svg) | Enamel Blue | `#15559A` → `#F7DE98` → `#144A74` |
 | ![Forest Ember trail swatch](assets/swatches/forest-ember.svg) | Forest Ember | `#872408` → `#E2782F` → `#F7D475` → `#403314` → `#4A230E` |
+| ![Forest Mist trail swatch](assets/swatches/forest-mist.svg) | Forest Mist | `#4B7043` → `#B7BF8E` → `#E7E5CD` |
 | ![Frost Blue trail swatch](assets/swatches/frost-blue.svg) | Frost Blue | `#8CC6ED` → `#C0E0F8` → `#D0E8FF` → `#EDF7FF` |
 | ![Gaudi Arcade trail swatch](assets/swatches/gaudi-arcade.svg) | Gaudi Arcade | `#CDC8B8` → `#DEA044` → `#BF8250` → `#9D473A` → `#416A81` |
 | ![Gem Blue trail swatch](assets/swatches/gem-blue.svg) | Gem Blue | `#2486B9` → `#1781B5` → `#1177B0` |
@@ -114,8 +117,10 @@ cohesive color stories rather than raw RGB picks.
 | ![Misty Blush trail swatch](assets/swatches/misty-blush.svg) | Misty Blush | `#FF6F61` → `#F8BBD0` → `#FFF8E1` |
 | ![Morandi trail swatch](assets/swatches/morandi.svg) | Morandi | `#7E8A82` → `#94918E` → `#A99E9A` → `#B3A8AE` → `#C7C4BE` |
 | ![Olive Grove trail swatch](assets/swatches/olive-grove.svg) | Olive Grove | `#8CB26C` → `#AAC576` → `#D7E9BC` → `#EEF5E9` |
+| ![Olive Linen trail swatch](assets/swatches/olive-linen.svg) | Olive Linen | `#696C75` → `#B7BF8E` → `#FEF5EE` |
 | ![Orchard Frost trail swatch](assets/swatches/orchard-frost.svg) | Orchard Frost | `#9ABF17` → `#84BF93` → `#AED9C5` → `#DDECF1` |
 | ![Orchid Whisper trail swatch](assets/swatches/orchid-whisper.svg) | Orchid Whisper | `#DBC4DE` → `#7A77B0` → `#FCE9EA` |
+| ![Pale Fern trail swatch](assets/swatches/pale-fern.svg) | Pale Fern | `#95A69C` → `#E7E5CD` → `#FEF5EE` |
 | ![Peach trail swatch](assets/swatches/peach.svg) | Peach | `#E68A5E` → `#F4B98E` → `#FBDDC2` |
 | ![Peach Hazelnut trail swatch](assets/swatches/peach-hazelnut.svg) | Peach Hazelnut | `#78A5CE` → `#FFF0D9` → `#DDA4B4` → `#7C5549` |
 | ![Periwinkle Hush trail swatch](assets/swatches/periwinkle-hush.svg) | Periwinkle Hush | `#B0AFD7` → `#DBC4DE` → `#7A77B0` |
@@ -126,8 +131,11 @@ cohesive color stories rather than raw RGB picks.
 | ![Rose Gold trail swatch](assets/swatches/rose-gold.svg) | Rose Gold | `#FF4777` → `#FBDC92` |
 | ![Rose Powder trail swatch](assets/swatches/rose-powder.svg) | Rose Powder | `#F0A0A0` → `#F8C8C8` → `#FBE6E6` → `#FFF5F5` |
 | ![Rose Toast trail swatch](assets/swatches/rose-toast.svg) | Rose Toast | `#D9A7B0` → `#F4E8DB` → `#EBC5C9` → `#A67C6B` → `#5A2F3A` |
+| ![Sage Olive trail swatch](assets/swatches/sage-olive.svg) | Sage Olive | `#95A69C` → `#B7BF8E` → `#FEF5EE` |
+| ![Sage Shore trail swatch](assets/swatches/sage-shore.svg) | Sage Shore | `#4B7043` → `#95A69C` → `#F9F8F9` |
 | ![Sage Whisper trail swatch](assets/swatches/sage-whisper.svg) | Sage Whisper | `#C2E2C2` → `#CDE5CD` → `#DCE9DC` → `#E8EEDC` |
 | ![Sakura trail swatch](assets/swatches/sakura.svg) | Sakura | `#E39BB4` → `#F2B8CE` → `#F9D3E1` → `#FCEDF2` |
+| ![Sand Sage trail swatch](assets/swatches/sand-sage.svg) | Sand Sage | `#95A69C` → `#E3CDBA` → `#FEF5EE` |
 | ![Sapphire Sprout trail swatch](assets/swatches/sapphire-sprout.svg) | Sapphire Sprout | `#053154` → `#BCE672` |
 | ![Sea Sky Blue trail swatch](assets/swatches/sea-sky-blue.svg) | Sea Sky Blue | `#C6E6E8` → `#B0D5DF` → `#8ABCD1` |
 | ![Sky Wash trail swatch](assets/swatches/sky-wash.svg) | Sky Wash | `#7EBCF5` → `#98C9F1` → `#B4DCEC` → `#D0ECE9` |

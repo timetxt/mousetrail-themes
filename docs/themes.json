@@ -43,6 +43,39 @@
       "createdAt": "2026-08-13T12:12:47+10:00"
     },
     {
+      "id": "theme-themes-official-designer-almond-milk",
+      "name": "Almond Milk",
+      "collection": "designer",
+      "path": "themes/official/designer/almond-milk.json",
+      "stops": [
+        {
+          "alpha": 1,
+          "blue": 0.4588235294117647,
+          "green": 0.4235294117647059,
+          "location": 0.0,
+          "red": 0.4117647058823529
+        },
+        {
+          "alpha": 1,
+          "blue": 0.7294117647058823,
+          "green": 0.803921568627451,
+          "location": 0.5,
+          "red": 0.8901960784313725
+        },
+        {
+          "alpha": 1,
+          "blue": 0.9764705882352941,
+          "green": 0.9725490196078431,
+          "location": 1.0,
+          "red": 0.9764705882352941
+        }
+      ],
+      "lifetime": 0.6,
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-almond-milk.svg",
+      "createdAt": "2026-08-18T03:31:57+10:00"
+    },
+    {
       "id": "theme-themes-official-designer-apricot-silk",
       "name": "Apricot Silk",
       "collection": "designer",
@@ -293,6 +326,39 @@
       "widthScale": 1.0,
       "preview": "assets/previews/theme-themes-official-designer-chapter-sixty-five.svg",
       "createdAt": "2026-08-13T12:12:47+10:00"
+    },
+    {
+      "id": "theme-themes-official-designer-citron-stone",
+      "name": "Citron Stone",
+      "collection": "designer",
+      "path": "themes/official/designer/citron-stone.json",
+      "stops": [
+        {
+          "alpha": 1,
+          "blue": 0.4588235294117647,
+          "green": 0.4235294117647059,
+          "location": 0.0,
+          "red": 0.4117647058823529
+        },
+        {
+          "alpha": 1,
+          "blue": 0.803921568627451,
+          "green": 0.8980392156862745,
+          "location": 0.5,
+          "red": 0.9058823529411765
+        },
+        {
+          "alpha": 1,
+          "blue": 0.34509803921568627,
+          "green": 0.8352941176470589,
+          "location": 1.0,
+          "red": 0.9058823529411765
+        }
+      ],
+      "lifetime": 0.6,
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-citron-stone.svg",
+      "createdAt": "2026-08-18T03:31:57+10:00"
     },
     {
       "id": "theme-themes-official-designer-clay-rose",
@@ -766,6 +832,39 @@
       "widthScale": 1.0,
       "preview": "assets/previews/theme-themes-official-designer-forest-ember.svg",
       "createdAt": "2026-08-13T12:12:47+10:00"
+    },
+    {
+      "id": "theme-themes-official-designer-forest-mist",
+      "name": "Forest Mist",
+      "collection": "designer",
+      "path": "themes/official/designer/forest-mist.json",
+      "stops": [
+        {
+          "alpha": 1,
+          "blue": 0.2627450980392157,
+          "green": 0.4392156862745098,
+          "location": 0.0,
+          "red": 0.29411764705882354
+        },
+        {
+          "alpha": 1,
+          "blue": 0.5568627450980392,
+          "green": 0.7490196078431373,
+          "location": 0.5,
+          "red": 0.7176470588235294
+        },
+        {
+          "alpha": 1,
+          "blue": 0.803921568627451,
+          "green": 0.8980392156862745,
+          "location": 1.0,
+          "red": 0.9058823529411765
+        }
+      ],
+      "lifetime": 0.6,
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-forest-mist.svg",
+      "createdAt": "2026-08-18T03:31:57+10:00"
     },
     {
       "id": "theme-themes-official-designer-frost-blue",
@@ -1552,6 +1651,39 @@
       "createdAt": "2026-08-02T11:22:56+10:00"
     },
     {
+      "id": "theme-themes-official-designer-olive-linen",
+      "name": "Olive Linen",
+      "collection": "designer",
+      "path": "themes/official/designer/olive-linen.json",
+      "stops": [
+        {
+          "alpha": 1,
+          "blue": 0.4588235294117647,
+          "green": 0.4235294117647059,
+          "location": 0.0,
+          "red": 0.4117647058823529
+        },
+        {
+          "alpha": 1,
+          "blue": 0.5568627450980392,
+          "green": 0.7490196078431373,
+          "location": 0.5,
+          "red": 0.7176470588235294
+        },
+        {
+          "alpha": 1,
+          "blue": 0.9333333333333333,
+          "green": 0.9607843137254902,
+          "location": 1.0,
+          "red": 0.996078431372549
+        }
+      ],
+      "lifetime": 0.6,
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-olive-linen.svg",
+      "createdAt": "2026-08-18T03:31:57+10:00"
+    },
+    {
       "id": "theme-themes-official-designer-orchard-frost",
       "name": "Orchard Frost",
       "collection": "designer",
@@ -1623,6 +1755,39 @@
       "widthScale": 1.0,
       "preview": "assets/previews/theme-themes-official-designer-orchid-whisper.svg",
       "createdAt": "2026-08-13T12:12:47+10:00"
+    },
+    {
+      "id": "theme-themes-official-designer-pale-fern",
+      "name": "Pale Fern",
+      "collection": "designer",
+      "path": "themes/official/designer/pale-fern.json",
+      "stops": [
+        {
+          "alpha": 1,
+          "blue": 0.611764705882353,
+          "green": 0.6509803921568628,
+          "location": 0.0,
+          "red": 0.5843137254901961
+        },
+        {
+          "alpha": 1,
+          "blue": 0.803921568627451,
+          "green": 0.8980392156862745,
+          "location": 0.5,
+          "red": 0.9058823529411765
+        },
+        {
+          "alpha": 1,
+          "blue": 0.9333333333333333,
+          "green": 0.9607843137254902,
+          "location": 1.0,
+          "red": 0.996078431372549
+        }
+      ],
+      "lifetime": 0.6,
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-pale-fern.svg",
+      "createdAt": "2026-08-18T03:31:57+10:00"
     },
     {
       "id": "theme-themes-official-designer-peach-hazelnut",
@@ -1997,6 +2162,72 @@
       "createdAt": "2026-08-13T13:21:42+10:00"
     },
     {
+      "id": "theme-themes-official-designer-sage-olive",
+      "name": "Sage Olive",
+      "collection": "designer",
+      "path": "themes/official/designer/sage-olive.json",
+      "stops": [
+        {
+          "alpha": 1,
+          "blue": 0.611764705882353,
+          "green": 0.6509803921568628,
+          "location": 0.0,
+          "red": 0.5843137254901961
+        },
+        {
+          "alpha": 1,
+          "blue": 0.5568627450980392,
+          "green": 0.7490196078431373,
+          "location": 0.5,
+          "red": 0.7176470588235294
+        },
+        {
+          "alpha": 1,
+          "blue": 0.9333333333333333,
+          "green": 0.9607843137254902,
+          "location": 1.0,
+          "red": 0.996078431372549
+        }
+      ],
+      "lifetime": 0.6,
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-sage-olive.svg",
+      "createdAt": "2026-08-18T03:31:57+10:00"
+    },
+    {
+      "id": "theme-themes-official-designer-sage-shore",
+      "name": "Sage Shore",
+      "collection": "designer",
+      "path": "themes/official/designer/sage-shore.json",
+      "stops": [
+        {
+          "alpha": 1,
+          "blue": 0.2627450980392157,
+          "green": 0.4392156862745098,
+          "location": 0.0,
+          "red": 0.29411764705882354
+        },
+        {
+          "alpha": 1,
+          "blue": 0.611764705882353,
+          "green": 0.6509803921568628,
+          "location": 0.5,
+          "red": 0.5843137254901961
+        },
+        {
+          "alpha": 1,
+          "blue": 0.9764705882352941,
+          "green": 0.9725490196078431,
+          "location": 1.0,
+          "red": 0.9764705882352941
+        }
+      ],
+      "lifetime": 0.6,
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-sage-shore.svg",
+      "createdAt": "2026-08-18T03:31:57+10:00"
+    },
+    {
       "id": "theme-themes-official-designer-sage-whisper",
       "name": "Sage Whisper",
       "collection": "designer",
@@ -2075,6 +2306,39 @@
       "widthScale": 1.0,
       "preview": "assets/previews/theme-themes-official-designer-sakura.svg",
       "createdAt": "2026-07-20T20:06:26+10:00"
+    },
+    {
+      "id": "theme-themes-official-designer-sand-sage",
+      "name": "Sand Sage",
+      "collection": "designer",
+      "path": "themes/official/designer/sand-sage.json",
+      "stops": [
+        {
+          "alpha": 1,
+          "blue": 0.611764705882353,
+          "green": 0.6509803921568628,
+          "location": 0.0,
+          "red": 0.5843137254901961
+        },
+        {
+          "alpha": 1,
+          "blue": 0.7294117647058823,
+          "green": 0.803921568627451,
+          "location": 0.5,
+          "red": 0.8901960784313725
+        },
+        {
+          "alpha": 1,
+          "blue": 0.9333333333333333,
+          "green": 0.9607843137254902,
+          "location": 1.0,
+          "red": 0.996078431372549
+        }
+      ],
+      "lifetime": 0.6,
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-sand-sage.svg",
+      "createdAt": "2026-08-18T03:31:57+10:00"
     },
     {
       "id": "theme-themes-official-designer-sapphire-sprout",

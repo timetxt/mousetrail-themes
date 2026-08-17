@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Almond Milk** (`themes/official/designer/almond-milk.json`) — a seventh-patch 3-colour Xiaohongshu palette card, tail-to-head in the card's own order.
+- **Citron Stone** (`themes/official/designer/citron-stone.json`) — a seventh-patch 3-colour Xiaohongshu palette card, tail-to-head in the card's own order.
+- **Forest Mist** (`themes/official/designer/forest-mist.json`) — a seventh-patch 3-colour Xiaohongshu palette card, tail-to-head in the card's own order.
+- **Olive Linen** (`themes/official/designer/olive-linen.json`) — a seventh-patch 3-colour Xiaohongshu palette card, tail-to-head in the card's own order.
+- **Pale Fern** (`themes/official/designer/pale-fern.json`) — a seventh-patch 3-colour Xiaohongshu palette card, tail-to-head in the card's own order.
+- **Sage Olive** (`themes/official/designer/sage-olive.json`) — a seventh-patch 3-colour Xiaohongshu palette card, tail-to-head in the card's own order.
+- **Sage Shore** (`themes/official/designer/sage-shore.json`) — a seventh-patch 3-colour Xiaohongshu palette card, tail-to-head in the card's own order.
+- **Sand Sage** (`themes/official/designer/sand-sage.json`) — a seventh-patch 3-colour Xiaohongshu palette card, tail-to-head in the card's own order.
 
 - **Unripe Mango** (`themes/official/designer/unripe-mango.json`) — a sixth-patch
   Xiaohongshu colour card ("未成熟的芒果世界") naming Jade, Ocean, Pigeon, Missing,
