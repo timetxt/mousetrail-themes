@@ -78,6 +78,7 @@ cohesive color stories rather than raw RGB picks.
 | ![Apricot Silk trail swatch](assets/swatches/apricot-silk.svg) | Apricot Silk | `#F2B382` → `#F8D0B0` → `#FBE3D2` → `#FFF8DD` |
 | ![Ash Blush trail swatch](assets/swatches/ash-blush.svg) | Ash Blush | `#5E6566` → `#959BA9` → `#E1C6C0` |
 | ![Ash Lilac trail swatch](assets/swatches/ash-lilac.svg) | Ash Lilac | `#363636` → `#B0A4E3` |
+| ![Berry Parfait trail swatch](assets/swatches/berry-parfait.svg) | Berry Parfait | `#BF2B5C` → `#B37BC6` → `#EF95B1` → `#BEACCC` |
 | ![Berry Whisper Breeze trail swatch](assets/swatches/berry-whisper-breeze.svg) | Berry Whisper Breeze | `#FFD3D4` → `#D5EBE4` → `#F8F4E8` → `#775C56` |
 | ![Caramel Latte trail swatch](assets/swatches/caramel-latte.svg) | Caramel Latte | `#8D6E63` → `#D7CCC8` → `#F5F5F5` |
 | ![Carnation Court trail swatch](assets/swatches/carnation-court.svg) | Carnation Court | `#F9F2E0` → `#FDAAC0` → `#003731` |
@@ -92,6 +93,7 @@ cohesive color stories rather than raw RGB picks.
 | ![Distant Sky Blue trail swatch](assets/swatches/distant-sky-blue.svg) | Distant Sky Blue | `#D0DFE6` → `#C3D7DF` → `#BACCD9` |
 | ![Dopamine Harvest trail swatch](assets/swatches/dopamine-harvest.svg) | Dopamine Harvest | `#DCD7D5` → `#FAB449` → `#61911C` → `#2B3C56` → `#633D13` |
 | ![Dusk Corsage trail swatch](assets/swatches/dusk-corsage.svg) | Dusk Corsage | `#DBC4DE` → `#FCE9EA` → `#5960A4` |
+| ![Elderberry trail swatch](assets/swatches/elderberry.svg) | Elderberry | `#AD2B79` → `#BF5CA1` → `#CE9FBB` → `#EFBB95` |
 | ![Ember Dusk trail swatch](assets/swatches/ember-dusk.svg) | Ember Dusk | `#243146` → `#D97556` → `#F1AD5F` |
 | ![Enamel Blue trail swatch](assets/swatches/enamel-blue.svg) | Enamel Blue | `#15559A` → `#F7DE98` → `#144A74` |
 | ![Forest Ember trail swatch](assets/swatches/forest-ember.svg) | Forest Ember | `#872408` → `#E2782F` → `#F7D475` → `#403314` → `#4A230E` |
@@ -100,8 +102,10 @@ cohesive color stories rather than raw RGB picks.
 | ![Gaudi Arcade trail swatch](assets/swatches/gaudi-arcade.svg) | Gaudi Arcade | `#CDC8B8` → `#DEA044` → `#BF8250` → `#9D473A` → `#416A81` |
 | ![Gem Blue trail swatch](assets/swatches/gem-blue.svg) | Gem Blue | `#2486B9` → `#1781B5` → `#1177B0` |
 | ![Glaze Indigo trail swatch](assets/swatches/glaze-indigo.svg) | Glaze Indigo | `#126BAE` → `#1661AB` → `#0F59A4` |
+| ![Grape Cream trail swatch](assets/swatches/grape-cream.svg) | Grape Cream | `#E23B7B` → `#CC6EC3` → `#EAA0B1` → `#FFD7F3` |
 | ![Harbor Mist trail swatch](assets/swatches/harbor-mist.svg) | Harbor Mist | `#5A97D0` → `#79B0D7` → `#A0C8E8` → `#C6E0F2` |
 | ![Harvest Slate trail swatch](assets/swatches/harvest-slate.svg) | Harvest Slate | `#3E5770` → `#F1AD5F` → `#D3D2BF` |
+| ![Hibiscus Ice trail swatch](assets/swatches/hibiscus-ice.svg) | Hibiscus Ice | `#A55E91` → `#D0B8C4` → `#BDF3F9` |
 | ![Indigo Garden trail swatch](assets/swatches/indigo-garden.svg) | Indigo Garden | `#5960A4` → `#A6D3A2` → `#C7CDE8` |
 | ![Indigo Mint trail swatch](assets/swatches/indigo-mint.svg) | Indigo Mint | `#7A77B0` → `#5960A4` → `#A4D6C1` |
 | ![Jasmine Light Tea trail swatch](assets/swatches/jasmine-light-tea.svg) | Jasmine Light Tea | `#F4F8F4` → `#DCE8DC` → `#C4D8C4` → `#8AA88A` |
@@ -116,6 +120,7 @@ cohesive color stories rather than raw RGB picks.
 | ![Meadow Tide trail swatch](assets/swatches/meadow-tide.svg) | Meadow Tide | `#90BFCF` → `#AFD1BF` → `#CFE5BB` → `#E0EEB8` |
 | ![Misty Blush trail swatch](assets/swatches/misty-blush.svg) | Misty Blush | `#FF6F61` → `#F8BBD0` → `#FFF8E1` |
 | ![Morandi trail swatch](assets/swatches/morandi.svg) | Morandi | `#7E8A82` → `#94918E` → `#A99E9A` → `#B3A8AE` → `#C7C4BE` |
+| ![Mulberry Mist trail swatch](assets/swatches/mulberry-mist.svg) | Mulberry Mist | `#835AAF` → `#A88DE2` → `#DBCCFF` → `#DEE6EE` |
 | ![Olive Grove trail swatch](assets/swatches/olive-grove.svg) | Olive Grove | `#8CB26C` → `#AAC576` → `#D7E9BC` → `#EEF5E9` |
 | ![Olive Linen trail swatch](assets/swatches/olive-linen.svg) | Olive Linen | `#696C75` → `#B7BF8E` → `#FEF5EE` |
 | ![Orchard Frost trail swatch](assets/swatches/orchard-frost.svg) | Orchard Frost | `#9ABF17` → `#84BF93` → `#AED9C5` → `#DDECF1` |
@@ -123,10 +128,12 @@ cohesive color stories rather than raw RGB picks.
 | ![Pale Fern trail swatch](assets/swatches/pale-fern.svg) | Pale Fern | `#95A69C` → `#E7E5CD` → `#FEF5EE` |
 | ![Peach trail swatch](assets/swatches/peach.svg) | Peach | `#E68A5E` → `#F4B98E` → `#FBDDC2` |
 | ![Peach Hazelnut trail swatch](assets/swatches/peach-hazelnut.svg) | Peach Hazelnut | `#78A5CE` → `#FFF0D9` → `#DDA4B4` → `#7C5549` |
+| ![Perilla Plum trail swatch](assets/swatches/perilla-plum.svg) | Perilla Plum | `#824B75` → `#B26079` → `#E595D4` → `#EAD6E3` |
 | ![Periwinkle Hush trail swatch](assets/swatches/periwinkle-hush.svg) | Periwinkle Hush | `#B0AFD7` → `#DBC4DE` → `#7A77B0` |
 | ![Persimmon Grove trail swatch](assets/swatches/persimmon-grove.svg) | Persimmon Grove | `#62768E` → `#91C0EF` → `#F7C97F` → `#E87425` → `#571801` |
 | ![Pine Glade trail swatch](assets/swatches/pine-glade.svg) | Pine Glade | `#4CAF50` → `#81C784` → `#E8F5E9` |
 | ![Pine Ivory trail swatch](assets/swatches/pine-ivory.svg) | Pine Ivory | `#0A3D2E` → `#FFD9D1` |
+| ![Purple Cabbage trail swatch](assets/swatches/purple-cabbage.svg) | Purple Cabbage | `#977DB2` → `#BC7DAC` → `#A3AAE5` → `#B5EBF4` |
 | ![Reverie trail swatch](assets/swatches/reverie.svg) | Reverie | `#B883D3` → `#C4A5DE` → `#A1A9D0` → `#96CCCB` → `#CFEAF1` |
 | ![Rose Gold trail swatch](assets/swatches/rose-gold.svg) | Rose Gold | `#FF4777` → `#FBDC92` |
 | ![Rose Powder trail swatch](assets/swatches/rose-powder.svg) | Rose Powder | `#F0A0A0` → `#F8C8C8` → `#FBE6E6` → `#FFF5F5` |
@@ -145,14 +152,17 @@ cohesive color stories rather than raw RGB picks.
 | ![Spring Dew trail swatch](assets/swatches/spring-dew.svg) | Spring Dew | `#B2D990` → `#B9DDCF` → `#C1E9E9` → `#E5F1E5` |
 | ![Stone Tide trail swatch](assets/swatches/stone-tide.svg) | Stone Tide | `#3E5770` → `#5E6566` → `#D3D2BF` |
 | ![Stream Stone Blue trail swatch](assets/swatches/stream-stone-blue.svg) | Stream Stone Blue | `#66A9C9` → `#619AC3` → `#5698C3` |
+| ![Taro Cream trail swatch](assets/swatches/taro-cream.svg) | Taro Cream | `#D16598` → `#D893CF` → `#A9A7E8` → `#EBE7DD` |
 | ![Teal Blossom trail swatch](assets/swatches/teal-blossom.svg) | Teal Blossom | `#024D62` → `#FCE9EA` → `#DBC4DE` |
 | ![Tennis Court Bloom trail swatch](assets/swatches/tennis-court-bloom.svg) | Tennis Court Bloom | `#FFE5F4` → `#5E8D66` → `#F1A6BC` → `#022414` |
 | ![Tiffany trail swatch](assets/swatches/tiffany.svg) | Tiffany | `#2E9A94` → `#57BDB5` → `#86D4CD` → `#C0E8E0` → `#EDE6D6` |
 | ![Unripe Mango trail swatch](assets/swatches/unripe-mango.svg) | Unripe Mango | `#04044D` → `#102A01` → `#B59F7B` → `#C7BAA5` |
 | ![Vintage Magazine trail swatch](assets/swatches/vintage-magazine.svg) | Vintage Magazine | `#D3AB78` → `#98341F` → `#DACABF` → `#E19956` → `#4A3934` |
+| ![Violet Cream trail swatch](assets/swatches/violet-cream.svg) | Violet Cream | `#B377BC` → `#E8A0E3` → `#FF8A9E` → `#FFD9E4` |
 | ![Windblown Wheat trail swatch](assets/swatches/windblown-wheat.svg) | Windblown Wheat | `#F7F4ED` → `#C7D3C0` → `#C8A96B` → `#8FA28A` |
 | ![Windmill Meadow trail swatch](assets/swatches/windmill-meadow.svg) | Windmill Meadow | `#4A79B8` → `#E3E6EA` → `#E6D6C3` → `#687C45` → `#1E2A13` |
 | ![Wisteria Veil trail swatch](assets/swatches/wisteria-veil.svg) | Wisteria Veil | `#897CD3` → `#9898DC` → `#B8BBE7` → `#D8DEF7` |
+
 
 ### Neon
 
@@ -195,6 +205,7 @@ Bright, saturated multi-stop gradients in `themes/official/neon/`, including the
 | ![Ultraviolet Bloom trail swatch](assets/swatches/ultraviolet-bloom.svg) | Ultraviolet Bloom | `#5F03A8` → `#A25CFF` → `#C99AFF` → `#E0BAFF` |
 | ![Verdant Pulse trail swatch](assets/swatches/verdant-pulse.svg) | Verdant Pulse | `#152C14` → `#00313F` → `#AFFDAB` |
 | ![Voltage trail swatch](assets/swatches/voltage.svg) | Voltage | `#3C3C3C` → `#8000FF` → `#FF0080` → `#FFDE00` |
+
 
 ### Community
 

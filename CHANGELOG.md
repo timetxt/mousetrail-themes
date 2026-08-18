@@ -8,6 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Berry Parfait** (`themes/official/designer/berry-parfait.json`) — an eighth-patch 4-colour Xiaohongshu palette card, tail-to-head in the card's own order.
+- **Elderberry** (`themes/official/designer/elderberry.json`) — an eighth-patch 4-colour Xiaohongshu palette card, tail-to-head in the card's own order.
+- **Grape Cream** (`themes/official/designer/grape-cream.json`) — an eighth-patch 4-colour Xiaohongshu palette card, tail-to-head in the card's own order.
+- **Hibiscus Ice** (`themes/official/designer/hibiscus-ice.json`) — an eighth-patch 4-colour Xiaohongshu palette card, tail-to-head in the card's own order.
+- **Mulberry Mist** (`themes/official/designer/mulberry-mist.json`) — an eighth-patch 4-colour Xiaohongshu palette card, tail-to-head in the card's own order.
+- **Perilla Plum** (`themes/official/designer/perilla-plum.json`) — an eighth-patch 4-colour Xiaohongshu palette card, tail-to-head in the card's own order.
+- **Purple Cabbage** (`themes/official/designer/purple-cabbage.json`) — an eighth-patch 4-colour Xiaohongshu palette card, tail-to-head in the card's own order.
+- **Taro Cream** (`themes/official/designer/taro-cream.json`) — an eighth-patch 4-colour Xiaohongshu palette card, tail-to-head in the card's own order.
+- **Violet Cream** (`themes/official/designer/violet-cream.json`) — an eighth-patch 4-colour Xiaohongshu palette card, tail-to-head in the card's own order.
 - **Almond Milk** (`themes/official/designer/almond-milk.json`) — a seventh-patch 3-colour Xiaohongshu palette card, tail-to-head in the card's own order.
 - **Citron Stone** (`themes/official/designer/citron-stone.json`) — a seventh-patch 3-colour Xiaohongshu palette card, tail-to-head in the card's own order.
 - **Forest Mist** (`themes/official/designer/forest-mist.json`) — a seventh-patch 3-colour Xiaohongshu palette card, tail-to-head in the card's own order.
