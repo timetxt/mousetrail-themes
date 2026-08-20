@@ -166,6 +166,7 @@ cohesive color stories rather than raw RGB picks.
 | ![Violet Cream trail swatch](assets/swatches/violet-cream.svg) | Violet Cream | `#B377BC` → `#E8A0E3` → `#FF8A9E` → `#FFD9E4` |
 | ![Windblown Wheat trail swatch](assets/swatches/windblown-wheat.svg) | Windblown Wheat | `#F7F4ED` → `#C7D3C0` → `#C8A96B` → `#8FA28A` |
 | ![Windmill Meadow trail swatch](assets/swatches/windmill-meadow.svg) | Windmill Meadow | `#4A79B8` → `#E3E6EA` → `#E6D6C3` → `#687C45` → `#1E2A13` |
+| ![Winter Mist trail swatch](assets/swatches/winter-mist.svg) | Winter Mist | `#021729` → `#1C405F` → `#6395BA` → `#B4D9EB` → `#DAEEF7` |
 | ![Wisteria Veil trail swatch](assets/swatches/wisteria-veil.svg) | Wisteria Veil | `#897CD3` → `#9898DC` → `#B8BBE7` → `#D8DEF7` |
 
 

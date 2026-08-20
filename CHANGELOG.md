@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Winter Mist** (`themes/official/designer/winter-mist.json`) — a tenth-patch 5-colour Xiaohongshu palette card ("雪山雾林蓝调" snow-mountain misty-forest blue), tail-to-head dark navy to icy blue.
 - **Pine Frost** (`themes/official/designer/pine-frost.json`) — a ninth-patch 5-colour Xiaohongshu cold-grey palette card (Damian Adasik's snowdrift-pines series), tail-to-head dark navy to light blue.
 - **Monsoon Hush** (`themes/official/designer/monsoon-hush.json`) — a ninth-patch 5-colour Xiaohongshu cold-grey palette card (caitiecolors' rain-storm scene), tail-to-head dark navy to light blue.
 - **Glacial Lake** (`themes/official/designer/glacial-lake.json`) — a ninth-patch 5-colour Xiaohongshu cold-grey palette card (winter-lake series), tail-to-head deep navy to frost white.
