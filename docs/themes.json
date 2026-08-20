@@ -510,7 +510,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-coral-drift.svg"
+      "preview": "assets/previews/theme-themes-official-designer-coral-drift.svg",
+      "createdAt": "2026-08-20T15:27:12+10:00"
     },
     {
       "id": "theme-themes-official-designer-cream",
@@ -949,7 +950,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-fjord-marble.svg"
+      "preview": "assets/previews/theme-themes-official-designer-fjord-marble.svg",
+      "createdAt": "2026-08-20T15:27:12+10:00"
     },
     {
       "id": "theme-themes-official-designer-forest-ember",
@@ -1195,7 +1197,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-glacial-lake.svg"
+      "preview": "assets/previews/theme-themes-official-designer-glacial-lake.svg",
+      "createdAt": "2026-08-20T15:27:12+10:00"
     },
     {
       "id": "theme-themes-official-designer-glaze-indigo",
@@ -1891,7 +1894,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-monsoon-hush.svg"
+      "preview": "assets/previews/theme-themes-official-designer-monsoon-hush.svg",
+      "createdAt": "2026-08-20T15:27:12+10:00"
     },
     {
       "id": "theme-themes-official-designer-morandi",
@@ -2396,7 +2400,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-designer-pine-frost.svg"
+      "preview": "assets/previews/theme-themes-official-designer-pine-frost.svg",
+      "createdAt": "2026-08-20T15:27:12+10:00"
     },
     {
       "id": "theme-themes-official-designer-pine-glade",
@@ -3932,7 +3937,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-cabana-stripe.svg"
+      "preview": "assets/previews/theme-themes-official-neon-cabana-stripe.svg",
+      "createdAt": "2026-08-20T15:27:12+10:00"
     },
     {
       "id": "theme-themes-official-neon-candy-pop",
@@ -4037,7 +4043,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-clementine-breeze.svg"
+      "preview": "assets/previews/theme-themes-official-neon-clementine-breeze.svg",
+      "createdAt": "2026-08-20T15:27:12+10:00"
     },
     {
       "id": "theme-themes-official-neon-crimson-pop",
@@ -4542,7 +4549,8 @@
       ],
       "lifetime": 0.6,
       "widthScale": 1.0,
-      "preview": "assets/previews/theme-themes-official-neon-mojave-glow.svg"
+      "preview": "assets/previews/theme-themes-official-neon-mojave-glow.svg",
+      "createdAt": "2026-08-20T15:27:12+10:00"
     },
     {
       "id": "theme-themes-official-neon-neon-iris",
