@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Pine Frost** (`themes/official/designer/pine-frost.json`) — a ninth-patch 5-colour Xiaohongshu cold-grey palette card (Damian Adasik's snowdrift-pines series), tail-to-head dark navy to light blue.
+- **Monsoon Hush** (`themes/official/designer/monsoon-hush.json`) — a ninth-patch 5-colour Xiaohongshu cold-grey palette card (caitiecolors' rain-storm scene), tail-to-head dark navy to light blue.
+- **Glacial Lake** (`themes/official/designer/glacial-lake.json`) — a ninth-patch 5-colour Xiaohongshu cold-grey palette card (winter-lake series), tail-to-head deep navy to frost white.
+- **Fjord Marble** (`themes/official/designer/fjord-marble.json`) — a ninth-patch 5-colour Xiaohongshu cold-grey palette card (Damian Adasik's marble texture), tail-to-head deep navy to light blue.
+- **Coral Drift** (`themes/official/designer/coral-drift.json`) — a ninth-patch 4-colour Xiaohongshu coastal palette card (Puff Daily's sparkling-sea series), tail-to-head sunset coral to drift sand.
+- **Cabana Stripe** (`themes/official/neon/cabana-stripe.json`) — a ninth-patch 4-colour Xiaohongshu coastal palette card (The Social Inclusive's beach-umbrella series), tail-to-head dark seafoam to sand with a saturated red accent.
+- **Mojave Glow** (`themes/official/neon/mojave-glow.json`) — a ninth-patch 3-colour Xiaohongshu Mediterranean palette card (hotdom's southern-sunlight series), tail-to-head terracotta glow to sunwashed cream with a pale-blue horizon.
+- **Clementine Breeze** (`themes/official/neon/clementine-breeze.json`) — a ninth-patch 3-colour Xiaohongshu Mediterranean palette card (hotdom's southern-sunlight series), tail-to-head carrot orange to alabaster with a light-steel-blue mid.
 - **Berry Parfait** (`themes/official/designer/berry-parfait.json`) — an eighth-patch 4-colour Xiaohongshu palette card, tail-to-head in the card's own order.
 - **Elderberry** (`themes/official/designer/elderberry.json`) — an eighth-patch 4-colour Xiaohongshu palette card, tail-to-head in the card's own order.
 - **Grape Cream** (`themes/official/designer/grape-cream.json`) — an eighth-patch 4-colour Xiaohongshu palette card, tail-to-head in the card's own order.

@@ -474,6 +474,45 @@
       "createdAt": "2026-08-02T11:22:56+10:00"
     },
     {
+      "id": "theme-themes-official-designer-coral-drift",
+      "name": "Coral Drift",
+      "collection": "designer",
+      "path": "themes/official/designer/coral-drift.json",
+      "stops": [
+        {
+          "alpha": 1,
+          "blue": 0.25098039215686274,
+          "green": 0.2823529411764706,
+          "location": 0.0,
+          "red": 0.788235294117647
+        },
+        {
+          "alpha": 1,
+          "blue": 0.6509803921568628,
+          "green": 0.5764705882352941,
+          "location": 0.3333333333333333,
+          "red": 0.38823529411764707
+        },
+        {
+          "alpha": 1,
+          "blue": 0.7764705882352941,
+          "green": 0.7372549019607844,
+          "location": 0.6666666666666666,
+          "red": 0.6392156862745098
+        },
+        {
+          "alpha": 1,
+          "blue": 0.788235294117647,
+          "green": 0.8274509803921568,
+          "location": 1.0,
+          "red": 0.8901960784313725
+        }
+      ],
+      "lifetime": 0.6,
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-coral-drift.svg"
+    },
+    {
       "id": "theme-themes-official-designer-cream",
       "name": "Cream",
       "collection": "designer",
@@ -867,6 +906,52 @@
       "createdAt": "2026-08-13T12:12:47+10:00"
     },
     {
+      "id": "theme-themes-official-designer-fjord-marble",
+      "name": "Fjord Marble",
+      "collection": "designer",
+      "path": "themes/official/designer/fjord-marble.json",
+      "stops": [
+        {
+          "alpha": 1,
+          "blue": 0.23921568627450981,
+          "green": 0.16470588235294117,
+          "location": 0.0,
+          "red": 0.0
+        },
+        {
+          "alpha": 1,
+          "blue": 0.4235294117647059,
+          "green": 0.3137254901960784,
+          "location": 0.25,
+          "red": 0.1843137254901961
+        },
+        {
+          "alpha": 1,
+          "blue": 0.6431372549019608,
+          "green": 0.49019607843137253,
+          "location": 0.5,
+          "red": 0.3411764705882353
+        },
+        {
+          "alpha": 1,
+          "blue": 0.7803921568627451,
+          "green": 0.611764705882353,
+          "location": 0.75,
+          "red": 0.45098039215686275
+        },
+        {
+          "alpha": 1,
+          "blue": 0.8352941176470589,
+          "green": 0.7372549019607844,
+          "location": 1.0,
+          "red": 0.6313725490196078
+        }
+      ],
+      "lifetime": 0.6,
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-fjord-marble.svg"
+    },
+    {
       "id": "theme-themes-official-designer-forest-ember",
       "name": "Forest Ember",
       "collection": "designer",
@@ -1065,6 +1150,52 @@
       "widthScale": 1.0,
       "preview": "assets/previews/theme-themes-official-designer-gem-blue.svg",
       "createdAt": "2026-08-13T12:12:47+10:00"
+    },
+    {
+      "id": "theme-themes-official-designer-glacial-lake",
+      "name": "Glacial Lake",
+      "collection": "designer",
+      "path": "themes/official/designer/glacial-lake.json",
+      "stops": [
+        {
+          "alpha": 1,
+          "blue": 0.2901960784313726,
+          "green": 0.19215686274509805,
+          "location": 0.0,
+          "red": 0.11764705882352941
+        },
+        {
+          "alpha": 1,
+          "blue": 0.5882352941176471,
+          "green": 0.5411764705882353,
+          "location": 0.25,
+          "red": 0.4980392156862745
+        },
+        {
+          "alpha": 1,
+          "blue": 0.9098039215686274,
+          "green": 0.7843137254901961,
+          "location": 0.5,
+          "red": 0.6549019607843137
+        },
+        {
+          "alpha": 1,
+          "blue": 0.8588235294117647,
+          "green": 0.8235294117647058,
+          "location": 0.75,
+          "red": 0.7843137254901961
+        },
+        {
+          "alpha": 1,
+          "blue": 1.0,
+          "green": 0.9803921568627451,
+          "location": 1.0,
+          "red": 0.9647058823529412
+        }
+      ],
+      "lifetime": 0.6,
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-glacial-lake.svg"
     },
     {
       "id": "theme-themes-official-designer-glaze-indigo",
@@ -1717,6 +1848,52 @@
       "createdAt": "2026-08-02T11:22:56+10:00"
     },
     {
+      "id": "theme-themes-official-designer-monsoon-hush",
+      "name": "Monsoon Hush",
+      "collection": "designer",
+      "path": "themes/official/designer/monsoon-hush.json",
+      "stops": [
+        {
+          "alpha": 1,
+          "blue": 0.2,
+          "green": 0.1607843137254902,
+          "location": 0.0,
+          "red": 0.09411764705882353
+        },
+        {
+          "alpha": 1,
+          "blue": 0.3254901960784314,
+          "green": 0.2784313725490196,
+          "location": 0.25,
+          "red": 0.18823529411764706
+        },
+        {
+          "alpha": 1,
+          "blue": 0.2980392156862745,
+          "green": 0.3058823529411765,
+          "location": 0.5,
+          "red": 0.2196078431372549
+        },
+        {
+          "alpha": 1,
+          "blue": 0.6431372549019608,
+          "green": 0.6,
+          "location": 0.75,
+          "red": 0.4745098039215686
+        },
+        {
+          "alpha": 1,
+          "blue": 0.8352941176470589,
+          "green": 0.8156862745098039,
+          "location": 1.0,
+          "red": 0.7372549019607844
+        }
+      ],
+      "lifetime": 0.6,
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-monsoon-hush.svg"
+    },
+    {
       "id": "theme-themes-official-designer-morandi",
       "name": "Morandi",
       "collection": "designer",
@@ -2174,6 +2351,52 @@
       "widthScale": 1.0,
       "preview": "assets/previews/theme-themes-official-designer-persimmon-grove.svg",
       "createdAt": "2026-08-13T12:12:47+10:00"
+    },
+    {
+      "id": "theme-themes-official-designer-pine-frost",
+      "name": "Pine Frost",
+      "collection": "designer",
+      "path": "themes/official/designer/pine-frost.json",
+      "stops": [
+        {
+          "alpha": 1,
+          "blue": 0.20392156862745098,
+          "green": 0.1450980392156863,
+          "location": 0.0,
+          "red": 0.08627450980392157
+        },
+        {
+          "alpha": 1,
+          "blue": 0.3411764705882353,
+          "green": 0.2627450980392157,
+          "location": 0.25,
+          "red": 0.12941176470588237
+        },
+        {
+          "alpha": 1,
+          "blue": 0.3568627450980392,
+          "green": 0.28627450980392155,
+          "location": 0.5,
+          "red": 0.21568627450980393
+        },
+        {
+          "alpha": 1,
+          "blue": 0.807843137254902,
+          "green": 0.7137254901960784,
+          "location": 0.75,
+          "red": 0.6039215686274509
+        },
+        {
+          "alpha": 1,
+          "blue": 0.9098039215686274,
+          "green": 0.8470588235294118,
+          "location": 1.0,
+          "red": 0.8
+        }
+      ],
+      "lifetime": 0.6,
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-designer-pine-frost.svg"
     },
     {
       "id": "theme-themes-official-designer-pine-glade",
@@ -3673,6 +3896,45 @@
       "createdAt": "2026-08-04T23:45:13+10:00"
     },
     {
+      "id": "theme-themes-official-neon-cabana-stripe",
+      "name": "Cabana Stripe",
+      "collection": "neon",
+      "path": "themes/official/neon/cabana-stripe.json",
+      "stops": [
+        {
+          "alpha": 1,
+          "blue": 0.396078431372549,
+          "green": 0.32941176470588235,
+          "location": 0.0,
+          "red": 0.08235294117647059
+        },
+        {
+          "alpha": 1,
+          "blue": 0.6549019607843137,
+          "green": 0.5725490196078431,
+          "location": 0.3333333333333333,
+          "red": 0.21568627450980393
+        },
+        {
+          "alpha": 1,
+          "blue": 0.3254901960784314,
+          "green": 0.3333333333333333,
+          "location": 0.6666666666666666,
+          "red": 0.9529411764705882
+        },
+        {
+          "alpha": 1,
+          "blue": 0.7843137254901961,
+          "green": 0.8862745098039215,
+          "location": 1.0,
+          "red": 0.9372549019607843
+        }
+      ],
+      "lifetime": 0.6,
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-cabana-stripe.svg"
+    },
+    {
       "id": "theme-themes-official-neon-candy-pop",
       "name": "Candy Pop",
       "collection": "neon",
@@ -3744,6 +4006,38 @@
       "widthScale": 1.0,
       "preview": "assets/previews/theme-themes-official-neon-citrus-sea.svg",
       "createdAt": "2026-08-02T11:22:56+10:00"
+    },
+    {
+      "id": "theme-themes-official-neon-clementine-breeze",
+      "name": "Clementine Breeze",
+      "collection": "neon",
+      "path": "themes/official/neon/clementine-breeze.json",
+      "stops": [
+        {
+          "alpha": 1,
+          "blue": 0.10588235294117647,
+          "green": 0.38823529411764707,
+          "location": 0.0,
+          "red": 0.9176470588235294
+        },
+        {
+          "alpha": 1,
+          "blue": 0.8784313725490196,
+          "green": 0.7607843137254902,
+          "location": 0.5,
+          "red": 0.6588235294117647
+        },
+        {
+          "alpha": 1,
+          "blue": 0.8745098039215686,
+          "green": 0.9215686274509803,
+          "location": 1.0,
+          "red": 0.9215686274509803
+        }
+      ],
+      "lifetime": 0.6,
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-clementine-breeze.svg"
     },
     {
       "id": "theme-themes-official-neon-crimson-pop",
@@ -4217,6 +4511,38 @@
       "widthScale": 1.0,
       "preview": "assets/previews/theme-themes-official-neon-mint-breeze.svg",
       "createdAt": "2026-07-20T20:01:28+10:00"
+    },
+    {
+      "id": "theme-themes-official-neon-mojave-glow",
+      "name": "Mojave Glow",
+      "collection": "neon",
+      "path": "themes/official/neon/mojave-glow.json",
+      "stops": [
+        {
+          "alpha": 1,
+          "blue": 0.12941176470588237,
+          "green": 0.37254901960784315,
+          "location": 0.0,
+          "red": 0.8941176470588236
+        },
+        {
+          "alpha": 1,
+          "blue": 0.8313725490196079,
+          "green": 0.7490196078431373,
+          "location": 0.5,
+          "red": 0.6627450980392157
+        },
+        {
+          "alpha": 1,
+          "blue": 0.7333333333333333,
+          "green": 0.8235294117647058,
+          "location": 1.0,
+          "red": 0.9058823529411765
+        }
+      ],
+      "lifetime": 0.6,
+      "widthScale": 1.0,
+      "preview": "assets/previews/theme-themes-official-neon-mojave-glow.svg"
     },
     {
       "id": "theme-themes-official-neon-neon-iris",
